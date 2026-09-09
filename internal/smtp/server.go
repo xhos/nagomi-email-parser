@@ -47,7 +47,7 @@ func (s *Server) Start(ctx context.Context) error {
 	s.smtpServer = &smtpd.Server{
 		Addr:     s.addr,
 		Handler:  s.mailHandler,
-		Appname:  "null-email-parser",
+		Appname:  "nagomi-email-parser",
 		Hostname: s.domain,
 	}
 

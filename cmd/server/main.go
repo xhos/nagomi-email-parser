@@ -7,11 +7,11 @@ import (
 	"os/signal"
 	"syscall"
 
-	"null-email-parser/internal/api"
-	"null-email-parser/internal/config"
-	"null-email-parser/internal/grpc"
-	"null-email-parser/internal/smtp"
-	"null-email-parser/internal/version"
+	"nagomi-email-parser/internal/api"
+	"nagomi-email-parser/internal/config"
+	"nagomi-email-parser/internal/grpc"
+	"nagomi-email-parser/internal/smtp"
+	"nagomi-email-parser/internal/version"
 
 	"github.com/charmbracelet/log"
 )
@@ -44,7 +44,7 @@ func main() {
 	}
 
 	// ----- api client -------------
-	apiClient, err := api.NewClient(cfg.NullCoreURL, "", cfg.APIKey)
+	apiClient, err := api.NewClient(cfg.NagomiCoreURL, "", cfg.APIKey)
 	if err != nil {
 		logger.Fatal("api client init", "err", err)
 	}
@@ -55,11 +55,11 @@ func main() {
 	}()
 
 	// ----- connectivity check -----
-	logger.Info("checking null-core connectivity", "url", cfg.NullCoreURL)
+	logger.Info("checking nagomi-core connectivity", "url", cfg.NagomiCoreURL)
 	if err := apiClient.Ping(); err != nil {
-		logger.Fatal("null-core not reachable", "err", err)
+		logger.Fatal("nagomi-core not reachable", "err", err)
 	}
-	logger.Info("null-core connectivity confirmed")
+	logger.Info("nagomi-core connectivity confirmed")
 
 	// ----- services ---------------
 	handler := smtp.NewEmailHandler(apiClient, logger, cfg.UnsafeSaveEML)

@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        (unknown)
-// source: null/v1/account_services.proto
+// source: nagomi/v1/account_services.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	_ "buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/buf/validate"
@@ -34,7 +34,7 @@ type ListAccountsRequest struct {
 
 func (x *ListAccountsRequest) Reset() {
 	*x = ListAccountsRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[0]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -46,7 +46,7 @@ func (x *ListAccountsRequest) String() string {
 func (*ListAccountsRequest) ProtoMessage() {}
 
 func (x *ListAccountsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[0]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -59,7 +59,7 @@ func (x *ListAccountsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListAccountsRequest.ProtoReflect.Descriptor instead.
 func (*ListAccountsRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{0}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *ListAccountsRequest) GetUserId() string {
@@ -78,7 +78,7 @@ type ListAccountsResponse struct {
 
 func (x *ListAccountsResponse) Reset() {
 	*x = ListAccountsResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[1]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -90,7 +90,7 @@ func (x *ListAccountsResponse) String() string {
 func (*ListAccountsResponse) ProtoMessage() {}
 
 func (x *ListAccountsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[1]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -103,7 +103,7 @@ func (x *ListAccountsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListAccountsResponse.ProtoReflect.Descriptor instead.
 func (*ListAccountsResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{1}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *ListAccountsResponse) GetAccounts() []*Account {
@@ -123,7 +123,7 @@ type GetAccountRequest struct {
 
 func (x *GetAccountRequest) Reset() {
 	*x = GetAccountRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[2]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -135,7 +135,7 @@ func (x *GetAccountRequest) String() string {
 func (*GetAccountRequest) ProtoMessage() {}
 
 func (x *GetAccountRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[2]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -148,7 +148,7 @@ func (x *GetAccountRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetAccountRequest.ProtoReflect.Descriptor instead.
 func (*GetAccountRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{2}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *GetAccountRequest) GetUserId() string {
@@ -174,7 +174,7 @@ type GetAccountResponse struct {
 
 func (x *GetAccountResponse) Reset() {
 	*x = GetAccountResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[3]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -186,7 +186,7 @@ func (x *GetAccountResponse) String() string {
 func (*GetAccountResponse) ProtoMessage() {}
 
 func (x *GetAccountResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[3]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -199,7 +199,7 @@ func (x *GetAccountResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetAccountResponse.ProtoReflect.Descriptor instead.
 func (*GetAccountResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{3}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *GetAccountResponse) GetAccount() *Account {
@@ -214,7 +214,7 @@ type CreateAccountRequest struct {
 	UserId        string                 `protobuf:"bytes,1,opt,name=user_id,json=userId,proto3" json:"user_id,omitempty"`
 	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"`
 	Bank          string                 `protobuf:"bytes,3,opt,name=bank,proto3" json:"bank,omitempty"`
-	Type          AccountType            `protobuf:"varint,4,opt,name=type,proto3,enum=null.v1.AccountType" json:"type,omitempty"`
+	Type          AccountType            `protobuf:"varint,4,opt,name=type,proto3,enum=nagomi.v1.AccountType" json:"type,omitempty"`
 	FriendlyName  *string                `protobuf:"bytes,5,opt,name=friendly_name,json=friendlyName,proto3,oneof" json:"friendly_name,omitempty"`
 	AnchorBalance *money.Money           `protobuf:"bytes,6,opt,name=anchor_balance,json=anchorBalance,proto3" json:"anchor_balance,omitempty"`
 	MainCurrency  string                 `protobuf:"bytes,7,opt,name=main_currency,json=mainCurrency,proto3" json:"main_currency,omitempty"`
@@ -225,7 +225,7 @@ type CreateAccountRequest struct {
 
 func (x *CreateAccountRequest) Reset() {
 	*x = CreateAccountRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[4]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -237,7 +237,7 @@ func (x *CreateAccountRequest) String() string {
 func (*CreateAccountRequest) ProtoMessage() {}
 
 func (x *CreateAccountRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[4]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -250,7 +250,7 @@ func (x *CreateAccountRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateAccountRequest.ProtoReflect.Descriptor instead.
 func (*CreateAccountRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{4}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *CreateAccountRequest) GetUserId() string {
@@ -318,7 +318,7 @@ type CreateAccountResponse struct {
 
 func (x *CreateAccountResponse) Reset() {
 	*x = CreateAccountResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[5]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -330,7 +330,7 @@ func (x *CreateAccountResponse) String() string {
 func (*CreateAccountResponse) ProtoMessage() {}
 
 func (x *CreateAccountResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[5]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -343,7 +343,7 @@ func (x *CreateAccountResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateAccountResponse.ProtoReflect.Descriptor instead.
 func (*CreateAccountResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{5}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *CreateAccountResponse) GetAccount() *Account {
@@ -361,7 +361,7 @@ type UpdateAccountRequest struct {
 	// fields that can be updated
 	Name          *string                `protobuf:"bytes,4,opt,name=name,proto3,oneof" json:"name,omitempty"`
 	Bank          *string                `protobuf:"bytes,5,opt,name=bank,proto3,oneof" json:"bank,omitempty"`
-	AccountType   *AccountType           `protobuf:"varint,6,opt,name=account_type,json=accountType,proto3,enum=null.v1.AccountType,oneof" json:"account_type,omitempty"`
+	AccountType   *AccountType           `protobuf:"varint,6,opt,name=account_type,json=accountType,proto3,enum=nagomi.v1.AccountType,oneof" json:"account_type,omitempty"`
 	FriendlyName  *string                `protobuf:"bytes,7,opt,name=friendly_name,json=friendlyName,proto3,oneof" json:"friendly_name,omitempty"`
 	AnchorDate    *timestamppb.Timestamp `protobuf:"bytes,8,opt,name=anchor_date,json=anchorDate,proto3,oneof" json:"anchor_date,omitempty"`
 	AnchorBalance *money.Money           `protobuf:"bytes,9,opt,name=anchor_balance,json=anchorBalance,proto3,oneof" json:"anchor_balance,omitempty"`
@@ -373,7 +373,7 @@ type UpdateAccountRequest struct {
 
 func (x *UpdateAccountRequest) Reset() {
 	*x = UpdateAccountRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[6]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -385,7 +385,7 @@ func (x *UpdateAccountRequest) String() string {
 func (*UpdateAccountRequest) ProtoMessage() {}
 
 func (x *UpdateAccountRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[6]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -398,7 +398,7 @@ func (x *UpdateAccountRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateAccountRequest.ProtoReflect.Descriptor instead.
 func (*UpdateAccountRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{6}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *UpdateAccountRequest) GetUserId() string {
@@ -486,7 +486,7 @@ type UpdateAccountResponse struct {
 
 func (x *UpdateAccountResponse) Reset() {
 	*x = UpdateAccountResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[7]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -498,7 +498,7 @@ func (x *UpdateAccountResponse) String() string {
 func (*UpdateAccountResponse) ProtoMessage() {}
 
 func (x *UpdateAccountResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[7]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -511,7 +511,7 @@ func (x *UpdateAccountResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateAccountResponse.ProtoReflect.Descriptor instead.
 func (*UpdateAccountResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{7}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{7}
 }
 
 type DeleteAccountRequest struct {
@@ -524,7 +524,7 @@ type DeleteAccountRequest struct {
 
 func (x *DeleteAccountRequest) Reset() {
 	*x = DeleteAccountRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[8]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -536,7 +536,7 @@ func (x *DeleteAccountRequest) String() string {
 func (*DeleteAccountRequest) ProtoMessage() {}
 
 func (x *DeleteAccountRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[8]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -549,7 +549,7 @@ func (x *DeleteAccountRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteAccountRequest.ProtoReflect.Descriptor instead.
 func (*DeleteAccountRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{8}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *DeleteAccountRequest) GetUserId() string {
@@ -575,7 +575,7 @@ type DeleteAccountResponse struct {
 
 func (x *DeleteAccountResponse) Reset() {
 	*x = DeleteAccountResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[9]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -587,7 +587,7 @@ func (x *DeleteAccountResponse) String() string {
 func (*DeleteAccountResponse) ProtoMessage() {}
 
 func (x *DeleteAccountResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[9]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -600,7 +600,7 @@ func (x *DeleteAccountResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteAccountResponse.ProtoReflect.Descriptor instead.
 func (*DeleteAccountResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{9}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *DeleteAccountResponse) GetAffectedRows() int64 {
@@ -621,7 +621,7 @@ type AddAccountAliasRequest struct {
 
 func (x *AddAccountAliasRequest) Reset() {
 	*x = AddAccountAliasRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[10]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -633,7 +633,7 @@ func (x *AddAccountAliasRequest) String() string {
 func (*AddAccountAliasRequest) ProtoMessage() {}
 
 func (x *AddAccountAliasRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[10]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -646,7 +646,7 @@ func (x *AddAccountAliasRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AddAccountAliasRequest.ProtoReflect.Descriptor instead.
 func (*AddAccountAliasRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{10}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *AddAccountAliasRequest) GetUserId() string {
@@ -678,7 +678,7 @@ type AddAccountAliasResponse struct {
 
 func (x *AddAccountAliasResponse) Reset() {
 	*x = AddAccountAliasResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[11]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -690,7 +690,7 @@ func (x *AddAccountAliasResponse) String() string {
 func (*AddAccountAliasResponse) ProtoMessage() {}
 
 func (x *AddAccountAliasResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[11]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -703,7 +703,7 @@ func (x *AddAccountAliasResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AddAccountAliasResponse.ProtoReflect.Descriptor instead.
 func (*AddAccountAliasResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{11}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{11}
 }
 
 type RemoveAccountAliasRequest struct {
@@ -717,7 +717,7 @@ type RemoveAccountAliasRequest struct {
 
 func (x *RemoveAccountAliasRequest) Reset() {
 	*x = RemoveAccountAliasRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[12]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -729,7 +729,7 @@ func (x *RemoveAccountAliasRequest) String() string {
 func (*RemoveAccountAliasRequest) ProtoMessage() {}
 
 func (x *RemoveAccountAliasRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[12]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -742,7 +742,7 @@ func (x *RemoveAccountAliasRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RemoveAccountAliasRequest.ProtoReflect.Descriptor instead.
 func (*RemoveAccountAliasRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{12}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *RemoveAccountAliasRequest) GetUserId() string {
@@ -774,7 +774,7 @@ type RemoveAccountAliasResponse struct {
 
 func (x *RemoveAccountAliasResponse) Reset() {
 	*x = RemoveAccountAliasResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[13]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -786,7 +786,7 @@ func (x *RemoveAccountAliasResponse) String() string {
 func (*RemoveAccountAliasResponse) ProtoMessage() {}
 
 func (x *RemoveAccountAliasResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[13]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -799,7 +799,7 @@ func (x *RemoveAccountAliasResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RemoveAccountAliasResponse.ProtoReflect.Descriptor instead.
 func (*RemoveAccountAliasResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{13}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{13}
 }
 
 type SetAccountAliasesRequest struct {
@@ -813,7 +813,7 @@ type SetAccountAliasesRequest struct {
 
 func (x *SetAccountAliasesRequest) Reset() {
 	*x = SetAccountAliasesRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[14]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -825,7 +825,7 @@ func (x *SetAccountAliasesRequest) String() string {
 func (*SetAccountAliasesRequest) ProtoMessage() {}
 
 func (x *SetAccountAliasesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[14]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -838,7 +838,7 @@ func (x *SetAccountAliasesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetAccountAliasesRequest.ProtoReflect.Descriptor instead.
 func (*SetAccountAliasesRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{14}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *SetAccountAliasesRequest) GetUserId() string {
@@ -870,7 +870,7 @@ type SetAccountAliasesResponse struct {
 
 func (x *SetAccountAliasesResponse) Reset() {
 	*x = SetAccountAliasesResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[15]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -882,7 +882,7 @@ func (x *SetAccountAliasesResponse) String() string {
 func (*SetAccountAliasesResponse) ProtoMessage() {}
 
 func (x *SetAccountAliasesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[15]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -895,7 +895,7 @@ func (x *SetAccountAliasesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetAccountAliasesResponse.ProtoReflect.Descriptor instead.
 func (*SetAccountAliasesResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{15}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{15}
 }
 
 type FindAccountByAliasRequest struct {
@@ -908,7 +908,7 @@ type FindAccountByAliasRequest struct {
 
 func (x *FindAccountByAliasRequest) Reset() {
 	*x = FindAccountByAliasRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[16]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -920,7 +920,7 @@ func (x *FindAccountByAliasRequest) String() string {
 func (*FindAccountByAliasRequest) ProtoMessage() {}
 
 func (x *FindAccountByAliasRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[16]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -933,7 +933,7 @@ func (x *FindAccountByAliasRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindAccountByAliasRequest.ProtoReflect.Descriptor instead.
 func (*FindAccountByAliasRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{16}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *FindAccountByAliasRequest) GetUserId() string {
@@ -959,7 +959,7 @@ type FindAccountByAliasResponse struct {
 
 func (x *FindAccountByAliasResponse) Reset() {
 	*x = FindAccountByAliasResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[17]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -971,7 +971,7 @@ func (x *FindAccountByAliasResponse) String() string {
 func (*FindAccountByAliasResponse) ProtoMessage() {}
 
 func (x *FindAccountByAliasResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[17]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -984,7 +984,7 @@ func (x *FindAccountByAliasResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindAccountByAliasResponse.ProtoReflect.Descriptor instead.
 func (*FindAccountByAliasResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{17}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *FindAccountByAliasResponse) GetAccount() *Account {
@@ -1005,7 +1005,7 @@ type MergeAccountsRequest struct {
 
 func (x *MergeAccountsRequest) Reset() {
 	*x = MergeAccountsRequest{}
-	mi := &file_null_v1_account_services_proto_msgTypes[18]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1017,7 +1017,7 @@ func (x *MergeAccountsRequest) String() string {
 func (*MergeAccountsRequest) ProtoMessage() {}
 
 func (x *MergeAccountsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[18]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1030,7 +1030,7 @@ func (x *MergeAccountsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MergeAccountsRequest.ProtoReflect.Descriptor instead.
 func (*MergeAccountsRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{18}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *MergeAccountsRequest) GetUserId() string {
@@ -1064,7 +1064,7 @@ type MergeAccountsResponse struct {
 
 func (x *MergeAccountsResponse) Reset() {
 	*x = MergeAccountsResponse{}
-	mi := &file_null_v1_account_services_proto_msgTypes[19]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1076,7 +1076,7 @@ func (x *MergeAccountsResponse) String() string {
 func (*MergeAccountsResponse) ProtoMessage() {}
 
 func (x *MergeAccountsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_account_services_proto_msgTypes[19]
+	mi := &file_nagomi_v1_account_services_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1089,7 +1089,7 @@ func (x *MergeAccountsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MergeAccountsResponse.ProtoReflect.Descriptor instead.
 func (*MergeAccountsResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_account_services_proto_rawDescGZIP(), []int{19}
+	return file_nagomi_v1_account_services_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *MergeAccountsResponse) GetAccount() *Account {
@@ -1106,40 +1106,40 @@ func (x *MergeAccountsResponse) GetTransactionsMoved() int64 {
 	return 0
 }
 
-var File_null_v1_account_services_proto protoreflect.FileDescriptor
+var File_nagomi_v1_account_services_proto protoreflect.FileDescriptor
 
-const file_null_v1_account_services_proto_rawDesc = "" +
+const file_nagomi_v1_account_services_proto_rawDesc = "" +
 	"\n" +
-	"\x1enull/v1/account_services.proto\x12\anull.v1\x1a\x15null/v1/account.proto\x1a\x17google/type/money.proto\x1a\x13null/v1/enums.proto\x1a\x1bbuf/validate/validate.proto\x1a google/protobuf/field_mask.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"8\n" +
+	" nagomi/v1/account_services.proto\x12\tnagomi.v1\x1a\x17nagomi/v1/account.proto\x1a\x17google/type/money.proto\x1a\x15nagomi/v1/enums.proto\x1a\x1bbuf/validate/validate.proto\x1a google/protobuf/field_mask.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"8\n" +
 	"\x13ListAccountsRequest\x12!\n" +
-	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\"D\n" +
-	"\x14ListAccountsResponse\x12,\n" +
-	"\baccounts\x18\x01 \x03(\v2\x10.null.v1.AccountR\baccounts\"O\n" +
+	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\"F\n" +
+	"\x14ListAccountsResponse\x12.\n" +
+	"\baccounts\x18\x01 \x03(\v2\x12.nagomi.v1.AccountR\baccounts\"O\n" +
 	"\x11GetAccountRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12\x17\n" +
-	"\x02id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x02id\"@\n" +
-	"\x12GetAccountResponse\x12*\n" +
-	"\aaccount\x18\x01 \x01(\v2\x10.null.v1.AccountR\aaccount\"\xbf\x02\n" +
+	"\x02id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x02id\"B\n" +
+	"\x12GetAccountResponse\x12,\n" +
+	"\aaccount\x18\x01 \x01(\v2\x12.nagomi.v1.AccountR\aaccount\"\xc1\x02\n" +
 	"\x14CreateAccountRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x12\n" +
-	"\x04bank\x18\x03 \x01(\tR\x04bank\x12(\n" +
-	"\x04type\x18\x04 \x01(\x0e2\x14.null.v1.AccountTypeR\x04type\x12(\n" +
+	"\x04bank\x18\x03 \x01(\tR\x04bank\x12*\n" +
+	"\x04type\x18\x04 \x01(\x0e2\x16.nagomi.v1.AccountTypeR\x04type\x12(\n" +
 	"\rfriendly_name\x18\x05 \x01(\tH\x00R\ffriendlyName\x88\x01\x01\x129\n" +
 	"\x0eanchor_balance\x18\x06 \x01(\v2\x12.google.type.MoneyR\ranchorBalance\x12#\n" +
 	"\rmain_currency\x18\a \x01(\tR\fmainCurrency\x12\x16\n" +
 	"\x06colors\x18\b \x03(\tR\x06colorsB\x10\n" +
-	"\x0e_friendly_name\"C\n" +
-	"\x15CreateAccountResponse\x12*\n" +
-	"\aaccount\x18\x01 \x01(\v2\x10.null.v1.AccountR\aaccount\"\xd7\x04\n" +
+	"\x0e_friendly_name\"E\n" +
+	"\x15CreateAccountResponse\x12,\n" +
+	"\aaccount\x18\x01 \x01(\v2\x12.nagomi.v1.AccountR\aaccount\"\xd9\x04\n" +
 	"\x14UpdateAccountRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12\x17\n" +
 	"\x02id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x02id\x12;\n" +
 	"\vupdate_mask\x18\x03 \x01(\v2\x1a.google.protobuf.FieldMaskR\n" +
 	"updateMask\x12\x17\n" +
 	"\x04name\x18\x04 \x01(\tH\x00R\x04name\x88\x01\x01\x12\x17\n" +
-	"\x04bank\x18\x05 \x01(\tH\x01R\x04bank\x88\x01\x01\x12<\n" +
-	"\faccount_type\x18\x06 \x01(\x0e2\x14.null.v1.AccountTypeH\x02R\vaccountType\x88\x01\x01\x12(\n" +
+	"\x04bank\x18\x05 \x01(\tH\x01R\x04bank\x88\x01\x01\x12>\n" +
+	"\faccount_type\x18\x06 \x01(\x0e2\x16.nagomi.v1.AccountTypeH\x02R\vaccountType\x88\x01\x01\x12(\n" +
 	"\rfriendly_name\x18\a \x01(\tH\x03R\ffriendlyName\x88\x01\x01\x12@\n" +
 	"\vanchor_date\x18\b \x01(\v2\x1a.google.protobuf.TimestampH\x04R\n" +
 	"anchorDate\x88\x01\x01\x12>\n" +
@@ -1180,102 +1180,103 @@ const file_null_v1_account_services_proto_rawDesc = "" +
 	"\x19SetAccountAliasesResponse\"]\n" +
 	"\x19FindAccountByAliasRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12\x1d\n" +
-	"\x05alias\x18\x02 \x01(\tB\a\xbaH\x04r\x02\x10\x01R\x05alias\"H\n" +
-	"\x1aFindAccountByAliasResponse\x12*\n" +
-	"\aaccount\x18\x01 \x01(\v2\x10.null.v1.AccountR\aaccount\"\xab\x01\n" +
+	"\x05alias\x18\x02 \x01(\tB\a\xbaH\x04r\x02\x10\x01R\x05alias\"J\n" +
+	"\x1aFindAccountByAliasResponse\x12,\n" +
+	"\aaccount\x18\x01 \x01(\v2\x12.nagomi.v1.AccountR\aaccount\"\xab\x01\n" +
 	"\x14MergeAccountsRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x125\n" +
 	"\x12primary_account_id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x10primaryAccountId\x129\n" +
-	"\x14secondary_account_id\x18\x03 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x12secondaryAccountId\"r\n" +
-	"\x15MergeAccountsResponse\x12*\n" +
-	"\aaccount\x18\x01 \x01(\v2\x10.null.v1.AccountR\aaccount\x12-\n" +
-	"\x12transactions_moved\x18\x02 \x01(\x03R\x11transactionsMoved2\xd4\x06\n" +
-	"\x0eAccountService\x12K\n" +
-	"\fListAccounts\x12\x1c.null.v1.ListAccountsRequest\x1a\x1d.null.v1.ListAccountsResponse\x12E\n" +
+	"\x14secondary_account_id\x18\x03 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x12secondaryAccountId\"t\n" +
+	"\x15MergeAccountsResponse\x12,\n" +
+	"\aaccount\x18\x01 \x01(\v2\x12.nagomi.v1.AccountR\aaccount\x12-\n" +
+	"\x12transactions_moved\x18\x02 \x01(\x03R\x11transactionsMoved2\xfc\x06\n" +
+	"\x0eAccountService\x12O\n" +
+	"\fListAccounts\x12\x1e.nagomi.v1.ListAccountsRequest\x1a\x1f.nagomi.v1.ListAccountsResponse\x12I\n" +
 	"\n" +
-	"GetAccount\x12\x1a.null.v1.GetAccountRequest\x1a\x1b.null.v1.GetAccountResponse\x12N\n" +
-	"\rCreateAccount\x12\x1d.null.v1.CreateAccountRequest\x1a\x1e.null.v1.CreateAccountResponse\x12N\n" +
-	"\rUpdateAccount\x12\x1d.null.v1.UpdateAccountRequest\x1a\x1e.null.v1.UpdateAccountResponse\x12N\n" +
-	"\rDeleteAccount\x12\x1d.null.v1.DeleteAccountRequest\x1a\x1e.null.v1.DeleteAccountResponse\x12T\n" +
-	"\x0fAddAccountAlias\x12\x1f.null.v1.AddAccountAliasRequest\x1a .null.v1.AddAccountAliasResponse\x12]\n" +
-	"\x12RemoveAccountAlias\x12\".null.v1.RemoveAccountAliasRequest\x1a#.null.v1.RemoveAccountAliasResponse\x12Z\n" +
-	"\x11SetAccountAliases\x12!.null.v1.SetAccountAliasesRequest\x1a\".null.v1.SetAccountAliasesResponse\x12]\n" +
-	"\x12FindAccountByAlias\x12\".null.v1.FindAccountByAliasRequest\x1a#.null.v1.FindAccountByAliasResponse\x12N\n" +
-	"\rMergeAccounts\x12\x1d.null.v1.MergeAccountsRequest\x1a\x1e.null.v1.MergeAccountsResponseB\x91\x01\n" +
-	"\vcom.null.v1B\x14AccountServicesProtoP\x01Z-null-email-parser/internal/gen/null/v1;nullv1\xa2\x02\x03NXX\xaa\x02\aNull.V1\xca\x02\bNull_\\V1\xe2\x02\x14Null_\\V1\\GPBMetadata\xea\x02\bNull::V1b\x06proto3"
+	"GetAccount\x12\x1c.nagomi.v1.GetAccountRequest\x1a\x1d.nagomi.v1.GetAccountResponse\x12R\n" +
+	"\rCreateAccount\x12\x1f.nagomi.v1.CreateAccountRequest\x1a .nagomi.v1.CreateAccountResponse\x12R\n" +
+	"\rUpdateAccount\x12\x1f.nagomi.v1.UpdateAccountRequest\x1a .nagomi.v1.UpdateAccountResponse\x12R\n" +
+	"\rDeleteAccount\x12\x1f.nagomi.v1.DeleteAccountRequest\x1a .nagomi.v1.DeleteAccountResponse\x12X\n" +
+	"\x0fAddAccountAlias\x12!.nagomi.v1.AddAccountAliasRequest\x1a\".nagomi.v1.AddAccountAliasResponse\x12a\n" +
+	"\x12RemoveAccountAlias\x12$.nagomi.v1.RemoveAccountAliasRequest\x1a%.nagomi.v1.RemoveAccountAliasResponse\x12^\n" +
+	"\x11SetAccountAliases\x12#.nagomi.v1.SetAccountAliasesRequest\x1a$.nagomi.v1.SetAccountAliasesResponse\x12a\n" +
+	"\x12FindAccountByAlias\x12$.nagomi.v1.FindAccountByAliasRequest\x1a%.nagomi.v1.FindAccountByAliasResponse\x12R\n" +
+	"\rMergeAccounts\x12\x1f.nagomi.v1.MergeAccountsRequest\x1a .nagomi.v1.MergeAccountsResponseB\x9f\x01\n" +
+	"\rcom.nagomi.v1B\x14AccountServicesProtoP\x01Z3nagomi-email-parser/internal/gen/nagomi/v1;nagomiv1\xa2\x02\x03NXX\xaa\x02\tNagomi.V1\xca\x02\tNagomi\\V1\xe2\x02\x15Nagomi\\V1\\GPBMetadata\xea\x02\n" +
+	"Nagomi::V1b\x06proto3"
 
 var (
-	file_null_v1_account_services_proto_rawDescOnce sync.Once
-	file_null_v1_account_services_proto_rawDescData []byte
+	file_nagomi_v1_account_services_proto_rawDescOnce sync.Once
+	file_nagomi_v1_account_services_proto_rawDescData []byte
 )
 
-func file_null_v1_account_services_proto_rawDescGZIP() []byte {
-	file_null_v1_account_services_proto_rawDescOnce.Do(func() {
-		file_null_v1_account_services_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_null_v1_account_services_proto_rawDesc), len(file_null_v1_account_services_proto_rawDesc)))
+func file_nagomi_v1_account_services_proto_rawDescGZIP() []byte {
+	file_nagomi_v1_account_services_proto_rawDescOnce.Do(func() {
+		file_nagomi_v1_account_services_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_nagomi_v1_account_services_proto_rawDesc), len(file_nagomi_v1_account_services_proto_rawDesc)))
 	})
-	return file_null_v1_account_services_proto_rawDescData
+	return file_nagomi_v1_account_services_proto_rawDescData
 }
 
-var file_null_v1_account_services_proto_msgTypes = make([]protoimpl.MessageInfo, 20)
-var file_null_v1_account_services_proto_goTypes = []any{
-	(*ListAccountsRequest)(nil),        // 0: null.v1.ListAccountsRequest
-	(*ListAccountsResponse)(nil),       // 1: null.v1.ListAccountsResponse
-	(*GetAccountRequest)(nil),          // 2: null.v1.GetAccountRequest
-	(*GetAccountResponse)(nil),         // 3: null.v1.GetAccountResponse
-	(*CreateAccountRequest)(nil),       // 4: null.v1.CreateAccountRequest
-	(*CreateAccountResponse)(nil),      // 5: null.v1.CreateAccountResponse
-	(*UpdateAccountRequest)(nil),       // 6: null.v1.UpdateAccountRequest
-	(*UpdateAccountResponse)(nil),      // 7: null.v1.UpdateAccountResponse
-	(*DeleteAccountRequest)(nil),       // 8: null.v1.DeleteAccountRequest
-	(*DeleteAccountResponse)(nil),      // 9: null.v1.DeleteAccountResponse
-	(*AddAccountAliasRequest)(nil),     // 10: null.v1.AddAccountAliasRequest
-	(*AddAccountAliasResponse)(nil),    // 11: null.v1.AddAccountAliasResponse
-	(*RemoveAccountAliasRequest)(nil),  // 12: null.v1.RemoveAccountAliasRequest
-	(*RemoveAccountAliasResponse)(nil), // 13: null.v1.RemoveAccountAliasResponse
-	(*SetAccountAliasesRequest)(nil),   // 14: null.v1.SetAccountAliasesRequest
-	(*SetAccountAliasesResponse)(nil),  // 15: null.v1.SetAccountAliasesResponse
-	(*FindAccountByAliasRequest)(nil),  // 16: null.v1.FindAccountByAliasRequest
-	(*FindAccountByAliasResponse)(nil), // 17: null.v1.FindAccountByAliasResponse
-	(*MergeAccountsRequest)(nil),       // 18: null.v1.MergeAccountsRequest
-	(*MergeAccountsResponse)(nil),      // 19: null.v1.MergeAccountsResponse
-	(*Account)(nil),                    // 20: null.v1.Account
-	(AccountType)(0),                   // 21: null.v1.AccountType
+var file_nagomi_v1_account_services_proto_msgTypes = make([]protoimpl.MessageInfo, 20)
+var file_nagomi_v1_account_services_proto_goTypes = []any{
+	(*ListAccountsRequest)(nil),        // 0: nagomi.v1.ListAccountsRequest
+	(*ListAccountsResponse)(nil),       // 1: nagomi.v1.ListAccountsResponse
+	(*GetAccountRequest)(nil),          // 2: nagomi.v1.GetAccountRequest
+	(*GetAccountResponse)(nil),         // 3: nagomi.v1.GetAccountResponse
+	(*CreateAccountRequest)(nil),       // 4: nagomi.v1.CreateAccountRequest
+	(*CreateAccountResponse)(nil),      // 5: nagomi.v1.CreateAccountResponse
+	(*UpdateAccountRequest)(nil),       // 6: nagomi.v1.UpdateAccountRequest
+	(*UpdateAccountResponse)(nil),      // 7: nagomi.v1.UpdateAccountResponse
+	(*DeleteAccountRequest)(nil),       // 8: nagomi.v1.DeleteAccountRequest
+	(*DeleteAccountResponse)(nil),      // 9: nagomi.v1.DeleteAccountResponse
+	(*AddAccountAliasRequest)(nil),     // 10: nagomi.v1.AddAccountAliasRequest
+	(*AddAccountAliasResponse)(nil),    // 11: nagomi.v1.AddAccountAliasResponse
+	(*RemoveAccountAliasRequest)(nil),  // 12: nagomi.v1.RemoveAccountAliasRequest
+	(*RemoveAccountAliasResponse)(nil), // 13: nagomi.v1.RemoveAccountAliasResponse
+	(*SetAccountAliasesRequest)(nil),   // 14: nagomi.v1.SetAccountAliasesRequest
+	(*SetAccountAliasesResponse)(nil),  // 15: nagomi.v1.SetAccountAliasesResponse
+	(*FindAccountByAliasRequest)(nil),  // 16: nagomi.v1.FindAccountByAliasRequest
+	(*FindAccountByAliasResponse)(nil), // 17: nagomi.v1.FindAccountByAliasResponse
+	(*MergeAccountsRequest)(nil),       // 18: nagomi.v1.MergeAccountsRequest
+	(*MergeAccountsResponse)(nil),      // 19: nagomi.v1.MergeAccountsResponse
+	(*Account)(nil),                    // 20: nagomi.v1.Account
+	(AccountType)(0),                   // 21: nagomi.v1.AccountType
 	(*money.Money)(nil),                // 22: google.type.Money
 	(*fieldmaskpb.FieldMask)(nil),      // 23: google.protobuf.FieldMask
 	(*timestamppb.Timestamp)(nil),      // 24: google.protobuf.Timestamp
 }
-var file_null_v1_account_services_proto_depIdxs = []int32{
-	20, // 0: null.v1.ListAccountsResponse.accounts:type_name -> null.v1.Account
-	20, // 1: null.v1.GetAccountResponse.account:type_name -> null.v1.Account
-	21, // 2: null.v1.CreateAccountRequest.type:type_name -> null.v1.AccountType
-	22, // 3: null.v1.CreateAccountRequest.anchor_balance:type_name -> google.type.Money
-	20, // 4: null.v1.CreateAccountResponse.account:type_name -> null.v1.Account
-	23, // 5: null.v1.UpdateAccountRequest.update_mask:type_name -> google.protobuf.FieldMask
-	21, // 6: null.v1.UpdateAccountRequest.account_type:type_name -> null.v1.AccountType
-	24, // 7: null.v1.UpdateAccountRequest.anchor_date:type_name -> google.protobuf.Timestamp
-	22, // 8: null.v1.UpdateAccountRequest.anchor_balance:type_name -> google.type.Money
-	20, // 9: null.v1.FindAccountByAliasResponse.account:type_name -> null.v1.Account
-	20, // 10: null.v1.MergeAccountsResponse.account:type_name -> null.v1.Account
-	0,  // 11: null.v1.AccountService.ListAccounts:input_type -> null.v1.ListAccountsRequest
-	2,  // 12: null.v1.AccountService.GetAccount:input_type -> null.v1.GetAccountRequest
-	4,  // 13: null.v1.AccountService.CreateAccount:input_type -> null.v1.CreateAccountRequest
-	6,  // 14: null.v1.AccountService.UpdateAccount:input_type -> null.v1.UpdateAccountRequest
-	8,  // 15: null.v1.AccountService.DeleteAccount:input_type -> null.v1.DeleteAccountRequest
-	10, // 16: null.v1.AccountService.AddAccountAlias:input_type -> null.v1.AddAccountAliasRequest
-	12, // 17: null.v1.AccountService.RemoveAccountAlias:input_type -> null.v1.RemoveAccountAliasRequest
-	14, // 18: null.v1.AccountService.SetAccountAliases:input_type -> null.v1.SetAccountAliasesRequest
-	16, // 19: null.v1.AccountService.FindAccountByAlias:input_type -> null.v1.FindAccountByAliasRequest
-	18, // 20: null.v1.AccountService.MergeAccounts:input_type -> null.v1.MergeAccountsRequest
-	1,  // 21: null.v1.AccountService.ListAccounts:output_type -> null.v1.ListAccountsResponse
-	3,  // 22: null.v1.AccountService.GetAccount:output_type -> null.v1.GetAccountResponse
-	5,  // 23: null.v1.AccountService.CreateAccount:output_type -> null.v1.CreateAccountResponse
-	7,  // 24: null.v1.AccountService.UpdateAccount:output_type -> null.v1.UpdateAccountResponse
-	9,  // 25: null.v1.AccountService.DeleteAccount:output_type -> null.v1.DeleteAccountResponse
-	11, // 26: null.v1.AccountService.AddAccountAlias:output_type -> null.v1.AddAccountAliasResponse
-	13, // 27: null.v1.AccountService.RemoveAccountAlias:output_type -> null.v1.RemoveAccountAliasResponse
-	15, // 28: null.v1.AccountService.SetAccountAliases:output_type -> null.v1.SetAccountAliasesResponse
-	17, // 29: null.v1.AccountService.FindAccountByAlias:output_type -> null.v1.FindAccountByAliasResponse
-	19, // 30: null.v1.AccountService.MergeAccounts:output_type -> null.v1.MergeAccountsResponse
+var file_nagomi_v1_account_services_proto_depIdxs = []int32{
+	20, // 0: nagomi.v1.ListAccountsResponse.accounts:type_name -> nagomi.v1.Account
+	20, // 1: nagomi.v1.GetAccountResponse.account:type_name -> nagomi.v1.Account
+	21, // 2: nagomi.v1.CreateAccountRequest.type:type_name -> nagomi.v1.AccountType
+	22, // 3: nagomi.v1.CreateAccountRequest.anchor_balance:type_name -> google.type.Money
+	20, // 4: nagomi.v1.CreateAccountResponse.account:type_name -> nagomi.v1.Account
+	23, // 5: nagomi.v1.UpdateAccountRequest.update_mask:type_name -> google.protobuf.FieldMask
+	21, // 6: nagomi.v1.UpdateAccountRequest.account_type:type_name -> nagomi.v1.AccountType
+	24, // 7: nagomi.v1.UpdateAccountRequest.anchor_date:type_name -> google.protobuf.Timestamp
+	22, // 8: nagomi.v1.UpdateAccountRequest.anchor_balance:type_name -> google.type.Money
+	20, // 9: nagomi.v1.FindAccountByAliasResponse.account:type_name -> nagomi.v1.Account
+	20, // 10: nagomi.v1.MergeAccountsResponse.account:type_name -> nagomi.v1.Account
+	0,  // 11: nagomi.v1.AccountService.ListAccounts:input_type -> nagomi.v1.ListAccountsRequest
+	2,  // 12: nagomi.v1.AccountService.GetAccount:input_type -> nagomi.v1.GetAccountRequest
+	4,  // 13: nagomi.v1.AccountService.CreateAccount:input_type -> nagomi.v1.CreateAccountRequest
+	6,  // 14: nagomi.v1.AccountService.UpdateAccount:input_type -> nagomi.v1.UpdateAccountRequest
+	8,  // 15: nagomi.v1.AccountService.DeleteAccount:input_type -> nagomi.v1.DeleteAccountRequest
+	10, // 16: nagomi.v1.AccountService.AddAccountAlias:input_type -> nagomi.v1.AddAccountAliasRequest
+	12, // 17: nagomi.v1.AccountService.RemoveAccountAlias:input_type -> nagomi.v1.RemoveAccountAliasRequest
+	14, // 18: nagomi.v1.AccountService.SetAccountAliases:input_type -> nagomi.v1.SetAccountAliasesRequest
+	16, // 19: nagomi.v1.AccountService.FindAccountByAlias:input_type -> nagomi.v1.FindAccountByAliasRequest
+	18, // 20: nagomi.v1.AccountService.MergeAccounts:input_type -> nagomi.v1.MergeAccountsRequest
+	1,  // 21: nagomi.v1.AccountService.ListAccounts:output_type -> nagomi.v1.ListAccountsResponse
+	3,  // 22: nagomi.v1.AccountService.GetAccount:output_type -> nagomi.v1.GetAccountResponse
+	5,  // 23: nagomi.v1.AccountService.CreateAccount:output_type -> nagomi.v1.CreateAccountResponse
+	7,  // 24: nagomi.v1.AccountService.UpdateAccount:output_type -> nagomi.v1.UpdateAccountResponse
+	9,  // 25: nagomi.v1.AccountService.DeleteAccount:output_type -> nagomi.v1.DeleteAccountResponse
+	11, // 26: nagomi.v1.AccountService.AddAccountAlias:output_type -> nagomi.v1.AddAccountAliasResponse
+	13, // 27: nagomi.v1.AccountService.RemoveAccountAlias:output_type -> nagomi.v1.RemoveAccountAliasResponse
+	15, // 28: nagomi.v1.AccountService.SetAccountAliases:output_type -> nagomi.v1.SetAccountAliasesResponse
+	17, // 29: nagomi.v1.AccountService.FindAccountByAlias:output_type -> nagomi.v1.FindAccountByAliasResponse
+	19, // 30: nagomi.v1.AccountService.MergeAccounts:output_type -> nagomi.v1.MergeAccountsResponse
 	21, // [21:31] is the sub-list for method output_type
 	11, // [11:21] is the sub-list for method input_type
 	11, // [11:11] is the sub-list for extension type_name
@@ -1283,30 +1284,30 @@ var file_null_v1_account_services_proto_depIdxs = []int32{
 	0,  // [0:11] is the sub-list for field type_name
 }
 
-func init() { file_null_v1_account_services_proto_init() }
-func file_null_v1_account_services_proto_init() {
-	if File_null_v1_account_services_proto != nil {
+func init() { file_nagomi_v1_account_services_proto_init() }
+func file_nagomi_v1_account_services_proto_init() {
+	if File_nagomi_v1_account_services_proto != nil {
 		return
 	}
-	file_null_v1_account_proto_init()
-	file_null_v1_enums_proto_init()
-	file_null_v1_account_services_proto_msgTypes[4].OneofWrappers = []any{}
-	file_null_v1_account_services_proto_msgTypes[6].OneofWrappers = []any{}
+	file_nagomi_v1_account_proto_init()
+	file_nagomi_v1_enums_proto_init()
+	file_nagomi_v1_account_services_proto_msgTypes[4].OneofWrappers = []any{}
+	file_nagomi_v1_account_services_proto_msgTypes[6].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_null_v1_account_services_proto_rawDesc), len(file_null_v1_account_services_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_nagomi_v1_account_services_proto_rawDesc), len(file_nagomi_v1_account_services_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   20,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_null_v1_account_services_proto_goTypes,
-		DependencyIndexes: file_null_v1_account_services_proto_depIdxs,
-		MessageInfos:      file_null_v1_account_services_proto_msgTypes,
+		GoTypes:           file_nagomi_v1_account_services_proto_goTypes,
+		DependencyIndexes: file_nagomi_v1_account_services_proto_depIdxs,
+		MessageInfos:      file_nagomi_v1_account_services_proto_msgTypes,
 	}.Build()
-	File_null_v1_account_services_proto = out.File
-	file_null_v1_account_services_proto_goTypes = nil
-	file_null_v1_account_services_proto_depIdxs = nil
+	File_nagomi_v1_account_services_proto = out.File
+	file_nagomi_v1_account_services_proto_goTypes = nil
+	file_nagomi_v1_account_services_proto_depIdxs = nil
 }

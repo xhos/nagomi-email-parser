@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"null-email-parser/internal/email"
+	"nagomi-email-parser/internal/email"
 
 	"github.com/charmbracelet/log"
 )

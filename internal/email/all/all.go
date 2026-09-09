@@ -1,6 +1,6 @@
 package all
 
 import (
-	_ "null-email-parser/internal/email/rbc"
-	_ "null-email-parser/internal/email/wise"
+	_ "nagomi-email-parser/internal/email/rbc"
+	_ "nagomi-email-parser/internal/email/wise"
 )

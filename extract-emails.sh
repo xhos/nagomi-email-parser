@@ -4,7 +4,7 @@
 
 set -e
 
-CONTAINER_ID=$(docker ps --filter "ancestor=null-email-parser:latest" --format "{{.ID}}" | head -n1)
+CONTAINER_ID=$(docker ps --filter "ancestor=nagomi-email-parser:latest" --format "{{.ID}}" | head -n1)
 
 if [ -z "$CONTAINER_ID" ]; then
     echo "No running container found"

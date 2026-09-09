@@ -47,7 +47,7 @@
 
     packages = forAllSystems (pkgs: {
       default = pkgs.buildGoModule {
-        pname = "null-email-parser";
+        pname = "nagomi-email-parser";
         version = self.shortRev or self.dirtyShortRev or "dev";
         src = ./.;
         vendorHash = "sha256-EL4qyXvWQvtX+yQYVGaHWuakHvj2rfm1TVfEtbA59k4=";

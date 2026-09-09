@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             (unknown)
-// source: null/v1/rule_services.proto
+// source: nagomi/v1/rule_services.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	context "context"
@@ -19,12 +19,12 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	RuleService_ListRules_FullMethodName    = "/null.v1.RuleService/ListRules"
-	RuleService_GetRule_FullMethodName      = "/null.v1.RuleService/GetRule"
-	RuleService_CreateRule_FullMethodName   = "/null.v1.RuleService/CreateRule"
-	RuleService_UpdateRule_FullMethodName   = "/null.v1.RuleService/UpdateRule"
-	RuleService_DeleteRule_FullMethodName   = "/null.v1.RuleService/DeleteRule"
-	RuleService_ValidateRule_FullMethodName = "/null.v1.RuleService/ValidateRule"
+	RuleService_ListRules_FullMethodName    = "/nagomi.v1.RuleService/ListRules"
+	RuleService_GetRule_FullMethodName      = "/nagomi.v1.RuleService/GetRule"
+	RuleService_CreateRule_FullMethodName   = "/nagomi.v1.RuleService/CreateRule"
+	RuleService_UpdateRule_FullMethodName   = "/nagomi.v1.RuleService/UpdateRule"
+	RuleService_DeleteRule_FullMethodName   = "/nagomi.v1.RuleService/DeleteRule"
+	RuleService_ValidateRule_FullMethodName = "/nagomi.v1.RuleService/ValidateRule"
 )
 
 // RuleServiceClient is the client API for RuleService service.
@@ -276,7 +276,7 @@ func _RuleService_ValidateRule_Handler(srv interface{}, ctx context.Context, dec
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RuleService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "null.v1.RuleService",
+	ServiceName: "nagomi.v1.RuleService",
 	HandlerType: (*RuleServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -305,5 +305,5 @@ var RuleService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "null/v1/rule_services.proto",
+	Metadata: "nagomi/v1/rule_services.proto",
 }

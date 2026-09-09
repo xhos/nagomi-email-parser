@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"null-email-parser/internal/domain"
+	"nagomi-email-parser/internal/domain"
 )
 
 func TestPurchaseParser(t *testing.T) {

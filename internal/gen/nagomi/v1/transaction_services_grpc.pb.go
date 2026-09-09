@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             (unknown)
-// source: null/v1/transaction_services.proto
+// source: nagomi/v1/transaction_services.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	context "context"
@@ -19,15 +19,15 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	TransactionService_ListTransactions_FullMethodName       = "/null.v1.TransactionService/ListTransactions"
-	TransactionService_GetTransaction_FullMethodName         = "/null.v1.TransactionService/GetTransaction"
-	TransactionService_CreateTransaction_FullMethodName      = "/null.v1.TransactionService/CreateTransaction"
-	TransactionService_UpdateTransaction_FullMethodName      = "/null.v1.TransactionService/UpdateTransaction"
-	TransactionService_DeleteTransaction_FullMethodName      = "/null.v1.TransactionService/DeleteTransaction"
-	TransactionService_CategorizeTransactions_FullMethodName = "/null.v1.TransactionService/CategorizeTransactions"
-	TransactionService_SplitTransaction_FullMethodName       = "/null.v1.TransactionService/SplitTransaction"
-	TransactionService_ForgiveTransaction_FullMethodName     = "/null.v1.TransactionService/ForgiveTransaction"
-	TransactionService_GetFriendBalances_FullMethodName      = "/null.v1.TransactionService/GetFriendBalances"
+	TransactionService_ListTransactions_FullMethodName       = "/nagomi.v1.TransactionService/ListTransactions"
+	TransactionService_GetTransaction_FullMethodName         = "/nagomi.v1.TransactionService/GetTransaction"
+	TransactionService_CreateTransaction_FullMethodName      = "/nagomi.v1.TransactionService/CreateTransaction"
+	TransactionService_UpdateTransaction_FullMethodName      = "/nagomi.v1.TransactionService/UpdateTransaction"
+	TransactionService_DeleteTransaction_FullMethodName      = "/nagomi.v1.TransactionService/DeleteTransaction"
+	TransactionService_CategorizeTransactions_FullMethodName = "/nagomi.v1.TransactionService/CategorizeTransactions"
+	TransactionService_SplitTransaction_FullMethodName       = "/nagomi.v1.TransactionService/SplitTransaction"
+	TransactionService_ForgiveTransaction_FullMethodName     = "/nagomi.v1.TransactionService/ForgiveTransaction"
+	TransactionService_GetFriendBalances_FullMethodName      = "/nagomi.v1.TransactionService/GetFriendBalances"
 )
 
 // TransactionServiceClient is the client API for TransactionService service.
@@ -378,7 +378,7 @@ func _TransactionService_GetFriendBalances_Handler(srv interface{}, ctx context.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var TransactionService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "null.v1.TransactionService",
+	ServiceName: "nagomi.v1.TransactionService",
 	HandlerType: (*TransactionServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -419,5 +419,5 @@ var TransactionService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "null/v1/transaction_services.proto",
+	Metadata: "nagomi/v1/transaction_services.proto",
 }

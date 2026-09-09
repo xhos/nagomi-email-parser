@@ -1,8 +1,8 @@
 package parser
 
 import (
+	"nagomi-email-parser/internal/domain"
 	"net/mail"
-	"null-email-parser/internal/domain"
 )
 
 // EmailMeta holds the minimal fields needed to pick and parse a message

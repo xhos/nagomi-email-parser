@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             (unknown)
-// source: null/v1/user_services.proto
+// source: nagomi/v1/user_services.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	context "context"
@@ -19,10 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	UserService_GetUser_FullMethodName    = "/null.v1.UserService/GetUser"
-	UserService_CreateUser_FullMethodName = "/null.v1.UserService/CreateUser"
-	UserService_UpdateUser_FullMethodName = "/null.v1.UserService/UpdateUser"
-	UserService_DeleteUser_FullMethodName = "/null.v1.UserService/DeleteUser"
+	UserService_GetUser_FullMethodName    = "/nagomi.v1.UserService/GetUser"
+	UserService_CreateUser_FullMethodName = "/nagomi.v1.UserService/CreateUser"
+	UserService_UpdateUser_FullMethodName = "/nagomi.v1.UserService/UpdateUser"
+	UserService_DeleteUser_FullMethodName = "/nagomi.v1.UserService/DeleteUser"
 )
 
 // UserServiceClient is the client API for UserService service.
@@ -212,7 +212,7 @@ func _UserService_DeleteUser_Handler(srv interface{}, ctx context.Context, dec f
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var UserService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "null.v1.UserService",
+	ServiceName: "nagomi.v1.UserService",
 	HandlerType: (*UserServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -233,5 +233,5 @@ var UserService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "null/v1/user_services.proto",
+	Metadata: "nagomi/v1/user_services.proto",
 }

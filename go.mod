@@ -1,4 +1,4 @@
-module null-email-parser
+module nagomi-email-parser
 
 go 1.24.2
 

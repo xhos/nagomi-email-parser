@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        (unknown)
-// source: null/v1/receipt_ocr.proto
+// source: nagomi/v1/receipt_ocr.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -60,11 +60,11 @@ func (x OCRErrorCode) String() string {
 }
 
 func (OCRErrorCode) Descriptor() protoreflect.EnumDescriptor {
-	return file_null_v1_receipt_ocr_proto_enumTypes[0].Descriptor()
+	return file_nagomi_v1_receipt_ocr_proto_enumTypes[0].Descriptor()
 }
 
 func (OCRErrorCode) Type() protoreflect.EnumType {
-	return &file_null_v1_receipt_ocr_proto_enumTypes[0]
+	return &file_nagomi_v1_receipt_ocr_proto_enumTypes[0]
 }
 
 func (x OCRErrorCode) Number() protoreflect.EnumNumber {
@@ -73,7 +73,7 @@ func (x OCRErrorCode) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use OCRErrorCode.Descriptor instead.
 func (OCRErrorCode) EnumDescriptor() ([]byte, []int) {
-	return file_null_v1_receipt_ocr_proto_rawDescGZIP(), []int{0}
+	return file_nagomi_v1_receipt_ocr_proto_rawDescGZIP(), []int{0}
 }
 
 type ParseReceiptRequest struct {
@@ -86,7 +86,7 @@ type ParseReceiptRequest struct {
 
 func (x *ParseReceiptRequest) Reset() {
 	*x = ParseReceiptRequest{}
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[0]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -98,7 +98,7 @@ func (x *ParseReceiptRequest) String() string {
 func (*ParseReceiptRequest) ProtoMessage() {}
 
 func (x *ParseReceiptRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[0]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -111,7 +111,7 @@ func (x *ParseReceiptRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParseReceiptRequest.ProtoReflect.Descriptor instead.
 func (*ParseReceiptRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_receipt_ocr_proto_rawDescGZIP(), []int{0}
+	return file_nagomi_v1_receipt_ocr_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *ParseReceiptRequest) GetImageData() []byte {
@@ -139,7 +139,7 @@ type ParseReceiptResponse struct {
 
 func (x *ParseReceiptResponse) Reset() {
 	*x = ParseReceiptResponse{}
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[1]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -151,7 +151,7 @@ func (x *ParseReceiptResponse) String() string {
 func (*ParseReceiptResponse) ProtoMessage() {}
 
 func (x *ParseReceiptResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[1]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -164,7 +164,7 @@ func (x *ParseReceiptResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParseReceiptResponse.ProtoReflect.Descriptor instead.
 func (*ParseReceiptResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_receipt_ocr_proto_rawDescGZIP(), []int{1}
+	return file_nagomi_v1_receipt_ocr_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *ParseReceiptResponse) GetSuccess() bool {
@@ -204,7 +204,7 @@ type ParsedReceipt struct {
 
 func (x *ParsedReceipt) Reset() {
 	*x = ParsedReceipt{}
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[2]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -216,7 +216,7 @@ func (x *ParsedReceipt) String() string {
 func (*ParsedReceipt) ProtoMessage() {}
 
 func (x *ParsedReceipt) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[2]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -229,7 +229,7 @@ func (x *ParsedReceipt) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParsedReceipt.ProtoReflect.Descriptor instead.
 func (*ParsedReceipt) Descriptor() ([]byte, []int) {
-	return file_null_v1_receipt_ocr_proto_rawDescGZIP(), []int{2}
+	return file_nagomi_v1_receipt_ocr_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *ParsedReceipt) GetMerchant() string {
@@ -300,7 +300,7 @@ type ParsedItem struct {
 
 func (x *ParsedItem) Reset() {
 	*x = ParsedItem{}
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[3]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -312,7 +312,7 @@ func (x *ParsedItem) String() string {
 func (*ParsedItem) ProtoMessage() {}
 
 func (x *ParsedItem) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[3]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -325,7 +325,7 @@ func (x *ParsedItem) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParsedItem.ProtoReflect.Descriptor instead.
 func (*ParsedItem) Descriptor() ([]byte, []int) {
-	return file_null_v1_receipt_ocr_proto_rawDescGZIP(), []int{3}
+	return file_nagomi_v1_receipt_ocr_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *ParsedItem) GetRaw() string {
@@ -358,7 +358,7 @@ func (x *ParsedItem) GetUnitPrice() float64 {
 
 type OCRError struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          OCRErrorCode           `protobuf:"varint,1,opt,name=code,proto3,enum=null.v1.OCRErrorCode" json:"code,omitempty"`
+	Code          OCRErrorCode           `protobuf:"varint,1,opt,name=code,proto3,enum=nagomi.v1.OCRErrorCode" json:"code,omitempty"`
 	Message       string                 `protobuf:"bytes,2,opt,name=message,proto3" json:"message,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -366,7 +366,7 @@ type OCRError struct {
 
 func (x *OCRError) Reset() {
 	*x = OCRError{}
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[4]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -378,7 +378,7 @@ func (x *OCRError) String() string {
 func (*OCRError) ProtoMessage() {}
 
 func (x *OCRError) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[4]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -391,7 +391,7 @@ func (x *OCRError) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use OCRError.ProtoReflect.Descriptor instead.
 func (*OCRError) Descriptor() ([]byte, []int) {
-	return file_null_v1_receipt_ocr_proto_rawDescGZIP(), []int{4}
+	return file_nagomi_v1_receipt_ocr_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *OCRError) GetCode() OCRErrorCode {
@@ -416,7 +416,7 @@ type HealthRequest struct {
 
 func (x *HealthRequest) Reset() {
 	*x = HealthRequest{}
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[5]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -428,7 +428,7 @@ func (x *HealthRequest) String() string {
 func (*HealthRequest) ProtoMessage() {}
 
 func (x *HealthRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[5]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -441,7 +441,7 @@ func (x *HealthRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HealthRequest.ProtoReflect.Descriptor instead.
 func (*HealthRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_receipt_ocr_proto_rawDescGZIP(), []int{5}
+	return file_nagomi_v1_receipt_ocr_proto_rawDescGZIP(), []int{5}
 }
 
 type HealthResponse struct {
@@ -455,7 +455,7 @@ type HealthResponse struct {
 
 func (x *HealthResponse) Reset() {
 	*x = HealthResponse{}
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[6]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -467,7 +467,7 @@ func (x *HealthResponse) String() string {
 func (*HealthResponse) ProtoMessage() {}
 
 func (x *HealthResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_receipt_ocr_proto_msgTypes[6]
+	mi := &file_nagomi_v1_receipt_ocr_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -480,7 +480,7 @@ func (x *HealthResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HealthResponse.ProtoReflect.Descriptor instead.
 func (*HealthResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_receipt_ocr_proto_rawDescGZIP(), []int{6}
+	return file_nagomi_v1_receipt_ocr_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *HealthResponse) GetStatus() string {
@@ -504,26 +504,26 @@ func (x *HealthResponse) GetGpuAvailable() bool {
 	return false
 }
 
-var File_null_v1_receipt_ocr_proto protoreflect.FileDescriptor
+var File_nagomi_v1_receipt_ocr_proto protoreflect.FileDescriptor
 
-const file_null_v1_receipt_ocr_proto_rawDesc = "" +
+const file_nagomi_v1_receipt_ocr_proto_rawDesc = "" +
 	"\n" +
-	"\x19null/v1/receipt_ocr.proto\x12\anull.v1\"W\n" +
+	"\x1bnagomi/v1/receipt_ocr.proto\x12\tnagomi.v1\"W\n" +
 	"\x13ParseReceiptRequest\x12\x1d\n" +
 	"\n" +
 	"image_data\x18\x01 \x01(\fR\timageData\x12!\n" +
-	"\fcontent_type\x18\x02 \x01(\tR\vcontentType\"\xa2\x01\n" +
+	"\fcontent_type\x18\x02 \x01(\tR\vcontentType\"\xa6\x01\n" +
 	"\x14ParseReceiptResponse\x12\x18\n" +
-	"\asuccess\x18\x01 \x01(\bR\asuccess\x12/\n" +
-	"\x04data\x18\x02 \x01(\v2\x16.null.v1.ParsedReceiptH\x00R\x04data\x88\x01\x01\x12,\n" +
-	"\x05error\x18\x03 \x01(\v2\x11.null.v1.OCRErrorH\x01R\x05error\x88\x01\x01B\a\n" +
+	"\asuccess\x18\x01 \x01(\bR\asuccess\x121\n" +
+	"\x04data\x18\x02 \x01(\v2\x18.nagomi.v1.ParsedReceiptH\x00R\x04data\x88\x01\x01\x12.\n" +
+	"\x05error\x18\x03 \x01(\v2\x13.nagomi.v1.OCRErrorH\x01R\x05error\x88\x01\x01B\a\n" +
 	"\x05_dataB\b\n" +
-	"\x06_error\"\xca\x02\n" +
+	"\x06_error\"\xcc\x02\n" +
 	"\rParsedReceipt\x12\x1f\n" +
 	"\bmerchant\x18\x01 \x01(\tH\x00R\bmerchant\x88\x01\x01\x12\x17\n" +
 	"\x04date\x18\x02 \x01(\tH\x01R\x04date\x88\x01\x01\x12\x1f\n" +
-	"\bcurrency\x18\x03 \x01(\tH\x02R\bcurrency\x88\x01\x01\x12)\n" +
-	"\x05items\x18\x04 \x03(\v2\x13.null.v1.ParsedItemR\x05items\x12\x1f\n" +
+	"\bcurrency\x18\x03 \x01(\tH\x02R\bcurrency\x88\x01\x01\x12+\n" +
+	"\x05items\x18\x04 \x03(\v2\x15.nagomi.v1.ParsedItemR\x05items\x12\x1f\n" +
 	"\bsubtotal\x18\x05 \x01(\x01H\x03R\bsubtotal\x88\x01\x01\x12\x15\n" +
 	"\x03tax\x18\x06 \x01(\x01H\x04R\x03tax\x88\x01\x01\x12\x19\n" +
 	"\x05total\x18\a \x01(\x01H\x05R\x05total\x88\x01\x01\x12\x1e\n" +
@@ -543,9 +543,9 @@ const file_null_v1_receipt_ocr_proto_rawDesc = "" +
 	"\x03qty\x18\x03 \x01(\x01R\x03qty\x12\x1d\n" +
 	"\n" +
 	"unit_price\x18\x04 \x01(\x01R\tunitPriceB\a\n" +
-	"\x05_name\"O\n" +
-	"\bOCRError\x12)\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x15.null.v1.OCRErrorCodeR\x04code\x12\x18\n" +
+	"\x05_name\"Q\n" +
+	"\bOCRError\x12+\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x17.nagomi.v1.OCRErrorCodeR\x04code\x12\x18\n" +
 	"\amessage\x18\x02 \x01(\tR\amessage\"\x0f\n" +
 	"\rHealthRequest\"c\n" +
 	"\x0eHealthResponse\x12\x16\n" +
@@ -557,45 +557,46 @@ const file_null_v1_receipt_ocr_proto_rawDesc = "" +
 	"\x17OCR_ERROR_INVALID_IMAGE\x10\x01\x12\x1a\n" +
 	"\x16OCR_ERROR_PARSE_FAILED\x10\x02\x12\x19\n" +
 	"\x15OCR_ERROR_MODEL_ERROR\x10\x03\x12\x15\n" +
-	"\x11OCR_ERROR_TIMEOUT\x10\x042\x9b\x01\n" +
-	"\x11ReceiptOCRService\x12K\n" +
-	"\fParseReceipt\x12\x1c.null.v1.ParseReceiptRequest\x1a\x1d.null.v1.ParseReceiptResponse\x129\n" +
-	"\x06Health\x12\x16.null.v1.HealthRequest\x1a\x17.null.v1.HealthResponseB\x8c\x01\n" +
-	"\vcom.null.v1B\x0fReceiptOcrProtoP\x01Z-null-email-parser/internal/gen/null/v1;nullv1\xa2\x02\x03NXX\xaa\x02\aNull.V1\xca\x02\bNull_\\V1\xe2\x02\x14Null_\\V1\\GPBMetadata\xea\x02\bNull::V1b\x06proto3"
+	"\x11OCR_ERROR_TIMEOUT\x10\x042\xa3\x01\n" +
+	"\x11ReceiptOCRService\x12O\n" +
+	"\fParseReceipt\x12\x1e.nagomi.v1.ParseReceiptRequest\x1a\x1f.nagomi.v1.ParseReceiptResponse\x12=\n" +
+	"\x06Health\x12\x18.nagomi.v1.HealthRequest\x1a\x19.nagomi.v1.HealthResponseB\x9a\x01\n" +
+	"\rcom.nagomi.v1B\x0fReceiptOcrProtoP\x01Z3nagomi-email-parser/internal/gen/nagomi/v1;nagomiv1\xa2\x02\x03NXX\xaa\x02\tNagomi.V1\xca\x02\tNagomi\\V1\xe2\x02\x15Nagomi\\V1\\GPBMetadata\xea\x02\n" +
+	"Nagomi::V1b\x06proto3"
 
 var (
-	file_null_v1_receipt_ocr_proto_rawDescOnce sync.Once
-	file_null_v1_receipt_ocr_proto_rawDescData []byte
+	file_nagomi_v1_receipt_ocr_proto_rawDescOnce sync.Once
+	file_nagomi_v1_receipt_ocr_proto_rawDescData []byte
 )
 
-func file_null_v1_receipt_ocr_proto_rawDescGZIP() []byte {
-	file_null_v1_receipt_ocr_proto_rawDescOnce.Do(func() {
-		file_null_v1_receipt_ocr_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_null_v1_receipt_ocr_proto_rawDesc), len(file_null_v1_receipt_ocr_proto_rawDesc)))
+func file_nagomi_v1_receipt_ocr_proto_rawDescGZIP() []byte {
+	file_nagomi_v1_receipt_ocr_proto_rawDescOnce.Do(func() {
+		file_nagomi_v1_receipt_ocr_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_nagomi_v1_receipt_ocr_proto_rawDesc), len(file_nagomi_v1_receipt_ocr_proto_rawDesc)))
 	})
-	return file_null_v1_receipt_ocr_proto_rawDescData
+	return file_nagomi_v1_receipt_ocr_proto_rawDescData
 }
 
-var file_null_v1_receipt_ocr_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_null_v1_receipt_ocr_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
-var file_null_v1_receipt_ocr_proto_goTypes = []any{
-	(OCRErrorCode)(0),            // 0: null.v1.OCRErrorCode
-	(*ParseReceiptRequest)(nil),  // 1: null.v1.ParseReceiptRequest
-	(*ParseReceiptResponse)(nil), // 2: null.v1.ParseReceiptResponse
-	(*ParsedReceipt)(nil),        // 3: null.v1.ParsedReceipt
-	(*ParsedItem)(nil),           // 4: null.v1.ParsedItem
-	(*OCRError)(nil),             // 5: null.v1.OCRError
-	(*HealthRequest)(nil),        // 6: null.v1.HealthRequest
-	(*HealthResponse)(nil),       // 7: null.v1.HealthResponse
+var file_nagomi_v1_receipt_ocr_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_nagomi_v1_receipt_ocr_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
+var file_nagomi_v1_receipt_ocr_proto_goTypes = []any{
+	(OCRErrorCode)(0),            // 0: nagomi.v1.OCRErrorCode
+	(*ParseReceiptRequest)(nil),  // 1: nagomi.v1.ParseReceiptRequest
+	(*ParseReceiptResponse)(nil), // 2: nagomi.v1.ParseReceiptResponse
+	(*ParsedReceipt)(nil),        // 3: nagomi.v1.ParsedReceipt
+	(*ParsedItem)(nil),           // 4: nagomi.v1.ParsedItem
+	(*OCRError)(nil),             // 5: nagomi.v1.OCRError
+	(*HealthRequest)(nil),        // 6: nagomi.v1.HealthRequest
+	(*HealthResponse)(nil),       // 7: nagomi.v1.HealthResponse
 }
-var file_null_v1_receipt_ocr_proto_depIdxs = []int32{
-	3, // 0: null.v1.ParseReceiptResponse.data:type_name -> null.v1.ParsedReceipt
-	5, // 1: null.v1.ParseReceiptResponse.error:type_name -> null.v1.OCRError
-	4, // 2: null.v1.ParsedReceipt.items:type_name -> null.v1.ParsedItem
-	0, // 3: null.v1.OCRError.code:type_name -> null.v1.OCRErrorCode
-	1, // 4: null.v1.ReceiptOCRService.ParseReceipt:input_type -> null.v1.ParseReceiptRequest
-	6, // 5: null.v1.ReceiptOCRService.Health:input_type -> null.v1.HealthRequest
-	2, // 6: null.v1.ReceiptOCRService.ParseReceipt:output_type -> null.v1.ParseReceiptResponse
-	7, // 7: null.v1.ReceiptOCRService.Health:output_type -> null.v1.HealthResponse
+var file_nagomi_v1_receipt_ocr_proto_depIdxs = []int32{
+	3, // 0: nagomi.v1.ParseReceiptResponse.data:type_name -> nagomi.v1.ParsedReceipt
+	5, // 1: nagomi.v1.ParseReceiptResponse.error:type_name -> nagomi.v1.OCRError
+	4, // 2: nagomi.v1.ParsedReceipt.items:type_name -> nagomi.v1.ParsedItem
+	0, // 3: nagomi.v1.OCRError.code:type_name -> nagomi.v1.OCRErrorCode
+	1, // 4: nagomi.v1.ReceiptOCRService.ParseReceipt:input_type -> nagomi.v1.ParseReceiptRequest
+	6, // 5: nagomi.v1.ReceiptOCRService.Health:input_type -> nagomi.v1.HealthRequest
+	2, // 6: nagomi.v1.ReceiptOCRService.ParseReceipt:output_type -> nagomi.v1.ParseReceiptResponse
+	7, // 7: nagomi.v1.ReceiptOCRService.Health:output_type -> nagomi.v1.HealthResponse
 	6, // [6:8] is the sub-list for method output_type
 	4, // [4:6] is the sub-list for method input_type
 	4, // [4:4] is the sub-list for extension type_name
@@ -603,30 +604,30 @@ var file_null_v1_receipt_ocr_proto_depIdxs = []int32{
 	0, // [0:4] is the sub-list for field type_name
 }
 
-func init() { file_null_v1_receipt_ocr_proto_init() }
-func file_null_v1_receipt_ocr_proto_init() {
-	if File_null_v1_receipt_ocr_proto != nil {
+func init() { file_nagomi_v1_receipt_ocr_proto_init() }
+func file_nagomi_v1_receipt_ocr_proto_init() {
+	if File_nagomi_v1_receipt_ocr_proto != nil {
 		return
 	}
-	file_null_v1_receipt_ocr_proto_msgTypes[1].OneofWrappers = []any{}
-	file_null_v1_receipt_ocr_proto_msgTypes[2].OneofWrappers = []any{}
-	file_null_v1_receipt_ocr_proto_msgTypes[3].OneofWrappers = []any{}
+	file_nagomi_v1_receipt_ocr_proto_msgTypes[1].OneofWrappers = []any{}
+	file_nagomi_v1_receipt_ocr_proto_msgTypes[2].OneofWrappers = []any{}
+	file_nagomi_v1_receipt_ocr_proto_msgTypes[3].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_null_v1_receipt_ocr_proto_rawDesc), len(file_null_v1_receipt_ocr_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_nagomi_v1_receipt_ocr_proto_rawDesc), len(file_nagomi_v1_receipt_ocr_proto_rawDesc)),
 			NumEnums:      1,
 			NumMessages:   7,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_null_v1_receipt_ocr_proto_goTypes,
-		DependencyIndexes: file_null_v1_receipt_ocr_proto_depIdxs,
-		EnumInfos:         file_null_v1_receipt_ocr_proto_enumTypes,
-		MessageInfos:      file_null_v1_receipt_ocr_proto_msgTypes,
+		GoTypes:           file_nagomi_v1_receipt_ocr_proto_goTypes,
+		DependencyIndexes: file_nagomi_v1_receipt_ocr_proto_depIdxs,
+		EnumInfos:         file_nagomi_v1_receipt_ocr_proto_enumTypes,
+		MessageInfos:      file_nagomi_v1_receipt_ocr_proto_msgTypes,
 	}.Build()
-	File_null_v1_receipt_ocr_proto = out.File
-	file_null_v1_receipt_ocr_proto_goTypes = nil
-	file_null_v1_receipt_ocr_proto_depIdxs = nil
+	File_nagomi_v1_receipt_ocr_proto = out.File
+	file_nagomi_v1_receipt_ocr_proto_goTypes = nil
+	file_nagomi_v1_receipt_ocr_proto_depIdxs = nil
 }

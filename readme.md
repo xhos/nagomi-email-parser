@@ -1,6 +1,6 @@
-# null-email-parser
+# nagomi-email-parser
 
-null-email-parser is a stateless microservice that exposes and SMTP server as a way to automaticly ingest transactions into [null-core](https://github.com/xhos/null-core) via bank emails. The service has an easily extensible parser system which allows adding support for new banks with minimal effort. The inteded way to use this is to setup bank email notifications to be forwarder to your personal email inbox, and then have those emails forwarded to this service. This service will then parse the emails and send the transaction data to null-core via its gRPC API.
+nagomi-email-parser is a stateless microservice that exposes and SMTP server as a way to automaticly ingest transactions into [nagomi-core](https://github.com/xhos/nagomi-core) via bank emails. The service has an easily extensible parser system which allows adding support for new banks with minimal effort. The inteded way to use this is to setup bank email notifications to be forwarder to your personal email inbox, and then have those emails forwarded to this service. This service will then parse the emails and send the transaction data to nagomi-core via its gRPC API.
 
 ## why?
 
@@ -12,8 +12,8 @@ All configuration is done via environment variables.
 
 | variable                        | description                            | default            | required?  |
 |---------------------------------|----------------------------------------|--------------------|------------|
-| `API_KEY`                       | authentication key for null-core       |                    | [x]        |
-| `NULL_CORE_URL`                 | null-core backend url                  |                    | [x]        |
+| `API_KEY`                       | authentication key for nagomi-core       |                    | [x]        |
+| `NAGOMI_CORE_URL`                 | nagomi-core backend url                  |                    | [x]        |
 | `DOMAIN`                        | email domain to serve                  |                    | [x]        |
 | `SMTP_PORT`                     | smtp server address                    | `127.0.0.1:2525`   | [ ]        |
 | `GRPC_PORT`                     | grpc health check address              | `127.0.0.1:55557`  | [ ]        |
@@ -27,13 +27,13 @@ All configuration is done via environment variables.
 - `SMTP_PORT` and `GRPC_PORT` can be specified as just the port number (e.g., `2525`), with colon prefix (`:2525`), or as full address (`0.0.0.0:2525`)
 - by default, services bind to `127.0.0.1` (localhost only) for security. use `0.0.0.0:port` to expose externally
 - when `TLS_CERT` and `TLS_KEY` are provided, TLS is required by default. set `UNSAFE_DISABLE_TLS_REQUIRED` to allow opportunistic TLS (accept non-TLS connections)
-- when `LOG_FORMAT=json`, logs are written to both stdout and `null-email-parser.log` in the working directory. useful for pointing monitoring tools at the log file
+- when `LOG_FORMAT=json`, logs are written to both stdout and `nagomi-email-parser.log` in the working directory. useful for pointing monitoring tools at the log file
 - email body content is never logged for privacy/security reasons. use `UNSAFE_SAVE_EML` to save emails to disk for debugging parsers
 - parsing failures are logged at ERROR level for visibility in monitoring
 
 ## setup
 
-when setting up your bank to forward emails to this service, use the email address format `uuid@your-domain.com`, where `uuid` is your null-core user ID. This allows the service to associate incoming emails with the correct user account. You can obtain your UUID from null-core logs or the settings page in null-web.
+when setting up your bank to forward emails to this service, use the email address format `uuid@your-domain.com`, where `uuid` is your nagomi-core user ID. This allows the service to associate incoming emails with the correct user account. You can obtain your UUID from nagomi-core logs or the settings page in nagomi-web.
 
 most email providers, when you set up forwarding, require you to confirm it by clicking a link in the email. you can see the confirmation link by setting `UNSAFE_SAVE_EML` to save emails as .eml files, then opening them in a text editor. This is intended for one-time forwarding setup, not constant use.
 
@@ -63,9 +63,9 @@ contributions are highly welcome, as it's not feasible for me to cover banks I d
 
 ## 🌱 ecosystem
 
-- [null-core](https://github.com/xhos/null-core) - main backend service
-- [null-web](https://github.com/xhos/null-web) - frontend web application
-- [null-mobile](https://github.com/xhos/null-mobile) - mobile appplication
-- [null-protos](https://github.com/xhos/null-protos) - shared protobuf definitions
-- [null-receipts](https://github.com/xhos/null-receipts) - receipt parsing microservice
-- [null-email-parser](https://github.com/xhos/null-email-parser) - email parsing service
+- [nagomi-core](https://github.com/xhos/nagomi-core) - main backend service
+- [nagomi-web](https://github.com/xhos/nagomi-web) - frontend web application
+- [nagomi-mobile](https://github.com/xhos/nagomi-mobile) - mobile appplication
+- [nagomi-protos](https://github.com/xhos/nagomi-protos) - shared protobuf definitions
+- [nagomi-receipts](https://github.com/xhos/nagomi-receipts) - receipt parsing microservice
+- [nagomi-email-parser](https://github.com/xhos/nagomi-email-parser) - email parsing service

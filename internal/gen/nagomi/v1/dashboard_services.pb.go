@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        (unknown)
-// source: null/v1/dashboard_services.proto
+// source: nagomi/v1/dashboard_services.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	date "google.golang.org/genproto/googleapis/type/date"
@@ -34,7 +34,7 @@ type GetDashboardSummaryRequest struct {
 
 func (x *GetDashboardSummaryRequest) Reset() {
 	*x = GetDashboardSummaryRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[0]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -46,7 +46,7 @@ func (x *GetDashboardSummaryRequest) String() string {
 func (*GetDashboardSummaryRequest) ProtoMessage() {}
 
 func (x *GetDashboardSummaryRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[0]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -59,7 +59,7 @@ func (x *GetDashboardSummaryRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetDashboardSummaryRequest.ProtoReflect.Descriptor instead.
 func (*GetDashboardSummaryRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{0}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *GetDashboardSummaryRequest) GetUserId() string {
@@ -92,7 +92,7 @@ type GetDashboardSummaryResponse struct {
 
 func (x *GetDashboardSummaryResponse) Reset() {
 	*x = GetDashboardSummaryResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[1]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -104,7 +104,7 @@ func (x *GetDashboardSummaryResponse) String() string {
 func (*GetDashboardSummaryResponse) ProtoMessage() {}
 
 func (x *GetDashboardSummaryResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[1]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -117,7 +117,7 @@ func (x *GetDashboardSummaryResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetDashboardSummaryResponse.ProtoReflect.Descriptor instead.
 func (*GetDashboardSummaryResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{1}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *GetDashboardSummaryResponse) GetSummary() *DashboardSummary {
@@ -138,7 +138,7 @@ type GetMonthlyComparisonRequest struct {
 
 func (x *GetMonthlyComparisonRequest) Reset() {
 	*x = GetMonthlyComparisonRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[2]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -150,7 +150,7 @@ func (x *GetMonthlyComparisonRequest) String() string {
 func (*GetMonthlyComparisonRequest) ProtoMessage() {}
 
 func (x *GetMonthlyComparisonRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[2]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -163,7 +163,7 @@ func (x *GetMonthlyComparisonRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetMonthlyComparisonRequest.ProtoReflect.Descriptor instead.
 func (*GetMonthlyComparisonRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{2}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *GetMonthlyComparisonRequest) GetUserId() string {
@@ -196,7 +196,7 @@ type GetMonthlyComparisonResponse struct {
 
 func (x *GetMonthlyComparisonResponse) Reset() {
 	*x = GetMonthlyComparisonResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[3]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -208,7 +208,7 @@ func (x *GetMonthlyComparisonResponse) String() string {
 func (*GetMonthlyComparisonResponse) ProtoMessage() {}
 
 func (x *GetMonthlyComparisonResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[3]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -221,7 +221,7 @@ func (x *GetMonthlyComparisonResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetMonthlyComparisonResponse.ProtoReflect.Descriptor instead.
 func (*GetMonthlyComparisonResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{3}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *GetMonthlyComparisonResponse) GetComparisons() []*MonthlyComparison {
@@ -243,7 +243,7 @@ type GetTopCategoriesRequest struct {
 
 func (x *GetTopCategoriesRequest) Reset() {
 	*x = GetTopCategoriesRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[4]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -255,7 +255,7 @@ func (x *GetTopCategoriesRequest) String() string {
 func (*GetTopCategoriesRequest) ProtoMessage() {}
 
 func (x *GetTopCategoriesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[4]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -268,7 +268,7 @@ func (x *GetTopCategoriesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTopCategoriesRequest.ProtoReflect.Descriptor instead.
 func (*GetTopCategoriesRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{4}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *GetTopCategoriesRequest) GetUserId() string {
@@ -308,7 +308,7 @@ type GetTopCategoriesResponse struct {
 
 func (x *GetTopCategoriesResponse) Reset() {
 	*x = GetTopCategoriesResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[5]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -320,7 +320,7 @@ func (x *GetTopCategoriesResponse) String() string {
 func (*GetTopCategoriesResponse) ProtoMessage() {}
 
 func (x *GetTopCategoriesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[5]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -333,7 +333,7 @@ func (x *GetTopCategoriesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTopCategoriesResponse.ProtoReflect.Descriptor instead.
 func (*GetTopCategoriesResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{5}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *GetTopCategoriesResponse) GetCategories() []*TopCategory {
@@ -355,7 +355,7 @@ type GetTopMerchantsRequest struct {
 
 func (x *GetTopMerchantsRequest) Reset() {
 	*x = GetTopMerchantsRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[6]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -367,7 +367,7 @@ func (x *GetTopMerchantsRequest) String() string {
 func (*GetTopMerchantsRequest) ProtoMessage() {}
 
 func (x *GetTopMerchantsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[6]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -380,7 +380,7 @@ func (x *GetTopMerchantsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTopMerchantsRequest.ProtoReflect.Descriptor instead.
 func (*GetTopMerchantsRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{6}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *GetTopMerchantsRequest) GetUserId() string {
@@ -420,7 +420,7 @@ type GetTopMerchantsResponse struct {
 
 func (x *GetTopMerchantsResponse) Reset() {
 	*x = GetTopMerchantsResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[7]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -432,7 +432,7 @@ func (x *GetTopMerchantsResponse) String() string {
 func (*GetTopMerchantsResponse) ProtoMessage() {}
 
 func (x *GetTopMerchantsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[7]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -445,7 +445,7 @@ func (x *GetTopMerchantsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTopMerchantsResponse.ProtoReflect.Descriptor instead.
 func (*GetTopMerchantsResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{7}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *GetTopMerchantsResponse) GetMerchants() []*TopMerchant {
@@ -468,7 +468,7 @@ type GetSpendingTrendsRequest struct {
 
 func (x *GetSpendingTrendsRequest) Reset() {
 	*x = GetSpendingTrendsRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[8]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -480,7 +480,7 @@ func (x *GetSpendingTrendsRequest) String() string {
 func (*GetSpendingTrendsRequest) ProtoMessage() {}
 
 func (x *GetSpendingTrendsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[8]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -493,7 +493,7 @@ func (x *GetSpendingTrendsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetSpendingTrendsRequest.ProtoReflect.Descriptor instead.
 func (*GetSpendingTrendsRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{8}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *GetSpendingTrendsRequest) GetUserId() string {
@@ -540,7 +540,7 @@ type GetSpendingTrendsResponse struct {
 
 func (x *GetSpendingTrendsResponse) Reset() {
 	*x = GetSpendingTrendsResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[9]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -552,7 +552,7 @@ func (x *GetSpendingTrendsResponse) String() string {
 func (*GetSpendingTrendsResponse) ProtoMessage() {}
 
 func (x *GetSpendingTrendsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[9]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -565,7 +565,7 @@ func (x *GetSpendingTrendsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetSpendingTrendsResponse.ProtoReflect.Descriptor instead.
 func (*GetSpendingTrendsResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{9}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *GetSpendingTrendsResponse) GetTrends() []*TrendPoint {
@@ -584,7 +584,7 @@ type GetFinancialSummaryRequest struct {
 
 func (x *GetFinancialSummaryRequest) Reset() {
 	*x = GetFinancialSummaryRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[10]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -596,7 +596,7 @@ func (x *GetFinancialSummaryRequest) String() string {
 func (*GetFinancialSummaryRequest) ProtoMessage() {}
 
 func (x *GetFinancialSummaryRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[10]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -609,7 +609,7 @@ func (x *GetFinancialSummaryRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetFinancialSummaryRequest.ProtoReflect.Descriptor instead.
 func (*GetFinancialSummaryRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{10}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *GetFinancialSummaryRequest) GetUserId() string {
@@ -630,7 +630,7 @@ type GetFinancialSummaryResponse struct {
 
 func (x *GetFinancialSummaryResponse) Reset() {
 	*x = GetFinancialSummaryResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[11]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -642,7 +642,7 @@ func (x *GetFinancialSummaryResponse) String() string {
 func (*GetFinancialSummaryResponse) ProtoMessage() {}
 
 func (x *GetFinancialSummaryResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[11]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -655,7 +655,7 @@ func (x *GetFinancialSummaryResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetFinancialSummaryResponse.ProtoReflect.Descriptor instead.
 func (*GetFinancialSummaryResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{11}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *GetFinancialSummaryResponse) GetTotalBalance() *money.Money {
@@ -682,7 +682,7 @@ func (x *GetFinancialSummaryResponse) GetNetBalance() *money.Money {
 type GetCategorySpendingComparisonRequest struct {
 	state           protoimpl.MessageState `protogen:"open.v1"`
 	UserId          string                 `protobuf:"bytes,1,opt,name=user_id,json=userId,proto3" json:"user_id,omitempty"`
-	PeriodType      PeriodType             `protobuf:"varint,2,opt,name=period_type,json=periodType,proto3,enum=null.v1.PeriodType" json:"period_type,omitempty"`
+	PeriodType      PeriodType             `protobuf:"varint,2,opt,name=period_type,json=periodType,proto3,enum=nagomi.v1.PeriodType" json:"period_type,omitempty"`
 	CustomStartDate *date.Date             `protobuf:"bytes,3,opt,name=custom_start_date,json=customStartDate,proto3,oneof" json:"custom_start_date,omitempty"`
 	CustomEndDate   *date.Date             `protobuf:"bytes,4,opt,name=custom_end_date,json=customEndDate,proto3,oneof" json:"custom_end_date,omitempty"`
 	unknownFields   protoimpl.UnknownFields
@@ -691,7 +691,7 @@ type GetCategorySpendingComparisonRequest struct {
 
 func (x *GetCategorySpendingComparisonRequest) Reset() {
 	*x = GetCategorySpendingComparisonRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[12]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -703,7 +703,7 @@ func (x *GetCategorySpendingComparisonRequest) String() string {
 func (*GetCategorySpendingComparisonRequest) ProtoMessage() {}
 
 func (x *GetCategorySpendingComparisonRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[12]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -716,7 +716,7 @@ func (x *GetCategorySpendingComparisonRequest) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use GetCategorySpendingComparisonRequest.ProtoReflect.Descriptor instead.
 func (*GetCategorySpendingComparisonRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{12}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *GetCategorySpendingComparisonRequest) GetUserId() string {
@@ -757,7 +757,7 @@ type CategorySpendingItem struct {
 
 func (x *CategorySpendingItem) Reset() {
 	*x = CategorySpendingItem{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[13]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -769,7 +769,7 @@ func (x *CategorySpendingItem) String() string {
 func (*CategorySpendingItem) ProtoMessage() {}
 
 func (x *CategorySpendingItem) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[13]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -782,7 +782,7 @@ func (x *CategorySpendingItem) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CategorySpendingItem.ProtoReflect.Descriptor instead.
 func (*CategorySpendingItem) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{13}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *CategorySpendingItem) GetCategory() *Category {
@@ -812,7 +812,7 @@ type GetCategorySpendingComparisonResponse struct {
 
 func (x *GetCategorySpendingComparisonResponse) Reset() {
 	*x = GetCategorySpendingComparisonResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[14]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -824,7 +824,7 @@ func (x *GetCategorySpendingComparisonResponse) String() string {
 func (*GetCategorySpendingComparisonResponse) ProtoMessage() {}
 
 func (x *GetCategorySpendingComparisonResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[14]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -837,7 +837,7 @@ func (x *GetCategorySpendingComparisonResponse) ProtoReflect() protoreflect.Mess
 
 // Deprecated: Use GetCategorySpendingComparisonResponse.ProtoReflect.Descriptor instead.
 func (*GetCategorySpendingComparisonResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{14}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *GetCategorySpendingComparisonResponse) GetCurrentPeriod() *PeriodInfo {
@@ -880,14 +880,14 @@ type GetNetWorthHistoryRequest struct {
 	UserId        string                 `protobuf:"bytes,1,opt,name=user_id,json=userId,proto3" json:"user_id,omitempty"`
 	StartDate     *date.Date             `protobuf:"bytes,2,opt,name=start_date,json=startDate,proto3" json:"start_date,omitempty"`
 	EndDate       *date.Date             `protobuf:"bytes,3,opt,name=end_date,json=endDate,proto3" json:"end_date,omitempty"`
-	Granularity   Granularity            `protobuf:"varint,4,opt,name=granularity,proto3,enum=null.v1.Granularity" json:"granularity,omitempty"`
+	Granularity   Granularity            `protobuf:"varint,4,opt,name=granularity,proto3,enum=nagomi.v1.Granularity" json:"granularity,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *GetNetWorthHistoryRequest) Reset() {
 	*x = GetNetWorthHistoryRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[15]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -899,7 +899,7 @@ func (x *GetNetWorthHistoryRequest) String() string {
 func (*GetNetWorthHistoryRequest) ProtoMessage() {}
 
 func (x *GetNetWorthHistoryRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[15]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -912,7 +912,7 @@ func (x *GetNetWorthHistoryRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetNetWorthHistoryRequest.ProtoReflect.Descriptor instead.
 func (*GetNetWorthHistoryRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{15}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *GetNetWorthHistoryRequest) GetUserId() string {
@@ -952,7 +952,7 @@ type GetNetWorthHistoryResponse struct {
 
 func (x *GetNetWorthHistoryResponse) Reset() {
 	*x = GetNetWorthHistoryResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[16]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -964,7 +964,7 @@ func (x *GetNetWorthHistoryResponse) String() string {
 func (*GetNetWorthHistoryResponse) ProtoMessage() {}
 
 func (x *GetNetWorthHistoryResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[16]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -977,7 +977,7 @@ func (x *GetNetWorthHistoryResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetNetWorthHistoryResponse.ProtoReflect.Descriptor instead.
 func (*GetNetWorthHistoryResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{16}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *GetNetWorthHistoryResponse) GetDataPoints() []*NetWorthPoint {
@@ -997,7 +997,7 @@ type CurrencyInfo struct {
 
 func (x *CurrencyInfo) Reset() {
 	*x = CurrencyInfo{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[17]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1009,7 +1009,7 @@ func (x *CurrencyInfo) String() string {
 func (*CurrencyInfo) ProtoMessage() {}
 
 func (x *CurrencyInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[17]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1022,7 +1022,7 @@ func (x *CurrencyInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CurrencyInfo.ProtoReflect.Descriptor instead.
 func (*CurrencyInfo) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{17}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *CurrencyInfo) GetCode() string {
@@ -1047,7 +1047,7 @@ type GetCurrenciesRequest struct {
 
 func (x *GetCurrenciesRequest) Reset() {
 	*x = GetCurrenciesRequest{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[18]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1059,7 +1059,7 @@ func (x *GetCurrenciesRequest) String() string {
 func (*GetCurrenciesRequest) ProtoMessage() {}
 
 func (x *GetCurrenciesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[18]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1072,7 +1072,7 @@ func (x *GetCurrenciesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCurrenciesRequest.ProtoReflect.Descriptor instead.
 func (*GetCurrenciesRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{18}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{18}
 }
 
 type GetCurrenciesResponse struct {
@@ -1084,7 +1084,7 @@ type GetCurrenciesResponse struct {
 
 func (x *GetCurrenciesResponse) Reset() {
 	*x = GetCurrenciesResponse{}
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[19]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1096,7 +1096,7 @@ func (x *GetCurrenciesResponse) String() string {
 func (*GetCurrenciesResponse) ProtoMessage() {}
 
 func (x *GetCurrenciesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_dashboard_services_proto_msgTypes[19]
+	mi := &file_nagomi_v1_dashboard_services_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1109,7 +1109,7 @@ func (x *GetCurrenciesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCurrenciesResponse.ProtoReflect.Descriptor instead.
 func (*GetCurrenciesResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_dashboard_services_proto_rawDescGZIP(), []int{19}
+	return file_nagomi_v1_dashboard_services_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *GetCurrenciesResponse) GetCurrencies() []*CurrencyInfo {
@@ -1119,29 +1119,29 @@ func (x *GetCurrenciesResponse) GetCurrencies() []*CurrencyInfo {
 	return nil
 }
 
-var File_null_v1_dashboard_services_proto protoreflect.FileDescriptor
+var File_nagomi_v1_dashboard_services_proto protoreflect.FileDescriptor
 
-const file_null_v1_dashboard_services_proto_rawDesc = "" +
+const file_nagomi_v1_dashboard_services_proto_rawDesc = "" +
 	"\n" +
-	" null/v1/dashboard_services.proto\x12\anull.v1\x1a\x15null/v1/account.proto\x1a\x16null/v1/category.proto\x1a\x17google/type/money.proto\x1a\x17null/v1/dashboard.proto\x1a\x13null/v1/enums.proto\x1a\x16google/type/date.proto\"\xbb\x01\n" +
+	"\"nagomi/v1/dashboard_services.proto\x12\tnagomi.v1\x1a\x17nagomi/v1/account.proto\x1a\x18nagomi/v1/category.proto\x1a\x17google/type/money.proto\x1a\x19nagomi/v1/dashboard.proto\x1a\x15nagomi/v1/enums.proto\x1a\x16google/type/date.proto\"\xbb\x01\n" +
 	"\x1aGetDashboardSummaryRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\tR\x06userId\x125\n" +
 	"\n" +
 	"start_date\x18\x02 \x01(\v2\x11.google.type.DateH\x00R\tstartDate\x88\x01\x01\x121\n" +
 	"\bend_date\x18\x03 \x01(\v2\x11.google.type.DateH\x01R\aendDate\x88\x01\x01B\r\n" +
 	"\v_start_dateB\v\n" +
-	"\t_end_date\"R\n" +
-	"\x1bGetDashboardSummaryResponse\x123\n" +
-	"\asummary\x18\x01 \x01(\v2\x19.null.v1.DashboardSummaryR\asummary\"\x8a\x01\n" +
+	"\t_end_date\"T\n" +
+	"\x1bGetDashboardSummaryResponse\x125\n" +
+	"\asummary\x18\x01 \x01(\v2\x1b.nagomi.v1.DashboardSummaryR\asummary\"\x8a\x01\n" +
 	"\x1bGetMonthlyComparisonRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\tR\x06userId\x12\x1f\n" +
 	"\vmonths_back\x18\x02 \x01(\x05R\n" +
 	"monthsBack\x12\"\n" +
 	"\n" +
 	"account_id\x18\x03 \x01(\x03H\x00R\taccountId\x88\x01\x01B\r\n" +
-	"\v_account_id\"\\\n" +
-	"\x1cGetMonthlyComparisonResponse\x12<\n" +
-	"\vcomparisons\x18\x01 \x03(\v2\x1a.null.v1.MonthlyComparisonR\vcomparisons\"\xdd\x01\n" +
+	"\v_account_id\"^\n" +
+	"\x1cGetMonthlyComparisonResponse\x12>\n" +
+	"\vcomparisons\x18\x01 \x03(\v2\x1c.nagomi.v1.MonthlyComparisonR\vcomparisons\"\xdd\x01\n" +
 	"\x17GetTopCategoriesRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\tR\x06userId\x125\n" +
 	"\n" +
@@ -1150,10 +1150,10 @@ const file_null_v1_dashboard_services_proto_rawDesc = "" +
 	"\x05limit\x18\x04 \x01(\x05H\x02R\x05limit\x88\x01\x01B\r\n" +
 	"\v_start_dateB\v\n" +
 	"\t_end_dateB\b\n" +
-	"\x06_limit\"P\n" +
-	"\x18GetTopCategoriesResponse\x124\n" +
+	"\x06_limit\"R\n" +
+	"\x18GetTopCategoriesResponse\x126\n" +
 	"\n" +
-	"categories\x18\x01 \x03(\v2\x14.null.v1.TopCategoryR\n" +
+	"categories\x18\x01 \x03(\v2\x16.nagomi.v1.TopCategoryR\n" +
 	"categories\"\xdc\x01\n" +
 	"\x16GetTopMerchantsRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\tR\x06userId\x125\n" +
@@ -1163,9 +1163,9 @@ const file_null_v1_dashboard_services_proto_rawDesc = "" +
 	"\x05limit\x18\x04 \x01(\x05H\x02R\x05limit\x88\x01\x01B\r\n" +
 	"\v_start_dateB\v\n" +
 	"\t_end_dateB\b\n" +
-	"\x06_limit\"M\n" +
-	"\x17GetTopMerchantsResponse\x122\n" +
-	"\tmerchants\x18\x01 \x03(\v2\x14.null.v1.TopMerchantR\tmerchants\"\xfc\x01\n" +
+	"\x06_limit\"O\n" +
+	"\x17GetTopMerchantsResponse\x124\n" +
+	"\tmerchants\x18\x01 \x03(\v2\x16.nagomi.v1.TopMerchantR\tmerchants\"\xfc\x01\n" +
 	"\x18GetSpendingTrendsRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\tR\x06userId\x120\n" +
 	"\n" +
@@ -1176,9 +1176,9 @@ const file_null_v1_dashboard_services_proto_rawDesc = "" +
 	"\n" +
 	"account_id\x18\x05 \x01(\x03H\x01R\taccountId\x88\x01\x01B\x0e\n" +
 	"\f_category_idB\r\n" +
-	"\v_account_id\"H\n" +
-	"\x19GetSpendingTrendsResponse\x12+\n" +
-	"\x06trends\x18\x01 \x03(\v2\x13.null.v1.TrendPointR\x06trends\"5\n" +
+	"\v_account_id\"J\n" +
+	"\x19GetSpendingTrendsResponse\x12-\n" +
+	"\x06trends\x18\x01 \x03(\v2\x15.nagomi.v1.TrendPointR\x06trends\"5\n" +
 	"\x1aGetFinancialSummaryRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\tR\x06userId\"\xbe\x01\n" +
 	"\x1bGetFinancialSummaryResponse\x127\n" +
@@ -1186,156 +1186,157 @@ const file_null_v1_dashboard_services_proto_rawDesc = "" +
 	"\n" +
 	"total_debt\x18\x02 \x01(\v2\x12.google.type.MoneyR\ttotalDebt\x123\n" +
 	"\vnet_balance\x18\x03 \x01(\v2\x12.google.type.MoneyR\n" +
-	"netBalance\"\xa3\x02\n" +
+	"netBalance\"\xa5\x02\n" +
 	"$GetCategorySpendingComparisonRequest\x12\x17\n" +
-	"\auser_id\x18\x01 \x01(\tR\x06userId\x124\n" +
-	"\vperiod_type\x18\x02 \x01(\x0e2\x13.null.v1.PeriodTypeR\n" +
+	"\auser_id\x18\x01 \x01(\tR\x06userId\x126\n" +
+	"\vperiod_type\x18\x02 \x01(\x0e2\x15.nagomi.v1.PeriodTypeR\n" +
 	"periodType\x12B\n" +
 	"\x11custom_start_date\x18\x03 \x01(\v2\x11.google.type.DateH\x00R\x0fcustomStartDate\x88\x01\x01\x12>\n" +
 	"\x0fcustom_end_date\x18\x04 \x01(\v2\x11.google.type.DateH\x01R\rcustomEndDate\x88\x01\x01B\x14\n" +
 	"\x12_custom_start_dateB\x12\n" +
-	"\x10_custom_end_date\"\x98\x01\n" +
-	"\x14CategorySpendingItem\x122\n" +
-	"\bcategory\x18\x01 \x01(\v2\x11.null.v1.CategoryH\x00R\bcategory\x88\x01\x01\x12?\n" +
-	"\bspending\x18\x02 \x01(\v2#.null.v1.CategorySpendingComparisonR\bspendingB\v\n" +
-	"\t_category\"\xfb\x02\n" +
-	"%GetCategorySpendingComparisonResponse\x12:\n" +
-	"\x0ecurrent_period\x18\x01 \x01(\v2\x13.null.v1.PeriodInfoR\rcurrentPeriod\x12<\n" +
-	"\x0fprevious_period\x18\x02 \x01(\v2\x13.null.v1.PeriodInfoR\x0epreviousPeriod\x12=\n" +
+	"\x10_custom_end_date\"\x9c\x01\n" +
+	"\x14CategorySpendingItem\x124\n" +
+	"\bcategory\x18\x01 \x01(\v2\x13.nagomi.v1.CategoryH\x00R\bcategory\x88\x01\x01\x12A\n" +
+	"\bspending\x18\x02 \x01(\v2%.nagomi.v1.CategorySpendingComparisonR\bspendingB\v\n" +
+	"\t_category\"\x85\x03\n" +
+	"%GetCategorySpendingComparisonResponse\x12<\n" +
+	"\x0ecurrent_period\x18\x01 \x01(\v2\x15.nagomi.v1.PeriodInfoR\rcurrentPeriod\x12>\n" +
+	"\x0fprevious_period\x18\x02 \x01(\v2\x15.nagomi.v1.PeriodInfoR\x0epreviousPeriod\x12?\n" +
 	"\n" +
-	"categories\x18\x03 \x03(\v2\x1d.null.v1.CategorySpendingItemR\n" +
-	"categories\x12N\n" +
-	"\runcategorized\x18\x04 \x01(\v2#.null.v1.CategorySpendingComparisonH\x00R\runcategorized\x88\x01\x01\x127\n" +
-	"\x06totals\x18\x05 \x01(\v2\x1f.null.v1.CategorySpendingTotalsR\x06totalsB\x10\n" +
-	"\x0e_uncategorized\"\xcc\x01\n" +
+	"categories\x18\x03 \x03(\v2\x1f.nagomi.v1.CategorySpendingItemR\n" +
+	"categories\x12P\n" +
+	"\runcategorized\x18\x04 \x01(\v2%.nagomi.v1.CategorySpendingComparisonH\x00R\runcategorized\x88\x01\x01\x129\n" +
+	"\x06totals\x18\x05 \x01(\v2!.nagomi.v1.CategorySpendingTotalsR\x06totalsB\x10\n" +
+	"\x0e_uncategorized\"\xce\x01\n" +
 	"\x19GetNetWorthHistoryRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\tR\x06userId\x120\n" +
 	"\n" +
 	"start_date\x18\x02 \x01(\v2\x11.google.type.DateR\tstartDate\x12,\n" +
-	"\bend_date\x18\x03 \x01(\v2\x11.google.type.DateR\aendDate\x126\n" +
-	"\vgranularity\x18\x04 \x01(\x0e2\x14.null.v1.GranularityR\vgranularity\"U\n" +
-	"\x1aGetNetWorthHistoryResponse\x127\n" +
-	"\vdata_points\x18\x01 \x03(\v2\x16.null.v1.NetWorthPointR\n" +
+	"\bend_date\x18\x03 \x01(\v2\x11.google.type.DateR\aendDate\x128\n" +
+	"\vgranularity\x18\x04 \x01(\x0e2\x16.nagomi.v1.GranularityR\vgranularity\"W\n" +
+	"\x1aGetNetWorthHistoryResponse\x129\n" +
+	"\vdata_points\x18\x01 \x03(\v2\x18.nagomi.v1.NetWorthPointR\n" +
 	"dataPoints\"6\n" +
 	"\fCurrencyInfo\x12\x12\n" +
 	"\x04code\x18\x01 \x01(\tR\x04code\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\"\x16\n" +
-	"\x14GetCurrenciesRequest\"N\n" +
-	"\x15GetCurrenciesResponse\x125\n" +
+	"\x14GetCurrenciesRequest\"P\n" +
+	"\x15GetCurrenciesResponse\x127\n" +
 	"\n" +
-	"currencies\x18\x01 \x03(\v2\x15.null.v1.CurrencyInfoR\n" +
-	"currencies2\xf5\x06\n" +
-	"\x10DashboardService\x12`\n" +
-	"\x13GetDashboardSummary\x12#.null.v1.GetDashboardSummaryRequest\x1a$.null.v1.GetDashboardSummaryResponse\x12c\n" +
-	"\x14GetMonthlyComparison\x12$.null.v1.GetMonthlyComparisonRequest\x1a%.null.v1.GetMonthlyComparisonResponse\x12W\n" +
-	"\x10GetTopCategories\x12 .null.v1.GetTopCategoriesRequest\x1a!.null.v1.GetTopCategoriesResponse\x12T\n" +
-	"\x0fGetTopMerchants\x12\x1f.null.v1.GetTopMerchantsRequest\x1a .null.v1.GetTopMerchantsResponse\x12Z\n" +
-	"\x11GetSpendingTrends\x12!.null.v1.GetSpendingTrendsRequest\x1a\".null.v1.GetSpendingTrendsResponse\x12`\n" +
-	"\x13GetFinancialSummary\x12#.null.v1.GetFinancialSummaryRequest\x1a$.null.v1.GetFinancialSummaryResponse\x12~\n" +
-	"\x1dGetCategorySpendingComparison\x12-.null.v1.GetCategorySpendingComparisonRequest\x1a..null.v1.GetCategorySpendingComparisonResponse\x12]\n" +
-	"\x12GetNetWorthHistory\x12\".null.v1.GetNetWorthHistoryRequest\x1a#.null.v1.GetNetWorthHistoryResponse\x12N\n" +
-	"\rGetCurrencies\x12\x1d.null.v1.GetCurrenciesRequest\x1a\x1e.null.v1.GetCurrenciesResponseB\x93\x01\n" +
-	"\vcom.null.v1B\x16DashboardServicesProtoP\x01Z-null-email-parser/internal/gen/null/v1;nullv1\xa2\x02\x03NXX\xaa\x02\aNull.V1\xca\x02\bNull_\\V1\xe2\x02\x14Null_\\V1\\GPBMetadata\xea\x02\bNull::V1b\x06proto3"
+	"currencies\x18\x01 \x03(\v2\x17.nagomi.v1.CurrencyInfoR\n" +
+	"currencies2\x9a\a\n" +
+	"\x10DashboardService\x12d\n" +
+	"\x13GetDashboardSummary\x12%.nagomi.v1.GetDashboardSummaryRequest\x1a&.nagomi.v1.GetDashboardSummaryResponse\x12g\n" +
+	"\x14GetMonthlyComparison\x12&.nagomi.v1.GetMonthlyComparisonRequest\x1a'.nagomi.v1.GetMonthlyComparisonResponse\x12[\n" +
+	"\x10GetTopCategories\x12\".nagomi.v1.GetTopCategoriesRequest\x1a#.nagomi.v1.GetTopCategoriesResponse\x12X\n" +
+	"\x0fGetTopMerchants\x12!.nagomi.v1.GetTopMerchantsRequest\x1a\".nagomi.v1.GetTopMerchantsResponse\x12^\n" +
+	"\x11GetSpendingTrends\x12#.nagomi.v1.GetSpendingTrendsRequest\x1a$.nagomi.v1.GetSpendingTrendsResponse\x12d\n" +
+	"\x13GetFinancialSummary\x12%.nagomi.v1.GetFinancialSummaryRequest\x1a&.nagomi.v1.GetFinancialSummaryResponse\x12\x82\x01\n" +
+	"\x1dGetCategorySpendingComparison\x12/.nagomi.v1.GetCategorySpendingComparisonRequest\x1a0.nagomi.v1.GetCategorySpendingComparisonResponse\x12a\n" +
+	"\x12GetNetWorthHistory\x12$.nagomi.v1.GetNetWorthHistoryRequest\x1a%.nagomi.v1.GetNetWorthHistoryResponse\x12R\n" +
+	"\rGetCurrencies\x12\x1f.nagomi.v1.GetCurrenciesRequest\x1a .nagomi.v1.GetCurrenciesResponseB\xa1\x01\n" +
+	"\rcom.nagomi.v1B\x16DashboardServicesProtoP\x01Z3nagomi-email-parser/internal/gen/nagomi/v1;nagomiv1\xa2\x02\x03NXX\xaa\x02\tNagomi.V1\xca\x02\tNagomi\\V1\xe2\x02\x15Nagomi\\V1\\GPBMetadata\xea\x02\n" +
+	"Nagomi::V1b\x06proto3"
 
 var (
-	file_null_v1_dashboard_services_proto_rawDescOnce sync.Once
-	file_null_v1_dashboard_services_proto_rawDescData []byte
+	file_nagomi_v1_dashboard_services_proto_rawDescOnce sync.Once
+	file_nagomi_v1_dashboard_services_proto_rawDescData []byte
 )
 
-func file_null_v1_dashboard_services_proto_rawDescGZIP() []byte {
-	file_null_v1_dashboard_services_proto_rawDescOnce.Do(func() {
-		file_null_v1_dashboard_services_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_null_v1_dashboard_services_proto_rawDesc), len(file_null_v1_dashboard_services_proto_rawDesc)))
+func file_nagomi_v1_dashboard_services_proto_rawDescGZIP() []byte {
+	file_nagomi_v1_dashboard_services_proto_rawDescOnce.Do(func() {
+		file_nagomi_v1_dashboard_services_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_nagomi_v1_dashboard_services_proto_rawDesc), len(file_nagomi_v1_dashboard_services_proto_rawDesc)))
 	})
-	return file_null_v1_dashboard_services_proto_rawDescData
+	return file_nagomi_v1_dashboard_services_proto_rawDescData
 }
 
-var file_null_v1_dashboard_services_proto_msgTypes = make([]protoimpl.MessageInfo, 20)
-var file_null_v1_dashboard_services_proto_goTypes = []any{
-	(*GetDashboardSummaryRequest)(nil),            // 0: null.v1.GetDashboardSummaryRequest
-	(*GetDashboardSummaryResponse)(nil),           // 1: null.v1.GetDashboardSummaryResponse
-	(*GetMonthlyComparisonRequest)(nil),           // 2: null.v1.GetMonthlyComparisonRequest
-	(*GetMonthlyComparisonResponse)(nil),          // 3: null.v1.GetMonthlyComparisonResponse
-	(*GetTopCategoriesRequest)(nil),               // 4: null.v1.GetTopCategoriesRequest
-	(*GetTopCategoriesResponse)(nil),              // 5: null.v1.GetTopCategoriesResponse
-	(*GetTopMerchantsRequest)(nil),                // 6: null.v1.GetTopMerchantsRequest
-	(*GetTopMerchantsResponse)(nil),               // 7: null.v1.GetTopMerchantsResponse
-	(*GetSpendingTrendsRequest)(nil),              // 8: null.v1.GetSpendingTrendsRequest
-	(*GetSpendingTrendsResponse)(nil),             // 9: null.v1.GetSpendingTrendsResponse
-	(*GetFinancialSummaryRequest)(nil),            // 10: null.v1.GetFinancialSummaryRequest
-	(*GetFinancialSummaryResponse)(nil),           // 11: null.v1.GetFinancialSummaryResponse
-	(*GetCategorySpendingComparisonRequest)(nil),  // 12: null.v1.GetCategorySpendingComparisonRequest
-	(*CategorySpendingItem)(nil),                  // 13: null.v1.CategorySpendingItem
-	(*GetCategorySpendingComparisonResponse)(nil), // 14: null.v1.GetCategorySpendingComparisonResponse
-	(*GetNetWorthHistoryRequest)(nil),             // 15: null.v1.GetNetWorthHistoryRequest
-	(*GetNetWorthHistoryResponse)(nil),            // 16: null.v1.GetNetWorthHistoryResponse
-	(*CurrencyInfo)(nil),                          // 17: null.v1.CurrencyInfo
-	(*GetCurrenciesRequest)(nil),                  // 18: null.v1.GetCurrenciesRequest
-	(*GetCurrenciesResponse)(nil),                 // 19: null.v1.GetCurrenciesResponse
+var file_nagomi_v1_dashboard_services_proto_msgTypes = make([]protoimpl.MessageInfo, 20)
+var file_nagomi_v1_dashboard_services_proto_goTypes = []any{
+	(*GetDashboardSummaryRequest)(nil),            // 0: nagomi.v1.GetDashboardSummaryRequest
+	(*GetDashboardSummaryResponse)(nil),           // 1: nagomi.v1.GetDashboardSummaryResponse
+	(*GetMonthlyComparisonRequest)(nil),           // 2: nagomi.v1.GetMonthlyComparisonRequest
+	(*GetMonthlyComparisonResponse)(nil),          // 3: nagomi.v1.GetMonthlyComparisonResponse
+	(*GetTopCategoriesRequest)(nil),               // 4: nagomi.v1.GetTopCategoriesRequest
+	(*GetTopCategoriesResponse)(nil),              // 5: nagomi.v1.GetTopCategoriesResponse
+	(*GetTopMerchantsRequest)(nil),                // 6: nagomi.v1.GetTopMerchantsRequest
+	(*GetTopMerchantsResponse)(nil),               // 7: nagomi.v1.GetTopMerchantsResponse
+	(*GetSpendingTrendsRequest)(nil),              // 8: nagomi.v1.GetSpendingTrendsRequest
+	(*GetSpendingTrendsResponse)(nil),             // 9: nagomi.v1.GetSpendingTrendsResponse
+	(*GetFinancialSummaryRequest)(nil),            // 10: nagomi.v1.GetFinancialSummaryRequest
+	(*GetFinancialSummaryResponse)(nil),           // 11: nagomi.v1.GetFinancialSummaryResponse
+	(*GetCategorySpendingComparisonRequest)(nil),  // 12: nagomi.v1.GetCategorySpendingComparisonRequest
+	(*CategorySpendingItem)(nil),                  // 13: nagomi.v1.CategorySpendingItem
+	(*GetCategorySpendingComparisonResponse)(nil), // 14: nagomi.v1.GetCategorySpendingComparisonResponse
+	(*GetNetWorthHistoryRequest)(nil),             // 15: nagomi.v1.GetNetWorthHistoryRequest
+	(*GetNetWorthHistoryResponse)(nil),            // 16: nagomi.v1.GetNetWorthHistoryResponse
+	(*CurrencyInfo)(nil),                          // 17: nagomi.v1.CurrencyInfo
+	(*GetCurrenciesRequest)(nil),                  // 18: nagomi.v1.GetCurrenciesRequest
+	(*GetCurrenciesResponse)(nil),                 // 19: nagomi.v1.GetCurrenciesResponse
 	(*date.Date)(nil),                             // 20: google.type.Date
-	(*DashboardSummary)(nil),                      // 21: null.v1.DashboardSummary
-	(*MonthlyComparison)(nil),                     // 22: null.v1.MonthlyComparison
-	(*TopCategory)(nil),                           // 23: null.v1.TopCategory
-	(*TopMerchant)(nil),                           // 24: null.v1.TopMerchant
-	(*TrendPoint)(nil),                            // 25: null.v1.TrendPoint
+	(*DashboardSummary)(nil),                      // 21: nagomi.v1.DashboardSummary
+	(*MonthlyComparison)(nil),                     // 22: nagomi.v1.MonthlyComparison
+	(*TopCategory)(nil),                           // 23: nagomi.v1.TopCategory
+	(*TopMerchant)(nil),                           // 24: nagomi.v1.TopMerchant
+	(*TrendPoint)(nil),                            // 25: nagomi.v1.TrendPoint
 	(*money.Money)(nil),                           // 26: google.type.Money
-	(PeriodType)(0),                               // 27: null.v1.PeriodType
-	(*Category)(nil),                              // 28: null.v1.Category
-	(*CategorySpendingComparison)(nil),            // 29: null.v1.CategorySpendingComparison
-	(*PeriodInfo)(nil),                            // 30: null.v1.PeriodInfo
-	(*CategorySpendingTotals)(nil),                // 31: null.v1.CategorySpendingTotals
-	(Granularity)(0),                              // 32: null.v1.Granularity
-	(*NetWorthPoint)(nil),                         // 33: null.v1.NetWorthPoint
+	(PeriodType)(0),                               // 27: nagomi.v1.PeriodType
+	(*Category)(nil),                              // 28: nagomi.v1.Category
+	(*CategorySpendingComparison)(nil),            // 29: nagomi.v1.CategorySpendingComparison
+	(*PeriodInfo)(nil),                            // 30: nagomi.v1.PeriodInfo
+	(*CategorySpendingTotals)(nil),                // 31: nagomi.v1.CategorySpendingTotals
+	(Granularity)(0),                              // 32: nagomi.v1.Granularity
+	(*NetWorthPoint)(nil),                         // 33: nagomi.v1.NetWorthPoint
 }
-var file_null_v1_dashboard_services_proto_depIdxs = []int32{
-	20, // 0: null.v1.GetDashboardSummaryRequest.start_date:type_name -> google.type.Date
-	20, // 1: null.v1.GetDashboardSummaryRequest.end_date:type_name -> google.type.Date
-	21, // 2: null.v1.GetDashboardSummaryResponse.summary:type_name -> null.v1.DashboardSummary
-	22, // 3: null.v1.GetMonthlyComparisonResponse.comparisons:type_name -> null.v1.MonthlyComparison
-	20, // 4: null.v1.GetTopCategoriesRequest.start_date:type_name -> google.type.Date
-	20, // 5: null.v1.GetTopCategoriesRequest.end_date:type_name -> google.type.Date
-	23, // 6: null.v1.GetTopCategoriesResponse.categories:type_name -> null.v1.TopCategory
-	20, // 7: null.v1.GetTopMerchantsRequest.start_date:type_name -> google.type.Date
-	20, // 8: null.v1.GetTopMerchantsRequest.end_date:type_name -> google.type.Date
-	24, // 9: null.v1.GetTopMerchantsResponse.merchants:type_name -> null.v1.TopMerchant
-	20, // 10: null.v1.GetSpendingTrendsRequest.start_date:type_name -> google.type.Date
-	20, // 11: null.v1.GetSpendingTrendsRequest.end_date:type_name -> google.type.Date
-	25, // 12: null.v1.GetSpendingTrendsResponse.trends:type_name -> null.v1.TrendPoint
-	26, // 13: null.v1.GetFinancialSummaryResponse.total_balance:type_name -> google.type.Money
-	26, // 14: null.v1.GetFinancialSummaryResponse.total_debt:type_name -> google.type.Money
-	26, // 15: null.v1.GetFinancialSummaryResponse.net_balance:type_name -> google.type.Money
-	27, // 16: null.v1.GetCategorySpendingComparisonRequest.period_type:type_name -> null.v1.PeriodType
-	20, // 17: null.v1.GetCategorySpendingComparisonRequest.custom_start_date:type_name -> google.type.Date
-	20, // 18: null.v1.GetCategorySpendingComparisonRequest.custom_end_date:type_name -> google.type.Date
-	28, // 19: null.v1.CategorySpendingItem.category:type_name -> null.v1.Category
-	29, // 20: null.v1.CategorySpendingItem.spending:type_name -> null.v1.CategorySpendingComparison
-	30, // 21: null.v1.GetCategorySpendingComparisonResponse.current_period:type_name -> null.v1.PeriodInfo
-	30, // 22: null.v1.GetCategorySpendingComparisonResponse.previous_period:type_name -> null.v1.PeriodInfo
-	13, // 23: null.v1.GetCategorySpendingComparisonResponse.categories:type_name -> null.v1.CategorySpendingItem
-	29, // 24: null.v1.GetCategorySpendingComparisonResponse.uncategorized:type_name -> null.v1.CategorySpendingComparison
-	31, // 25: null.v1.GetCategorySpendingComparisonResponse.totals:type_name -> null.v1.CategorySpendingTotals
-	20, // 26: null.v1.GetNetWorthHistoryRequest.start_date:type_name -> google.type.Date
-	20, // 27: null.v1.GetNetWorthHistoryRequest.end_date:type_name -> google.type.Date
-	32, // 28: null.v1.GetNetWorthHistoryRequest.granularity:type_name -> null.v1.Granularity
-	33, // 29: null.v1.GetNetWorthHistoryResponse.data_points:type_name -> null.v1.NetWorthPoint
-	17, // 30: null.v1.GetCurrenciesResponse.currencies:type_name -> null.v1.CurrencyInfo
-	0,  // 31: null.v1.DashboardService.GetDashboardSummary:input_type -> null.v1.GetDashboardSummaryRequest
-	2,  // 32: null.v1.DashboardService.GetMonthlyComparison:input_type -> null.v1.GetMonthlyComparisonRequest
-	4,  // 33: null.v1.DashboardService.GetTopCategories:input_type -> null.v1.GetTopCategoriesRequest
-	6,  // 34: null.v1.DashboardService.GetTopMerchants:input_type -> null.v1.GetTopMerchantsRequest
-	8,  // 35: null.v1.DashboardService.GetSpendingTrends:input_type -> null.v1.GetSpendingTrendsRequest
-	10, // 36: null.v1.DashboardService.GetFinancialSummary:input_type -> null.v1.GetFinancialSummaryRequest
-	12, // 37: null.v1.DashboardService.GetCategorySpendingComparison:input_type -> null.v1.GetCategorySpendingComparisonRequest
-	15, // 38: null.v1.DashboardService.GetNetWorthHistory:input_type -> null.v1.GetNetWorthHistoryRequest
-	18, // 39: null.v1.DashboardService.GetCurrencies:input_type -> null.v1.GetCurrenciesRequest
-	1,  // 40: null.v1.DashboardService.GetDashboardSummary:output_type -> null.v1.GetDashboardSummaryResponse
-	3,  // 41: null.v1.DashboardService.GetMonthlyComparison:output_type -> null.v1.GetMonthlyComparisonResponse
-	5,  // 42: null.v1.DashboardService.GetTopCategories:output_type -> null.v1.GetTopCategoriesResponse
-	7,  // 43: null.v1.DashboardService.GetTopMerchants:output_type -> null.v1.GetTopMerchantsResponse
-	9,  // 44: null.v1.DashboardService.GetSpendingTrends:output_type -> null.v1.GetSpendingTrendsResponse
-	11, // 45: null.v1.DashboardService.GetFinancialSummary:output_type -> null.v1.GetFinancialSummaryResponse
-	14, // 46: null.v1.DashboardService.GetCategorySpendingComparison:output_type -> null.v1.GetCategorySpendingComparisonResponse
-	16, // 47: null.v1.DashboardService.GetNetWorthHistory:output_type -> null.v1.GetNetWorthHistoryResponse
-	19, // 48: null.v1.DashboardService.GetCurrencies:output_type -> null.v1.GetCurrenciesResponse
+var file_nagomi_v1_dashboard_services_proto_depIdxs = []int32{
+	20, // 0: nagomi.v1.GetDashboardSummaryRequest.start_date:type_name -> google.type.Date
+	20, // 1: nagomi.v1.GetDashboardSummaryRequest.end_date:type_name -> google.type.Date
+	21, // 2: nagomi.v1.GetDashboardSummaryResponse.summary:type_name -> nagomi.v1.DashboardSummary
+	22, // 3: nagomi.v1.GetMonthlyComparisonResponse.comparisons:type_name -> nagomi.v1.MonthlyComparison
+	20, // 4: nagomi.v1.GetTopCategoriesRequest.start_date:type_name -> google.type.Date
+	20, // 5: nagomi.v1.GetTopCategoriesRequest.end_date:type_name -> google.type.Date
+	23, // 6: nagomi.v1.GetTopCategoriesResponse.categories:type_name -> nagomi.v1.TopCategory
+	20, // 7: nagomi.v1.GetTopMerchantsRequest.start_date:type_name -> google.type.Date
+	20, // 8: nagomi.v1.GetTopMerchantsRequest.end_date:type_name -> google.type.Date
+	24, // 9: nagomi.v1.GetTopMerchantsResponse.merchants:type_name -> nagomi.v1.TopMerchant
+	20, // 10: nagomi.v1.GetSpendingTrendsRequest.start_date:type_name -> google.type.Date
+	20, // 11: nagomi.v1.GetSpendingTrendsRequest.end_date:type_name -> google.type.Date
+	25, // 12: nagomi.v1.GetSpendingTrendsResponse.trends:type_name -> nagomi.v1.TrendPoint
+	26, // 13: nagomi.v1.GetFinancialSummaryResponse.total_balance:type_name -> google.type.Money
+	26, // 14: nagomi.v1.GetFinancialSummaryResponse.total_debt:type_name -> google.type.Money
+	26, // 15: nagomi.v1.GetFinancialSummaryResponse.net_balance:type_name -> google.type.Money
+	27, // 16: nagomi.v1.GetCategorySpendingComparisonRequest.period_type:type_name -> nagomi.v1.PeriodType
+	20, // 17: nagomi.v1.GetCategorySpendingComparisonRequest.custom_start_date:type_name -> google.type.Date
+	20, // 18: nagomi.v1.GetCategorySpendingComparisonRequest.custom_end_date:type_name -> google.type.Date
+	28, // 19: nagomi.v1.CategorySpendingItem.category:type_name -> nagomi.v1.Category
+	29, // 20: nagomi.v1.CategorySpendingItem.spending:type_name -> nagomi.v1.CategorySpendingComparison
+	30, // 21: nagomi.v1.GetCategorySpendingComparisonResponse.current_period:type_name -> nagomi.v1.PeriodInfo
+	30, // 22: nagomi.v1.GetCategorySpendingComparisonResponse.previous_period:type_name -> nagomi.v1.PeriodInfo
+	13, // 23: nagomi.v1.GetCategorySpendingComparisonResponse.categories:type_name -> nagomi.v1.CategorySpendingItem
+	29, // 24: nagomi.v1.GetCategorySpendingComparisonResponse.uncategorized:type_name -> nagomi.v1.CategorySpendingComparison
+	31, // 25: nagomi.v1.GetCategorySpendingComparisonResponse.totals:type_name -> nagomi.v1.CategorySpendingTotals
+	20, // 26: nagomi.v1.GetNetWorthHistoryRequest.start_date:type_name -> google.type.Date
+	20, // 27: nagomi.v1.GetNetWorthHistoryRequest.end_date:type_name -> google.type.Date
+	32, // 28: nagomi.v1.GetNetWorthHistoryRequest.granularity:type_name -> nagomi.v1.Granularity
+	33, // 29: nagomi.v1.GetNetWorthHistoryResponse.data_points:type_name -> nagomi.v1.NetWorthPoint
+	17, // 30: nagomi.v1.GetCurrenciesResponse.currencies:type_name -> nagomi.v1.CurrencyInfo
+	0,  // 31: nagomi.v1.DashboardService.GetDashboardSummary:input_type -> nagomi.v1.GetDashboardSummaryRequest
+	2,  // 32: nagomi.v1.DashboardService.GetMonthlyComparison:input_type -> nagomi.v1.GetMonthlyComparisonRequest
+	4,  // 33: nagomi.v1.DashboardService.GetTopCategories:input_type -> nagomi.v1.GetTopCategoriesRequest
+	6,  // 34: nagomi.v1.DashboardService.GetTopMerchants:input_type -> nagomi.v1.GetTopMerchantsRequest
+	8,  // 35: nagomi.v1.DashboardService.GetSpendingTrends:input_type -> nagomi.v1.GetSpendingTrendsRequest
+	10, // 36: nagomi.v1.DashboardService.GetFinancialSummary:input_type -> nagomi.v1.GetFinancialSummaryRequest
+	12, // 37: nagomi.v1.DashboardService.GetCategorySpendingComparison:input_type -> nagomi.v1.GetCategorySpendingComparisonRequest
+	15, // 38: nagomi.v1.DashboardService.GetNetWorthHistory:input_type -> nagomi.v1.GetNetWorthHistoryRequest
+	18, // 39: nagomi.v1.DashboardService.GetCurrencies:input_type -> nagomi.v1.GetCurrenciesRequest
+	1,  // 40: nagomi.v1.DashboardService.GetDashboardSummary:output_type -> nagomi.v1.GetDashboardSummaryResponse
+	3,  // 41: nagomi.v1.DashboardService.GetMonthlyComparison:output_type -> nagomi.v1.GetMonthlyComparisonResponse
+	5,  // 42: nagomi.v1.DashboardService.GetTopCategories:output_type -> nagomi.v1.GetTopCategoriesResponse
+	7,  // 43: nagomi.v1.DashboardService.GetTopMerchants:output_type -> nagomi.v1.GetTopMerchantsResponse
+	9,  // 44: nagomi.v1.DashboardService.GetSpendingTrends:output_type -> nagomi.v1.GetSpendingTrendsResponse
+	11, // 45: nagomi.v1.DashboardService.GetFinancialSummary:output_type -> nagomi.v1.GetFinancialSummaryResponse
+	14, // 46: nagomi.v1.DashboardService.GetCategorySpendingComparison:output_type -> nagomi.v1.GetCategorySpendingComparisonResponse
+	16, // 47: nagomi.v1.DashboardService.GetNetWorthHistory:output_type -> nagomi.v1.GetNetWorthHistoryResponse
+	19, // 48: nagomi.v1.DashboardService.GetCurrencies:output_type -> nagomi.v1.GetCurrenciesResponse
 	40, // [40:49] is the sub-list for method output_type
 	31, // [31:40] is the sub-list for method input_type
 	31, // [31:31] is the sub-list for extension type_name
@@ -1343,38 +1344,38 @@ var file_null_v1_dashboard_services_proto_depIdxs = []int32{
 	0,  // [0:31] is the sub-list for field type_name
 }
 
-func init() { file_null_v1_dashboard_services_proto_init() }
-func file_null_v1_dashboard_services_proto_init() {
-	if File_null_v1_dashboard_services_proto != nil {
+func init() { file_nagomi_v1_dashboard_services_proto_init() }
+func file_nagomi_v1_dashboard_services_proto_init() {
+	if File_nagomi_v1_dashboard_services_proto != nil {
 		return
 	}
-	file_null_v1_account_proto_init()
-	file_null_v1_category_proto_init()
-	file_null_v1_dashboard_proto_init()
-	file_null_v1_enums_proto_init()
-	file_null_v1_dashboard_services_proto_msgTypes[0].OneofWrappers = []any{}
-	file_null_v1_dashboard_services_proto_msgTypes[2].OneofWrappers = []any{}
-	file_null_v1_dashboard_services_proto_msgTypes[4].OneofWrappers = []any{}
-	file_null_v1_dashboard_services_proto_msgTypes[6].OneofWrappers = []any{}
-	file_null_v1_dashboard_services_proto_msgTypes[8].OneofWrappers = []any{}
-	file_null_v1_dashboard_services_proto_msgTypes[12].OneofWrappers = []any{}
-	file_null_v1_dashboard_services_proto_msgTypes[13].OneofWrappers = []any{}
-	file_null_v1_dashboard_services_proto_msgTypes[14].OneofWrappers = []any{}
+	file_nagomi_v1_account_proto_init()
+	file_nagomi_v1_category_proto_init()
+	file_nagomi_v1_dashboard_proto_init()
+	file_nagomi_v1_enums_proto_init()
+	file_nagomi_v1_dashboard_services_proto_msgTypes[0].OneofWrappers = []any{}
+	file_nagomi_v1_dashboard_services_proto_msgTypes[2].OneofWrappers = []any{}
+	file_nagomi_v1_dashboard_services_proto_msgTypes[4].OneofWrappers = []any{}
+	file_nagomi_v1_dashboard_services_proto_msgTypes[6].OneofWrappers = []any{}
+	file_nagomi_v1_dashboard_services_proto_msgTypes[8].OneofWrappers = []any{}
+	file_nagomi_v1_dashboard_services_proto_msgTypes[12].OneofWrappers = []any{}
+	file_nagomi_v1_dashboard_services_proto_msgTypes[13].OneofWrappers = []any{}
+	file_nagomi_v1_dashboard_services_proto_msgTypes[14].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_null_v1_dashboard_services_proto_rawDesc), len(file_null_v1_dashboard_services_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_nagomi_v1_dashboard_services_proto_rawDesc), len(file_nagomi_v1_dashboard_services_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   20,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_null_v1_dashboard_services_proto_goTypes,
-		DependencyIndexes: file_null_v1_dashboard_services_proto_depIdxs,
-		MessageInfos:      file_null_v1_dashboard_services_proto_msgTypes,
+		GoTypes:           file_nagomi_v1_dashboard_services_proto_goTypes,
+		DependencyIndexes: file_nagomi_v1_dashboard_services_proto_depIdxs,
+		MessageInfos:      file_nagomi_v1_dashboard_services_proto_msgTypes,
 	}.Build()
-	File_null_v1_dashboard_services_proto = out.File
-	file_null_v1_dashboard_services_proto_goTypes = nil
-	file_null_v1_dashboard_services_proto_depIdxs = nil
+	File_nagomi_v1_dashboard_services_proto = out.File
+	file_nagomi_v1_dashboard_services_proto_goTypes = nil
+	file_nagomi_v1_dashboard_services_proto_depIdxs = nil
 }

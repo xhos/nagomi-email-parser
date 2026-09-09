@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"null-email-parser/internal/domain"
+	"nagomi-email-parser/internal/domain"
 )
 
 // ExtractFields applies each regex to the email body and returns the single capture group for each key

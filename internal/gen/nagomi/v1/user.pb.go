@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        (unknown)
-// source: null/v1/user.proto
+// source: nagomi/v1/user.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	_ "buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/buf/validate"
@@ -38,7 +38,7 @@ type User struct {
 
 func (x *User) Reset() {
 	*x = User{}
-	mi := &file_null_v1_user_proto_msgTypes[0]
+	mi := &file_nagomi_v1_user_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -50,7 +50,7 @@ func (x *User) String() string {
 func (*User) ProtoMessage() {}
 
 func (x *User) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_user_proto_msgTypes[0]
+	mi := &file_nagomi_v1_user_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -63,7 +63,7 @@ func (x *User) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use User.ProtoReflect.Descriptor instead.
 func (*User) Descriptor() ([]byte, []int) {
-	return file_null_v1_user_proto_rawDescGZIP(), []int{0}
+	return file_nagomi_v1_user_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *User) GetId() string {
@@ -115,11 +115,11 @@ func (x *User) GetTimezone() string {
 	return ""
 }
 
-var File_null_v1_user_proto protoreflect.FileDescriptor
+var File_nagomi_v1_user_proto protoreflect.FileDescriptor
 
-const file_null_v1_user_proto_rawDesc = "" +
+const file_nagomi_v1_user_proto_rawDesc = "" +
 	"\n" +
-	"\x12null/v1/user.proto\x12\anull.v1\x1a\x1bbuf/validate/validate.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\xe1\x02\n" +
+	"\x14nagomi/v1/user.proto\x12\tnagomi.v1\x1a\x1bbuf/validate/validate.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\xe1\x02\n" +
 	"\x04User\x12\x18\n" +
 	"\x02id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x02id\x12\x1d\n" +
 	"\x05email\x18\x02 \x01(\tB\a\xbaH\x04r\x02`\x01R\x05email\x121\n" +
@@ -131,29 +131,30 @@ const file_null_v1_user_proto_rawDesc = "" +
 	"\x10primary_currency\x18\a \x01(\tB\x14\xbaH\x11r\x0f2\n" +
 	"^[A-Z]{3}$\x98\x01\x03R\x0fprimaryCurrency\x12%\n" +
 	"\btimezone\x18\b \x01(\tB\t\xbaH\x06r\x04\x10\x01\x182R\btimezoneB\x0f\n" +
-	"\r_display_nameB\x86\x01\n" +
-	"\vcom.null.v1B\tUserProtoP\x01Z-null-email-parser/internal/gen/null/v1;nullv1\xa2\x02\x03NXX\xaa\x02\aNull.V1\xca\x02\bNull_\\V1\xe2\x02\x14Null_\\V1\\GPBMetadata\xea\x02\bNull::V1b\x06proto3"
+	"\r_display_nameB\x94\x01\n" +
+	"\rcom.nagomi.v1B\tUserProtoP\x01Z3nagomi-email-parser/internal/gen/nagomi/v1;nagomiv1\xa2\x02\x03NXX\xaa\x02\tNagomi.V1\xca\x02\tNagomi\\V1\xe2\x02\x15Nagomi\\V1\\GPBMetadata\xea\x02\n" +
+	"Nagomi::V1b\x06proto3"
 
 var (
-	file_null_v1_user_proto_rawDescOnce sync.Once
-	file_null_v1_user_proto_rawDescData []byte
+	file_nagomi_v1_user_proto_rawDescOnce sync.Once
+	file_nagomi_v1_user_proto_rawDescData []byte
 )
 
-func file_null_v1_user_proto_rawDescGZIP() []byte {
-	file_null_v1_user_proto_rawDescOnce.Do(func() {
-		file_null_v1_user_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_null_v1_user_proto_rawDesc), len(file_null_v1_user_proto_rawDesc)))
+func file_nagomi_v1_user_proto_rawDescGZIP() []byte {
+	file_nagomi_v1_user_proto_rawDescOnce.Do(func() {
+		file_nagomi_v1_user_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_nagomi_v1_user_proto_rawDesc), len(file_nagomi_v1_user_proto_rawDesc)))
 	})
-	return file_null_v1_user_proto_rawDescData
+	return file_nagomi_v1_user_proto_rawDescData
 }
 
-var file_null_v1_user_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_null_v1_user_proto_goTypes = []any{
-	(*User)(nil),                  // 0: null.v1.User
+var file_nagomi_v1_user_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_nagomi_v1_user_proto_goTypes = []any{
+	(*User)(nil),                  // 0: nagomi.v1.User
 	(*timestamppb.Timestamp)(nil), // 1: google.protobuf.Timestamp
 }
-var file_null_v1_user_proto_depIdxs = []int32{
-	1, // 0: null.v1.User.created_at:type_name -> google.protobuf.Timestamp
-	1, // 1: null.v1.User.updated_at:type_name -> google.protobuf.Timestamp
+var file_nagomi_v1_user_proto_depIdxs = []int32{
+	1, // 0: nagomi.v1.User.created_at:type_name -> google.protobuf.Timestamp
+	1, // 1: nagomi.v1.User.updated_at:type_name -> google.protobuf.Timestamp
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name
@@ -161,27 +162,27 @@ var file_null_v1_user_proto_depIdxs = []int32{
 	0, // [0:2] is the sub-list for field type_name
 }
 
-func init() { file_null_v1_user_proto_init() }
-func file_null_v1_user_proto_init() {
-	if File_null_v1_user_proto != nil {
+func init() { file_nagomi_v1_user_proto_init() }
+func file_nagomi_v1_user_proto_init() {
+	if File_nagomi_v1_user_proto != nil {
 		return
 	}
-	file_null_v1_user_proto_msgTypes[0].OneofWrappers = []any{}
+	file_nagomi_v1_user_proto_msgTypes[0].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_null_v1_user_proto_rawDesc), len(file_null_v1_user_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_nagomi_v1_user_proto_rawDesc), len(file_nagomi_v1_user_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_null_v1_user_proto_goTypes,
-		DependencyIndexes: file_null_v1_user_proto_depIdxs,
-		MessageInfos:      file_null_v1_user_proto_msgTypes,
+		GoTypes:           file_nagomi_v1_user_proto_goTypes,
+		DependencyIndexes: file_nagomi_v1_user_proto_depIdxs,
+		MessageInfos:      file_nagomi_v1_user_proto_msgTypes,
 	}.Build()
-	File_null_v1_user_proto = out.File
-	file_null_v1_user_proto_goTypes = nil
-	file_null_v1_user_proto_depIdxs = nil
+	File_nagomi_v1_user_proto = out.File
+	file_nagomi_v1_user_proto_goTypes = nil
+	file_nagomi_v1_user_proto_depIdxs = nil
 }

@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             (unknown)
-// source: null/v1/receipt_ocr.proto
+// source: nagomi/v1/receipt_ocr.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	context "context"
@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	ReceiptOCRService_ParseReceipt_FullMethodName = "/null.v1.ReceiptOCRService/ParseReceipt"
-	ReceiptOCRService_Health_FullMethodName       = "/null.v1.ReceiptOCRService/Health"
+	ReceiptOCRService_ParseReceipt_FullMethodName = "/nagomi.v1.ReceiptOCRService/ParseReceipt"
+	ReceiptOCRService_Health_FullMethodName       = "/nagomi.v1.ReceiptOCRService/Health"
 )
 
 // ReceiptOCRServiceClient is the client API for ReceiptOCRService service.
@@ -140,7 +140,7 @@ func _ReceiptOCRService_Health_Handler(srv interface{}, ctx context.Context, dec
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var ReceiptOCRService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "null.v1.ReceiptOCRService",
+	ServiceName: "nagomi.v1.ReceiptOCRService",
 	HandlerType: (*ReceiptOCRServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -153,5 +153,5 @@ var ReceiptOCRService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "null/v1/receipt_ocr.proto",
+	Metadata: "nagomi/v1/receipt_ocr.proto",
 }

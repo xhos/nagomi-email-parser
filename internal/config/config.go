@@ -8,9 +8,9 @@ import (
 )
 
 type Config struct {
-	NullCoreURL string // null-core service URL
-	APIKey      string // internal API key for authenticating requests
-	Domain      string // domain for the SMTP server
+	NagomiCoreURL string // nagomi-core service URL
+	APIKey        string // internal API key for authenticating requests
+	Domain        string // domain for the SMTP server
 
 	SMTPAddress string // SMTP server address
 	GRPCAddress string // gRPC server address
@@ -36,9 +36,9 @@ func parseAddress(port string) string {
 }
 
 func Load() Config {
-	nullCoreURL := os.Getenv("NULL_CORE_URL")
-	if nullCoreURL == "" {
-		panic("NULL_CORE_URL environment variable is required")
+	nagomiCoreURL := os.Getenv("NAGOMI_CORE_URL")
+	if nagomiCoreURL == "" {
+		panic("NAGOMI_CORE_URL environment variable is required")
 	}
 
 	apiKey := os.Getenv("API_KEY")
@@ -80,7 +80,7 @@ func Load() Config {
 	tlsRequired := tlsCert != "" && tlsKey != "" && os.Getenv("UNSAFE_DISABLE_TLS_REQUIRED") == ""
 
 	return Config{
-		NullCoreURL:   nullCoreURL,
+		NagomiCoreURL: nagomiCoreURL,
 		APIKey:        apiKey,
 		Domain:        domain,
 		SMTPAddress:   parseAddress(smtpAddress),

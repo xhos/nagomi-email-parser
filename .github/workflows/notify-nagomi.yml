@@ -1,4 +1,4 @@
-name: notify null
+name: notify nagomi
 
 on:
   push:
@@ -15,8 +15,8 @@ jobs:
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'xhos',
-              repo: 'null',
+              repo: 'nagomi',
               workflow_id: 'update-input.yml',
               ref: 'main',
-              inputs: { input: 'null-email-parser' },
+              inputs: { input: 'nagomi-email-parser' },
             });

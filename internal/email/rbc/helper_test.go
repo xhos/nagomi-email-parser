@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"null-email-parser/internal/domain"
-	"null-email-parser/internal/email"
-	"null-email-parser/internal/parser"
+	"nagomi-email-parser/internal/domain"
+	"nagomi-email-parser/internal/email"
+	"nagomi-email-parser/internal/parser"
 )
 
 type expectedTransactionDetails struct {

@@ -6,8 +6,8 @@ import (
 )
 
 const (
-	RepoName = "null-email-parser"
-	RepoURL  = "https://github.com/xhos/null-email-parser"
+	RepoName = "nagomi-email-parser"
+	RepoURL  = "https://github.com/xhos/nagomi-email-parser"
 )
 
 var (

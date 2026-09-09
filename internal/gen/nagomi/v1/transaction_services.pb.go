@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        (unknown)
-// source: null/v1/transaction_services.proto
+// source: nagomi/v1/transaction_services.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	_ "buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/buf/validate"
@@ -36,7 +36,7 @@ type ListTransactionsRequest struct {
 	Cursor           *Cursor                `protobuf:"bytes,7,opt,name=cursor,proto3,oneof" json:"cursor,omitempty"`
 	AmountMin        *money.Money           `protobuf:"bytes,8,opt,name=amount_min,json=amountMin,proto3,oneof" json:"amount_min,omitempty"`
 	AmountMax        *money.Money           `protobuf:"bytes,9,opt,name=amount_max,json=amountMax,proto3,oneof" json:"amount_max,omitempty"`
-	Direction        *TransactionDirection  `protobuf:"varint,10,opt,name=direction,proto3,enum=null.v1.TransactionDirection,oneof" json:"direction,omitempty"`
+	Direction        *TransactionDirection  `protobuf:"varint,10,opt,name=direction,proto3,enum=nagomi.v1.TransactionDirection,oneof" json:"direction,omitempty"`
 	AccountIds       []int64                `protobuf:"varint,11,rep,packed,name=account_ids,json=accountIds,proto3" json:"account_ids,omitempty"`
 	Categories       []string               `protobuf:"bytes,12,rep,name=categories,proto3" json:"categories,omitempty"`
 	MerchantQuery    *string                `protobuf:"bytes,13,opt,name=merchant_query,json=merchantQuery,proto3,oneof" json:"merchant_query,omitempty"`
@@ -51,7 +51,7 @@ type ListTransactionsRequest struct {
 
 func (x *ListTransactionsRequest) Reset() {
 	*x = ListTransactionsRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[0]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -63,7 +63,7 @@ func (x *ListTransactionsRequest) String() string {
 func (*ListTransactionsRequest) ProtoMessage() {}
 
 func (x *ListTransactionsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[0]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -76,7 +76,7 @@ func (x *ListTransactionsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListTransactionsRequest.ProtoReflect.Descriptor instead.
 func (*ListTransactionsRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{0}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *ListTransactionsRequest) GetUserId() string {
@@ -216,7 +216,7 @@ type ListTransactionsResponse struct {
 
 func (x *ListTransactionsResponse) Reset() {
 	*x = ListTransactionsResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[1]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -228,7 +228,7 @@ func (x *ListTransactionsResponse) String() string {
 func (*ListTransactionsResponse) ProtoMessage() {}
 
 func (x *ListTransactionsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[1]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -241,7 +241,7 @@ func (x *ListTransactionsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListTransactionsResponse.ProtoReflect.Descriptor instead.
 func (*ListTransactionsResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{1}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *ListTransactionsResponse) GetTransactions() []*Transaction {
@@ -275,7 +275,7 @@ type GetTransactionRequest struct {
 
 func (x *GetTransactionRequest) Reset() {
 	*x = GetTransactionRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[2]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -287,7 +287,7 @@ func (x *GetTransactionRequest) String() string {
 func (*GetTransactionRequest) ProtoMessage() {}
 
 func (x *GetTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[2]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -300,7 +300,7 @@ func (x *GetTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTransactionRequest.ProtoReflect.Descriptor instead.
 func (*GetTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{2}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *GetTransactionRequest) GetUserId() string {
@@ -326,7 +326,7 @@ type GetTransactionResponse struct {
 
 func (x *GetTransactionResponse) Reset() {
 	*x = GetTransactionResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[3]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -338,7 +338,7 @@ func (x *GetTransactionResponse) String() string {
 func (*GetTransactionResponse) ProtoMessage() {}
 
 func (x *GetTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[3]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -351,7 +351,7 @@ func (x *GetTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTransactionResponse.ProtoReflect.Descriptor instead.
 func (*GetTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{3}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *GetTransactionResponse) GetTransaction() *Transaction {
@@ -366,7 +366,7 @@ type TransactionInput struct {
 	AccountId     int64                  `protobuf:"varint,1,opt,name=account_id,json=accountId,proto3" json:"account_id,omitempty"`
 	TxDate        *timestamppb.Timestamp `protobuf:"bytes,2,opt,name=tx_date,json=txDate,proto3" json:"tx_date,omitempty"`
 	TxAmount      *money.Money           `protobuf:"bytes,3,opt,name=tx_amount,json=txAmount,proto3" json:"tx_amount,omitempty"`
-	Direction     TransactionDirection   `protobuf:"varint,4,opt,name=direction,proto3,enum=null.v1.TransactionDirection" json:"direction,omitempty"`
+	Direction     TransactionDirection   `protobuf:"varint,4,opt,name=direction,proto3,enum=nagomi.v1.TransactionDirection" json:"direction,omitempty"`
 	Description   *string                `protobuf:"bytes,5,opt,name=description,proto3,oneof" json:"description,omitempty"`
 	Merchant      *string                `protobuf:"bytes,6,opt,name=merchant,proto3,oneof" json:"merchant,omitempty"`
 	UserNotes     *string                `protobuf:"bytes,7,opt,name=user_notes,json=userNotes,proto3,oneof" json:"user_notes,omitempty"`
@@ -381,7 +381,7 @@ type TransactionInput struct {
 
 func (x *TransactionInput) Reset() {
 	*x = TransactionInput{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[4]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -393,7 +393,7 @@ func (x *TransactionInput) String() string {
 func (*TransactionInput) ProtoMessage() {}
 
 func (x *TransactionInput) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[4]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -406,7 +406,7 @@ func (x *TransactionInput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransactionInput.ProtoReflect.Descriptor instead.
 func (*TransactionInput) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{4}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *TransactionInput) GetAccountId() int64 {
@@ -503,7 +503,7 @@ type CreateTransactionRequest struct {
 
 func (x *CreateTransactionRequest) Reset() {
 	*x = CreateTransactionRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[5]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -515,7 +515,7 @@ func (x *CreateTransactionRequest) String() string {
 func (*CreateTransactionRequest) ProtoMessage() {}
 
 func (x *CreateTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[5]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -528,7 +528,7 @@ func (x *CreateTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateTransactionRequest.ProtoReflect.Descriptor instead.
 func (*CreateTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{5}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *CreateTransactionRequest) GetUserId() string {
@@ -555,7 +555,7 @@ type CreateTransactionResponse struct {
 
 func (x *CreateTransactionResponse) Reset() {
 	*x = CreateTransactionResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[6]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -567,7 +567,7 @@ func (x *CreateTransactionResponse) String() string {
 func (*CreateTransactionResponse) ProtoMessage() {}
 
 func (x *CreateTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[6]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -580,7 +580,7 @@ func (x *CreateTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateTransactionResponse.ProtoReflect.Descriptor instead.
 func (*CreateTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{6}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *CreateTransactionResponse) GetTransactions() []*Transaction {
@@ -604,7 +604,7 @@ type UpdateTransactionRequest struct {
 	UpdateMask    *fieldmaskpb.FieldMask `protobuf:"bytes,3,opt,name=update_mask,json=updateMask,proto3" json:"update_mask,omitempty"`
 	TxDate        *timestamppb.Timestamp `protobuf:"bytes,4,opt,name=tx_date,json=txDate,proto3,oneof" json:"tx_date,omitempty"`
 	TxAmount      *money.Money           `protobuf:"bytes,5,opt,name=tx_amount,json=txAmount,proto3,oneof" json:"tx_amount,omitempty"`
-	Direction     *TransactionDirection  `protobuf:"varint,6,opt,name=direction,proto3,enum=null.v1.TransactionDirection,oneof" json:"direction,omitempty"`
+	Direction     *TransactionDirection  `protobuf:"varint,6,opt,name=direction,proto3,enum=nagomi.v1.TransactionDirection,oneof" json:"direction,omitempty"`
 	Description   *string                `protobuf:"bytes,7,opt,name=description,proto3,oneof" json:"description,omitempty"`
 	Merchant      *string                `protobuf:"bytes,8,opt,name=merchant,proto3,oneof" json:"merchant,omitempty"`
 	UserNotes     *string                `protobuf:"bytes,9,opt,name=user_notes,json=userNotes,proto3,oneof" json:"user_notes,omitempty"`
@@ -618,7 +618,7 @@ type UpdateTransactionRequest struct {
 
 func (x *UpdateTransactionRequest) Reset() {
 	*x = UpdateTransactionRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[7]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -630,7 +630,7 @@ func (x *UpdateTransactionRequest) String() string {
 func (*UpdateTransactionRequest) ProtoMessage() {}
 
 func (x *UpdateTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[7]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -643,7 +643,7 @@ func (x *UpdateTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateTransactionRequest.ProtoReflect.Descriptor instead.
 func (*UpdateTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{7}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *UpdateTransactionRequest) GetUserId() string {
@@ -745,7 +745,7 @@ type UpdateTransactionResponse struct {
 
 func (x *UpdateTransactionResponse) Reset() {
 	*x = UpdateTransactionResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[8]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -757,7 +757,7 @@ func (x *UpdateTransactionResponse) String() string {
 func (*UpdateTransactionResponse) ProtoMessage() {}
 
 func (x *UpdateTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[8]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -770,7 +770,7 @@ func (x *UpdateTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateTransactionResponse.ProtoReflect.Descriptor instead.
 func (*UpdateTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{8}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{8}
 }
 
 type DeleteTransactionRequest struct {
@@ -783,7 +783,7 @@ type DeleteTransactionRequest struct {
 
 func (x *DeleteTransactionRequest) Reset() {
 	*x = DeleteTransactionRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[9]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -795,7 +795,7 @@ func (x *DeleteTransactionRequest) String() string {
 func (*DeleteTransactionRequest) ProtoMessage() {}
 
 func (x *DeleteTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[9]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -808,7 +808,7 @@ func (x *DeleteTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteTransactionRequest.ProtoReflect.Descriptor instead.
 func (*DeleteTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{9}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *DeleteTransactionRequest) GetUserId() string {
@@ -834,7 +834,7 @@ type DeleteTransactionResponse struct {
 
 func (x *DeleteTransactionResponse) Reset() {
 	*x = DeleteTransactionResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[10]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -846,7 +846,7 @@ func (x *DeleteTransactionResponse) String() string {
 func (*DeleteTransactionResponse) ProtoMessage() {}
 
 func (x *DeleteTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[10]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -859,7 +859,7 @@ func (x *DeleteTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteTransactionResponse.ProtoReflect.Descriptor instead.
 func (*DeleteTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{10}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *DeleteTransactionResponse) GetAffectedRows() int64 {
@@ -880,7 +880,7 @@ type CategorizeTransactionsRequest struct {
 
 func (x *CategorizeTransactionsRequest) Reset() {
 	*x = CategorizeTransactionsRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[11]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -892,7 +892,7 @@ func (x *CategorizeTransactionsRequest) String() string {
 func (*CategorizeTransactionsRequest) ProtoMessage() {}
 
 func (x *CategorizeTransactionsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[11]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -905,7 +905,7 @@ func (x *CategorizeTransactionsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CategorizeTransactionsRequest.ProtoReflect.Descriptor instead.
 func (*CategorizeTransactionsRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{11}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *CategorizeTransactionsRequest) GetUserId() string {
@@ -938,7 +938,7 @@ type CategorizeTransactionsResponse struct {
 
 func (x *CategorizeTransactionsResponse) Reset() {
 	*x = CategorizeTransactionsResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[12]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -950,7 +950,7 @@ func (x *CategorizeTransactionsResponse) String() string {
 func (*CategorizeTransactionsResponse) ProtoMessage() {}
 
 func (x *CategorizeTransactionsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[12]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -963,7 +963,7 @@ func (x *CategorizeTransactionsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CategorizeTransactionsResponse.ProtoReflect.Descriptor instead.
 func (*CategorizeTransactionsResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{12}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *CategorizeTransactionsResponse) GetAffectedRows() int64 {
@@ -983,7 +983,7 @@ type SplitEntry struct {
 
 func (x *SplitEntry) Reset() {
 	*x = SplitEntry{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[13]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -995,7 +995,7 @@ func (x *SplitEntry) String() string {
 func (*SplitEntry) ProtoMessage() {}
 
 func (x *SplitEntry) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[13]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1008,7 +1008,7 @@ func (x *SplitEntry) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SplitEntry.ProtoReflect.Descriptor instead.
 func (*SplitEntry) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{13}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *SplitEntry) GetFriendAccountId() int64 {
@@ -1036,7 +1036,7 @@ type SplitTransactionRequest struct {
 
 func (x *SplitTransactionRequest) Reset() {
 	*x = SplitTransactionRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[14]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1048,7 +1048,7 @@ func (x *SplitTransactionRequest) String() string {
 func (*SplitTransactionRequest) ProtoMessage() {}
 
 func (x *SplitTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[14]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1061,7 +1061,7 @@ func (x *SplitTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SplitTransactionRequest.ProtoReflect.Descriptor instead.
 func (*SplitTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{14}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *SplitTransactionRequest) GetUserId() string {
@@ -1094,7 +1094,7 @@ type SplitTransactionResponse struct {
 
 func (x *SplitTransactionResponse) Reset() {
 	*x = SplitTransactionResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[15]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1106,7 +1106,7 @@ func (x *SplitTransactionResponse) String() string {
 func (*SplitTransactionResponse) ProtoMessage() {}
 
 func (x *SplitTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[15]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1119,7 +1119,7 @@ func (x *SplitTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SplitTransactionResponse.ProtoReflect.Descriptor instead.
 func (*SplitTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{15}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *SplitTransactionResponse) GetCreatedSplits() []*Transaction {
@@ -1140,7 +1140,7 @@ type ForgiveTransactionRequest struct {
 
 func (x *ForgiveTransactionRequest) Reset() {
 	*x = ForgiveTransactionRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[16]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1152,7 +1152,7 @@ func (x *ForgiveTransactionRequest) String() string {
 func (*ForgiveTransactionRequest) ProtoMessage() {}
 
 func (x *ForgiveTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[16]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1165,7 +1165,7 @@ func (x *ForgiveTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ForgiveTransactionRequest.ProtoReflect.Descriptor instead.
 func (*ForgiveTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{16}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *ForgiveTransactionRequest) GetUserId() string {
@@ -1197,7 +1197,7 @@ type ForgiveTransactionResponse struct {
 
 func (x *ForgiveTransactionResponse) Reset() {
 	*x = ForgiveTransactionResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[17]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1209,7 +1209,7 @@ func (x *ForgiveTransactionResponse) String() string {
 func (*ForgiveTransactionResponse) ProtoMessage() {}
 
 func (x *ForgiveTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[17]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1222,7 +1222,7 @@ func (x *ForgiveTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ForgiveTransactionResponse.ProtoReflect.Descriptor instead.
 func (*ForgiveTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{17}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{17}
 }
 
 type GetFriendBalancesRequest struct {
@@ -1234,7 +1234,7 @@ type GetFriendBalancesRequest struct {
 
 func (x *GetFriendBalancesRequest) Reset() {
 	*x = GetFriendBalancesRequest{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[18]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1246,7 +1246,7 @@ func (x *GetFriendBalancesRequest) String() string {
 func (*GetFriendBalancesRequest) ProtoMessage() {}
 
 func (x *GetFriendBalancesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[18]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1259,7 +1259,7 @@ func (x *GetFriendBalancesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetFriendBalancesRequest.ProtoReflect.Descriptor instead.
 func (*GetFriendBalancesRequest) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{18}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *GetFriendBalancesRequest) GetUserId() string {
@@ -1280,7 +1280,7 @@ type FriendBalance struct {
 
 func (x *FriendBalance) Reset() {
 	*x = FriendBalance{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[19]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1292,7 +1292,7 @@ func (x *FriendBalance) String() string {
 func (*FriendBalance) ProtoMessage() {}
 
 func (x *FriendBalance) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[19]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1305,7 +1305,7 @@ func (x *FriendBalance) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FriendBalance.ProtoReflect.Descriptor instead.
 func (*FriendBalance) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{19}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *FriendBalance) GetAccountId() int64 {
@@ -1338,7 +1338,7 @@ type GetFriendBalancesResponse struct {
 
 func (x *GetFriendBalancesResponse) Reset() {
 	*x = GetFriendBalancesResponse{}
-	mi := &file_null_v1_transaction_services_proto_msgTypes[20]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[20]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1350,7 +1350,7 @@ func (x *GetFriendBalancesResponse) String() string {
 func (*GetFriendBalancesResponse) ProtoMessage() {}
 
 func (x *GetFriendBalancesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_transaction_services_proto_msgTypes[20]
+	mi := &file_nagomi_v1_transaction_services_proto_msgTypes[20]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1363,7 +1363,7 @@ func (x *GetFriendBalancesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetFriendBalancesResponse.ProtoReflect.Descriptor instead.
 func (*GetFriendBalancesResponse) Descriptor() ([]byte, []int) {
-	return file_null_v1_transaction_services_proto_rawDescGZIP(), []int{20}
+	return file_nagomi_v1_transaction_services_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *GetFriendBalancesResponse) GetBalances() []*FriendBalance {
@@ -1373,11 +1373,11 @@ func (x *GetFriendBalancesResponse) GetBalances() []*FriendBalance {
 	return nil
 }
 
-var File_null_v1_transaction_services_proto protoreflect.FileDescriptor
+var File_nagomi_v1_transaction_services_proto protoreflect.FileDescriptor
 
-const file_null_v1_transaction_services_proto_rawDesc = "" +
+const file_nagomi_v1_transaction_services_proto_rawDesc = "" +
 	"\n" +
-	"\"null/v1/transaction_services.proto\x12\anull.v1\x1a\x14null/v1/common.proto\x1a\x13null/v1/enums.proto\x1a\x17google/type/money.proto\x1a\x19null/v1/transaction.proto\x1a\x1bbuf/validate/validate.proto\x1a google/protobuf/field_mask.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\x88\t\n" +
+	"$nagomi/v1/transaction_services.proto\x12\tnagomi.v1\x1a\x16nagomi/v1/common.proto\x1a\x15nagomi/v1/enums.proto\x1a\x17google/type/money.proto\x1a\x1bnagomi/v1/transaction.proto\x1a\x1bbuf/validate/validate.proto\x1a google/protobuf/field_mask.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\x90\t\n" +
 	"\x17ListTransactionsRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12+\n" +
 	"\n" +
@@ -1387,14 +1387,14 @@ const file_null_v1_transaction_services_proto_rawDesc = "" +
 	"\x06offset\x18\x04 \x01(\x05B\a\xbaH\x04\x1a\x02(\x00H\x02R\x06offset\x88\x01\x01\x12>\n" +
 	"\n" +
 	"start_date\x18\x05 \x01(\v2\x1a.google.protobuf.TimestampH\x03R\tstartDate\x88\x01\x01\x12:\n" +
-	"\bend_date\x18\x06 \x01(\v2\x1a.google.protobuf.TimestampH\x04R\aendDate\x88\x01\x01\x12,\n" +
-	"\x06cursor\x18\a \x01(\v2\x0f.null.v1.CursorH\x05R\x06cursor\x88\x01\x01\x126\n" +
+	"\bend_date\x18\x06 \x01(\v2\x1a.google.protobuf.TimestampH\x04R\aendDate\x88\x01\x01\x12.\n" +
+	"\x06cursor\x18\a \x01(\v2\x11.nagomi.v1.CursorH\x05R\x06cursor\x88\x01\x01\x126\n" +
 	"\n" +
 	"amount_min\x18\b \x01(\v2\x12.google.type.MoneyH\x06R\tamountMin\x88\x01\x01\x126\n" +
 	"\n" +
-	"amount_max\x18\t \x01(\v2\x12.google.type.MoneyH\aR\tamountMax\x88\x01\x01\x12J\n" +
+	"amount_max\x18\t \x01(\v2\x12.google.type.MoneyH\aR\tamountMax\x88\x01\x01\x12L\n" +
 	"\tdirection\x18\n" +
-	" \x01(\x0e2\x1d.null.v1.TransactionDirectionB\b\xbaH\x05\x82\x01\x02\x10\x01H\bR\tdirection\x88\x01\x01\x12\x1f\n" +
+	" \x01(\x0e2\x1f.nagomi.v1.TransactionDirectionB\b\xbaH\x05\x82\x01\x02\x10\x01H\bR\tdirection\x88\x01\x01\x12\x1f\n" +
 	"\vaccount_ids\x18\v \x03(\x03R\n" +
 	"accountIds\x12\x1e\n" +
 	"\n" +
@@ -1403,9 +1403,9 @@ const file_null_v1_transaction_services_proto_rawDesc = "" +
 	"\x0emerchant_query\x18\r \x01(\tB\b\xbaH\x05r\x03\x18\xc8\x01H\tR\rmerchantQuery\x88\x01\x01\x12:\n" +
 	"\x11description_query\x18\x0e \x01(\tB\b\xbaH\x05r\x03\x18\xf4\x03H\n" +
 	"R\x10descriptionQuery\x88\x01\x01\x12\x1f\n" +
-	"\bcurrency\x18\x0f \x01(\tH\vR\bcurrency\x88\x01\x01\x12B\n" +
-	"\x11time_of_day_start\x18\x10 \x01(\v2\x12.null.v1.TimeOfDayH\fR\x0etimeOfDayStart\x88\x01\x01\x12>\n" +
-	"\x0ftime_of_day_end\x18\x11 \x01(\v2\x12.null.v1.TimeOfDayH\rR\ftimeOfDayEnd\x88\x01\x01\x12)\n" +
+	"\bcurrency\x18\x0f \x01(\tH\vR\bcurrency\x88\x01\x01\x12D\n" +
+	"\x11time_of_day_start\x18\x10 \x01(\v2\x14.nagomi.v1.TimeOfDayH\fR\x0etimeOfDayStart\x88\x01\x01\x12@\n" +
+	"\x0ftime_of_day_end\x18\x11 \x01(\v2\x14.nagomi.v1.TimeOfDayH\rR\ftimeOfDayEnd\x88\x01\x01\x12)\n" +
 	"\runcategorized\x18\x12 \x01(\bH\x0eR\runcategorized\x88\x01\x01B\r\n" +
 	"\v_account_idB\b\n" +
 	"\x06_limitB\t\n" +
@@ -1422,25 +1422,25 @@ const file_null_v1_transaction_services_proto_rawDesc = "" +
 	"\t_currencyB\x14\n" +
 	"\x12_time_of_day_startB\x12\n" +
 	"\x10_time_of_day_endB\x10\n" +
-	"\x0e_uncategorized\"\xbc\x01\n" +
-	"\x18ListTransactionsResponse\x128\n" +
-	"\ftransactions\x18\x01 \x03(\v2\x14.null.v1.TransactionR\ftransactions\x12\x1f\n" +
+	"\x0e_uncategorized\"\xc0\x01\n" +
+	"\x18ListTransactionsResponse\x12:\n" +
+	"\ftransactions\x18\x01 \x03(\v2\x16.nagomi.v1.TransactionR\ftransactions\x12\x1f\n" +
 	"\vtotal_count\x18\x02 \x01(\x03R\n" +
-	"totalCount\x125\n" +
-	"\vnext_cursor\x18\x03 \x01(\v2\x0f.null.v1.CursorH\x00R\n" +
+	"totalCount\x127\n" +
+	"\vnext_cursor\x18\x03 \x01(\v2\x11.nagomi.v1.CursorH\x00R\n" +
 	"nextCursor\x88\x01\x01B\x0e\n" +
 	"\f_next_cursor\"S\n" +
 	"\x15GetTransactionRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12\x17\n" +
-	"\x02id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x02id\"P\n" +
-	"\x16GetTransactionResponse\x126\n" +
-	"\vtransaction\x18\x01 \x01(\v2\x14.null.v1.TransactionR\vtransaction\"\xab\x05\n" +
+	"\x02id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x02id\"R\n" +
+	"\x16GetTransactionResponse\x128\n" +
+	"\vtransaction\x18\x01 \x01(\v2\x16.nagomi.v1.TransactionR\vtransaction\"\xad\x05\n" +
 	"\x10TransactionInput\x12&\n" +
 	"\n" +
 	"account_id\x18\x01 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\taccountId\x123\n" +
 	"\atx_date\x18\x02 \x01(\v2\x1a.google.protobuf.TimestampR\x06txDate\x12/\n" +
-	"\ttx_amount\x18\x03 \x01(\v2\x12.google.type.MoneyR\btxAmount\x12;\n" +
-	"\tdirection\x18\x04 \x01(\x0e2\x1d.null.v1.TransactionDirectionR\tdirection\x12%\n" +
+	"\ttx_amount\x18\x03 \x01(\v2\x12.google.type.MoneyR\btxAmount\x12=\n" +
+	"\tdirection\x18\x04 \x01(\x0e2\x1f.nagomi.v1.TransactionDirectionR\tdirection\x12%\n" +
 	"\vdescription\x18\x05 \x01(\tH\x00R\vdescription\x88\x01\x01\x12\x1f\n" +
 	"\bmerchant\x18\x06 \x01(\tH\x01R\bmerchant\x88\x01\x01\x12\"\n" +
 	"\n" +
@@ -1460,21 +1460,21 @@ const file_null_v1_transaction_services_proto_rawDesc = "" +
 	"\x0f_foreign_amountB\x10\n" +
 	"\x0e_exchange_rateB\x10\n" +
 	"\x0e_split_from_idB\x0e\n" +
-	"\f_external_id\"\x86\x01\n" +
+	"\f_external_id\"\x88\x01\n" +
 	"\x18CreateTransactionRequest\x12!\n" +
-	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12G\n" +
-	"\ftransactions\x18\x02 \x03(\v2\x19.null.v1.TransactionInputB\b\xbaH\x05\x92\x01\x02\b\x01R\ftransactions\"z\n" +
-	"\x19CreateTransactionResponse\x128\n" +
-	"\ftransactions\x18\x01 \x03(\v2\x14.null.v1.TransactionR\ftransactions\x12#\n" +
-	"\rcreated_count\x18\x02 \x01(\x05R\fcreatedCount\"\x86\x06\n" +
+	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12I\n" +
+	"\ftransactions\x18\x02 \x03(\v2\x1b.nagomi.v1.TransactionInputB\b\xbaH\x05\x92\x01\x02\b\x01R\ftransactions\"|\n" +
+	"\x19CreateTransactionResponse\x12:\n" +
+	"\ftransactions\x18\x01 \x03(\v2\x16.nagomi.v1.TransactionR\ftransactions\x12#\n" +
+	"\rcreated_count\x18\x02 \x01(\x05R\fcreatedCount\"\x88\x06\n" +
 	"\x18UpdateTransactionRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12\x17\n" +
 	"\x02id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x02id\x12;\n" +
 	"\vupdate_mask\x18\x03 \x01(\v2\x1a.google.protobuf.FieldMaskR\n" +
 	"updateMask\x128\n" +
 	"\atx_date\x18\x04 \x01(\v2\x1a.google.protobuf.TimestampH\x00R\x06txDate\x88\x01\x01\x124\n" +
-	"\ttx_amount\x18\x05 \x01(\v2\x12.google.type.MoneyH\x01R\btxAmount\x88\x01\x01\x12@\n" +
-	"\tdirection\x18\x06 \x01(\x0e2\x1d.null.v1.TransactionDirectionH\x02R\tdirection\x88\x01\x01\x12%\n" +
+	"\ttx_amount\x18\x05 \x01(\v2\x12.google.type.MoneyH\x01R\btxAmount\x88\x01\x01\x12B\n" +
+	"\tdirection\x18\x06 \x01(\x0e2\x1f.nagomi.v1.TransactionDirectionH\x02R\tdirection\x88\x01\x01\x12%\n" +
 	"\vdescription\x18\a \x01(\tH\x03R\vdescription\x88\x01\x01\x12\x1f\n" +
 	"\bmerchant\x18\b \x01(\tH\x04R\bmerchant\x88\x01\x01\x12\"\n" +
 	"\n" +
@@ -1515,13 +1515,13 @@ const file_null_v1_transaction_services_proto_rawDesc = "" +
 	"\n" +
 	"SplitEntry\x123\n" +
 	"\x11friend_account_id\x18\x01 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x0ffriendAccountId\x12*\n" +
-	"\x06amount\x18\x02 \x01(\v2\x12.google.type.MoneyR\x06amount\"\xb0\x01\n" +
+	"\x06amount\x18\x02 \x01(\v2\x12.google.type.MoneyR\x06amount\"\xb2\x01\n" +
 	"\x17SplitTransactionRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12;\n" +
-	"\x15source_transaction_id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x13sourceTransactionId\x125\n" +
-	"\x06splits\x18\x03 \x03(\v2\x13.null.v1.SplitEntryB\b\xbaH\x05\x92\x01\x02\b\x01R\x06splits\"W\n" +
-	"\x18SplitTransactionResponse\x12;\n" +
-	"\x0ecreated_splits\x18\x01 \x03(\v2\x14.null.v1.TransactionR\rcreatedSplits\"\x8a\x01\n" +
+	"\x15source_transaction_id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\x13sourceTransactionId\x127\n" +
+	"\x06splits\x18\x03 \x03(\v2\x15.nagomi.v1.SplitEntryB\b\xbaH\x05\x92\x01\x02\b\x01R\x06splits\"Y\n" +
+	"\x18SplitTransactionResponse\x12=\n" +
+	"\x0ecreated_splits\x18\x01 \x03(\v2\x16.nagomi.v1.TransactionR\rcreatedSplits\"\x8a\x01\n" +
 	"\x19ForgiveTransactionRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12.\n" +
 	"\x0etransaction_id\x18\x02 \x01(\x03B\a\xbaH\x04\"\x02 \x00R\rtransactionId\x12\x1a\n" +
@@ -1534,110 +1534,111 @@ const file_null_v1_transaction_services_proto_rawDesc = "" +
 	"account_id\x18\x01 \x01(\x03R\taccountId\x12\x1f\n" +
 	"\vfriend_name\x18\x02 \x01(\tR\n" +
 	"friendName\x12,\n" +
-	"\abalance\x18\x03 \x01(\v2\x12.google.type.MoneyR\abalance\"O\n" +
-	"\x19GetFriendBalancesResponse\x122\n" +
-	"\bbalances\x18\x01 \x03(\v2\x16.null.v1.FriendBalanceR\bbalances2\xd3\x06\n" +
-	"\x12TransactionService\x12W\n" +
-	"\x10ListTransactions\x12 .null.v1.ListTransactionsRequest\x1a!.null.v1.ListTransactionsResponse\x12Q\n" +
-	"\x0eGetTransaction\x12\x1e.null.v1.GetTransactionRequest\x1a\x1f.null.v1.GetTransactionResponse\x12Z\n" +
-	"\x11CreateTransaction\x12!.null.v1.CreateTransactionRequest\x1a\".null.v1.CreateTransactionResponse\x12Z\n" +
-	"\x11UpdateTransaction\x12!.null.v1.UpdateTransactionRequest\x1a\".null.v1.UpdateTransactionResponse\x12Z\n" +
-	"\x11DeleteTransaction\x12!.null.v1.DeleteTransactionRequest\x1a\".null.v1.DeleteTransactionResponse\x12i\n" +
-	"\x16CategorizeTransactions\x12&.null.v1.CategorizeTransactionsRequest\x1a'.null.v1.CategorizeTransactionsResponse\x12W\n" +
-	"\x10SplitTransaction\x12 .null.v1.SplitTransactionRequest\x1a!.null.v1.SplitTransactionResponse\x12]\n" +
-	"\x12ForgiveTransaction\x12\".null.v1.ForgiveTransactionRequest\x1a#.null.v1.ForgiveTransactionResponse\x12Z\n" +
-	"\x11GetFriendBalances\x12!.null.v1.GetFriendBalancesRequest\x1a\".null.v1.GetFriendBalancesResponseB\x95\x01\n" +
-	"\vcom.null.v1B\x18TransactionServicesProtoP\x01Z-null-email-parser/internal/gen/null/v1;nullv1\xa2\x02\x03NXX\xaa\x02\aNull.V1\xca\x02\bNull_\\V1\xe2\x02\x14Null_\\V1\\GPBMetadata\xea\x02\bNull::V1b\x06proto3"
+	"\abalance\x18\x03 \x01(\v2\x12.google.type.MoneyR\abalance\"Q\n" +
+	"\x19GetFriendBalancesResponse\x124\n" +
+	"\bbalances\x18\x01 \x03(\v2\x18.nagomi.v1.FriendBalanceR\bbalances2\xf7\x06\n" +
+	"\x12TransactionService\x12[\n" +
+	"\x10ListTransactions\x12\".nagomi.v1.ListTransactionsRequest\x1a#.nagomi.v1.ListTransactionsResponse\x12U\n" +
+	"\x0eGetTransaction\x12 .nagomi.v1.GetTransactionRequest\x1a!.nagomi.v1.GetTransactionResponse\x12^\n" +
+	"\x11CreateTransaction\x12#.nagomi.v1.CreateTransactionRequest\x1a$.nagomi.v1.CreateTransactionResponse\x12^\n" +
+	"\x11UpdateTransaction\x12#.nagomi.v1.UpdateTransactionRequest\x1a$.nagomi.v1.UpdateTransactionResponse\x12^\n" +
+	"\x11DeleteTransaction\x12#.nagomi.v1.DeleteTransactionRequest\x1a$.nagomi.v1.DeleteTransactionResponse\x12m\n" +
+	"\x16CategorizeTransactions\x12(.nagomi.v1.CategorizeTransactionsRequest\x1a).nagomi.v1.CategorizeTransactionsResponse\x12[\n" +
+	"\x10SplitTransaction\x12\".nagomi.v1.SplitTransactionRequest\x1a#.nagomi.v1.SplitTransactionResponse\x12a\n" +
+	"\x12ForgiveTransaction\x12$.nagomi.v1.ForgiveTransactionRequest\x1a%.nagomi.v1.ForgiveTransactionResponse\x12^\n" +
+	"\x11GetFriendBalances\x12#.nagomi.v1.GetFriendBalancesRequest\x1a$.nagomi.v1.GetFriendBalancesResponseB\xa3\x01\n" +
+	"\rcom.nagomi.v1B\x18TransactionServicesProtoP\x01Z3nagomi-email-parser/internal/gen/nagomi/v1;nagomiv1\xa2\x02\x03NXX\xaa\x02\tNagomi.V1\xca\x02\tNagomi\\V1\xe2\x02\x15Nagomi\\V1\\GPBMetadata\xea\x02\n" +
+	"Nagomi::V1b\x06proto3"
 
 var (
-	file_null_v1_transaction_services_proto_rawDescOnce sync.Once
-	file_null_v1_transaction_services_proto_rawDescData []byte
+	file_nagomi_v1_transaction_services_proto_rawDescOnce sync.Once
+	file_nagomi_v1_transaction_services_proto_rawDescData []byte
 )
 
-func file_null_v1_transaction_services_proto_rawDescGZIP() []byte {
-	file_null_v1_transaction_services_proto_rawDescOnce.Do(func() {
-		file_null_v1_transaction_services_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_null_v1_transaction_services_proto_rawDesc), len(file_null_v1_transaction_services_proto_rawDesc)))
+func file_nagomi_v1_transaction_services_proto_rawDescGZIP() []byte {
+	file_nagomi_v1_transaction_services_proto_rawDescOnce.Do(func() {
+		file_nagomi_v1_transaction_services_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_nagomi_v1_transaction_services_proto_rawDesc), len(file_nagomi_v1_transaction_services_proto_rawDesc)))
 	})
-	return file_null_v1_transaction_services_proto_rawDescData
+	return file_nagomi_v1_transaction_services_proto_rawDescData
 }
 
-var file_null_v1_transaction_services_proto_msgTypes = make([]protoimpl.MessageInfo, 21)
-var file_null_v1_transaction_services_proto_goTypes = []any{
-	(*ListTransactionsRequest)(nil),        // 0: null.v1.ListTransactionsRequest
-	(*ListTransactionsResponse)(nil),       // 1: null.v1.ListTransactionsResponse
-	(*GetTransactionRequest)(nil),          // 2: null.v1.GetTransactionRequest
-	(*GetTransactionResponse)(nil),         // 3: null.v1.GetTransactionResponse
-	(*TransactionInput)(nil),               // 4: null.v1.TransactionInput
-	(*CreateTransactionRequest)(nil),       // 5: null.v1.CreateTransactionRequest
-	(*CreateTransactionResponse)(nil),      // 6: null.v1.CreateTransactionResponse
-	(*UpdateTransactionRequest)(nil),       // 7: null.v1.UpdateTransactionRequest
-	(*UpdateTransactionResponse)(nil),      // 8: null.v1.UpdateTransactionResponse
-	(*DeleteTransactionRequest)(nil),       // 9: null.v1.DeleteTransactionRequest
-	(*DeleteTransactionResponse)(nil),      // 10: null.v1.DeleteTransactionResponse
-	(*CategorizeTransactionsRequest)(nil),  // 11: null.v1.CategorizeTransactionsRequest
-	(*CategorizeTransactionsResponse)(nil), // 12: null.v1.CategorizeTransactionsResponse
-	(*SplitEntry)(nil),                     // 13: null.v1.SplitEntry
-	(*SplitTransactionRequest)(nil),        // 14: null.v1.SplitTransactionRequest
-	(*SplitTransactionResponse)(nil),       // 15: null.v1.SplitTransactionResponse
-	(*ForgiveTransactionRequest)(nil),      // 16: null.v1.ForgiveTransactionRequest
-	(*ForgiveTransactionResponse)(nil),     // 17: null.v1.ForgiveTransactionResponse
-	(*GetFriendBalancesRequest)(nil),       // 18: null.v1.GetFriendBalancesRequest
-	(*FriendBalance)(nil),                  // 19: null.v1.FriendBalance
-	(*GetFriendBalancesResponse)(nil),      // 20: null.v1.GetFriendBalancesResponse
+var file_nagomi_v1_transaction_services_proto_msgTypes = make([]protoimpl.MessageInfo, 21)
+var file_nagomi_v1_transaction_services_proto_goTypes = []any{
+	(*ListTransactionsRequest)(nil),        // 0: nagomi.v1.ListTransactionsRequest
+	(*ListTransactionsResponse)(nil),       // 1: nagomi.v1.ListTransactionsResponse
+	(*GetTransactionRequest)(nil),          // 2: nagomi.v1.GetTransactionRequest
+	(*GetTransactionResponse)(nil),         // 3: nagomi.v1.GetTransactionResponse
+	(*TransactionInput)(nil),               // 4: nagomi.v1.TransactionInput
+	(*CreateTransactionRequest)(nil),       // 5: nagomi.v1.CreateTransactionRequest
+	(*CreateTransactionResponse)(nil),      // 6: nagomi.v1.CreateTransactionResponse
+	(*UpdateTransactionRequest)(nil),       // 7: nagomi.v1.UpdateTransactionRequest
+	(*UpdateTransactionResponse)(nil),      // 8: nagomi.v1.UpdateTransactionResponse
+	(*DeleteTransactionRequest)(nil),       // 9: nagomi.v1.DeleteTransactionRequest
+	(*DeleteTransactionResponse)(nil),      // 10: nagomi.v1.DeleteTransactionResponse
+	(*CategorizeTransactionsRequest)(nil),  // 11: nagomi.v1.CategorizeTransactionsRequest
+	(*CategorizeTransactionsResponse)(nil), // 12: nagomi.v1.CategorizeTransactionsResponse
+	(*SplitEntry)(nil),                     // 13: nagomi.v1.SplitEntry
+	(*SplitTransactionRequest)(nil),        // 14: nagomi.v1.SplitTransactionRequest
+	(*SplitTransactionResponse)(nil),       // 15: nagomi.v1.SplitTransactionResponse
+	(*ForgiveTransactionRequest)(nil),      // 16: nagomi.v1.ForgiveTransactionRequest
+	(*ForgiveTransactionResponse)(nil),     // 17: nagomi.v1.ForgiveTransactionResponse
+	(*GetFriendBalancesRequest)(nil),       // 18: nagomi.v1.GetFriendBalancesRequest
+	(*FriendBalance)(nil),                  // 19: nagomi.v1.FriendBalance
+	(*GetFriendBalancesResponse)(nil),      // 20: nagomi.v1.GetFriendBalancesResponse
 	(*timestamppb.Timestamp)(nil),          // 21: google.protobuf.Timestamp
-	(*Cursor)(nil),                         // 22: null.v1.Cursor
+	(*Cursor)(nil),                         // 22: nagomi.v1.Cursor
 	(*money.Money)(nil),                    // 23: google.type.Money
-	(TransactionDirection)(0),              // 24: null.v1.TransactionDirection
-	(*TimeOfDay)(nil),                      // 25: null.v1.TimeOfDay
-	(*Transaction)(nil),                    // 26: null.v1.Transaction
+	(TransactionDirection)(0),              // 24: nagomi.v1.TransactionDirection
+	(*TimeOfDay)(nil),                      // 25: nagomi.v1.TimeOfDay
+	(*Transaction)(nil),                    // 26: nagomi.v1.Transaction
 	(*fieldmaskpb.FieldMask)(nil),          // 27: google.protobuf.FieldMask
 }
-var file_null_v1_transaction_services_proto_depIdxs = []int32{
-	21, // 0: null.v1.ListTransactionsRequest.start_date:type_name -> google.protobuf.Timestamp
-	21, // 1: null.v1.ListTransactionsRequest.end_date:type_name -> google.protobuf.Timestamp
-	22, // 2: null.v1.ListTransactionsRequest.cursor:type_name -> null.v1.Cursor
-	23, // 3: null.v1.ListTransactionsRequest.amount_min:type_name -> google.type.Money
-	23, // 4: null.v1.ListTransactionsRequest.amount_max:type_name -> google.type.Money
-	24, // 5: null.v1.ListTransactionsRequest.direction:type_name -> null.v1.TransactionDirection
-	25, // 6: null.v1.ListTransactionsRequest.time_of_day_start:type_name -> null.v1.TimeOfDay
-	25, // 7: null.v1.ListTransactionsRequest.time_of_day_end:type_name -> null.v1.TimeOfDay
-	26, // 8: null.v1.ListTransactionsResponse.transactions:type_name -> null.v1.Transaction
-	22, // 9: null.v1.ListTransactionsResponse.next_cursor:type_name -> null.v1.Cursor
-	26, // 10: null.v1.GetTransactionResponse.transaction:type_name -> null.v1.Transaction
-	21, // 11: null.v1.TransactionInput.tx_date:type_name -> google.protobuf.Timestamp
-	23, // 12: null.v1.TransactionInput.tx_amount:type_name -> google.type.Money
-	24, // 13: null.v1.TransactionInput.direction:type_name -> null.v1.TransactionDirection
-	23, // 14: null.v1.TransactionInput.foreign_amount:type_name -> google.type.Money
-	4,  // 15: null.v1.CreateTransactionRequest.transactions:type_name -> null.v1.TransactionInput
-	26, // 16: null.v1.CreateTransactionResponse.transactions:type_name -> null.v1.Transaction
-	27, // 17: null.v1.UpdateTransactionRequest.update_mask:type_name -> google.protobuf.FieldMask
-	21, // 18: null.v1.UpdateTransactionRequest.tx_date:type_name -> google.protobuf.Timestamp
-	23, // 19: null.v1.UpdateTransactionRequest.tx_amount:type_name -> google.type.Money
-	24, // 20: null.v1.UpdateTransactionRequest.direction:type_name -> null.v1.TransactionDirection
-	23, // 21: null.v1.UpdateTransactionRequest.foreign_amount:type_name -> google.type.Money
-	23, // 22: null.v1.SplitEntry.amount:type_name -> google.type.Money
-	13, // 23: null.v1.SplitTransactionRequest.splits:type_name -> null.v1.SplitEntry
-	26, // 24: null.v1.SplitTransactionResponse.created_splits:type_name -> null.v1.Transaction
-	23, // 25: null.v1.FriendBalance.balance:type_name -> google.type.Money
-	19, // 26: null.v1.GetFriendBalancesResponse.balances:type_name -> null.v1.FriendBalance
-	0,  // 27: null.v1.TransactionService.ListTransactions:input_type -> null.v1.ListTransactionsRequest
-	2,  // 28: null.v1.TransactionService.GetTransaction:input_type -> null.v1.GetTransactionRequest
-	5,  // 29: null.v1.TransactionService.CreateTransaction:input_type -> null.v1.CreateTransactionRequest
-	7,  // 30: null.v1.TransactionService.UpdateTransaction:input_type -> null.v1.UpdateTransactionRequest
-	9,  // 31: null.v1.TransactionService.DeleteTransaction:input_type -> null.v1.DeleteTransactionRequest
-	11, // 32: null.v1.TransactionService.CategorizeTransactions:input_type -> null.v1.CategorizeTransactionsRequest
-	14, // 33: null.v1.TransactionService.SplitTransaction:input_type -> null.v1.SplitTransactionRequest
-	16, // 34: null.v1.TransactionService.ForgiveTransaction:input_type -> null.v1.ForgiveTransactionRequest
-	18, // 35: null.v1.TransactionService.GetFriendBalances:input_type -> null.v1.GetFriendBalancesRequest
-	1,  // 36: null.v1.TransactionService.ListTransactions:output_type -> null.v1.ListTransactionsResponse
-	3,  // 37: null.v1.TransactionService.GetTransaction:output_type -> null.v1.GetTransactionResponse
-	6,  // 38: null.v1.TransactionService.CreateTransaction:output_type -> null.v1.CreateTransactionResponse
-	8,  // 39: null.v1.TransactionService.UpdateTransaction:output_type -> null.v1.UpdateTransactionResponse
-	10, // 40: null.v1.TransactionService.DeleteTransaction:output_type -> null.v1.DeleteTransactionResponse
-	12, // 41: null.v1.TransactionService.CategorizeTransactions:output_type -> null.v1.CategorizeTransactionsResponse
-	15, // 42: null.v1.TransactionService.SplitTransaction:output_type -> null.v1.SplitTransactionResponse
-	17, // 43: null.v1.TransactionService.ForgiveTransaction:output_type -> null.v1.ForgiveTransactionResponse
-	20, // 44: null.v1.TransactionService.GetFriendBalances:output_type -> null.v1.GetFriendBalancesResponse
+var file_nagomi_v1_transaction_services_proto_depIdxs = []int32{
+	21, // 0: nagomi.v1.ListTransactionsRequest.start_date:type_name -> google.protobuf.Timestamp
+	21, // 1: nagomi.v1.ListTransactionsRequest.end_date:type_name -> google.protobuf.Timestamp
+	22, // 2: nagomi.v1.ListTransactionsRequest.cursor:type_name -> nagomi.v1.Cursor
+	23, // 3: nagomi.v1.ListTransactionsRequest.amount_min:type_name -> google.type.Money
+	23, // 4: nagomi.v1.ListTransactionsRequest.amount_max:type_name -> google.type.Money
+	24, // 5: nagomi.v1.ListTransactionsRequest.direction:type_name -> nagomi.v1.TransactionDirection
+	25, // 6: nagomi.v1.ListTransactionsRequest.time_of_day_start:type_name -> nagomi.v1.TimeOfDay
+	25, // 7: nagomi.v1.ListTransactionsRequest.time_of_day_end:type_name -> nagomi.v1.TimeOfDay
+	26, // 8: nagomi.v1.ListTransactionsResponse.transactions:type_name -> nagomi.v1.Transaction
+	22, // 9: nagomi.v1.ListTransactionsResponse.next_cursor:type_name -> nagomi.v1.Cursor
+	26, // 10: nagomi.v1.GetTransactionResponse.transaction:type_name -> nagomi.v1.Transaction
+	21, // 11: nagomi.v1.TransactionInput.tx_date:type_name -> google.protobuf.Timestamp
+	23, // 12: nagomi.v1.TransactionInput.tx_amount:type_name -> google.type.Money
+	24, // 13: nagomi.v1.TransactionInput.direction:type_name -> nagomi.v1.TransactionDirection
+	23, // 14: nagomi.v1.TransactionInput.foreign_amount:type_name -> google.type.Money
+	4,  // 15: nagomi.v1.CreateTransactionRequest.transactions:type_name -> nagomi.v1.TransactionInput
+	26, // 16: nagomi.v1.CreateTransactionResponse.transactions:type_name -> nagomi.v1.Transaction
+	27, // 17: nagomi.v1.UpdateTransactionRequest.update_mask:type_name -> google.protobuf.FieldMask
+	21, // 18: nagomi.v1.UpdateTransactionRequest.tx_date:type_name -> google.protobuf.Timestamp
+	23, // 19: nagomi.v1.UpdateTransactionRequest.tx_amount:type_name -> google.type.Money
+	24, // 20: nagomi.v1.UpdateTransactionRequest.direction:type_name -> nagomi.v1.TransactionDirection
+	23, // 21: nagomi.v1.UpdateTransactionRequest.foreign_amount:type_name -> google.type.Money
+	23, // 22: nagomi.v1.SplitEntry.amount:type_name -> google.type.Money
+	13, // 23: nagomi.v1.SplitTransactionRequest.splits:type_name -> nagomi.v1.SplitEntry
+	26, // 24: nagomi.v1.SplitTransactionResponse.created_splits:type_name -> nagomi.v1.Transaction
+	23, // 25: nagomi.v1.FriendBalance.balance:type_name -> google.type.Money
+	19, // 26: nagomi.v1.GetFriendBalancesResponse.balances:type_name -> nagomi.v1.FriendBalance
+	0,  // 27: nagomi.v1.TransactionService.ListTransactions:input_type -> nagomi.v1.ListTransactionsRequest
+	2,  // 28: nagomi.v1.TransactionService.GetTransaction:input_type -> nagomi.v1.GetTransactionRequest
+	5,  // 29: nagomi.v1.TransactionService.CreateTransaction:input_type -> nagomi.v1.CreateTransactionRequest
+	7,  // 30: nagomi.v1.TransactionService.UpdateTransaction:input_type -> nagomi.v1.UpdateTransactionRequest
+	9,  // 31: nagomi.v1.TransactionService.DeleteTransaction:input_type -> nagomi.v1.DeleteTransactionRequest
+	11, // 32: nagomi.v1.TransactionService.CategorizeTransactions:input_type -> nagomi.v1.CategorizeTransactionsRequest
+	14, // 33: nagomi.v1.TransactionService.SplitTransaction:input_type -> nagomi.v1.SplitTransactionRequest
+	16, // 34: nagomi.v1.TransactionService.ForgiveTransaction:input_type -> nagomi.v1.ForgiveTransactionRequest
+	18, // 35: nagomi.v1.TransactionService.GetFriendBalances:input_type -> nagomi.v1.GetFriendBalancesRequest
+	1,  // 36: nagomi.v1.TransactionService.ListTransactions:output_type -> nagomi.v1.ListTransactionsResponse
+	3,  // 37: nagomi.v1.TransactionService.GetTransaction:output_type -> nagomi.v1.GetTransactionResponse
+	6,  // 38: nagomi.v1.TransactionService.CreateTransaction:output_type -> nagomi.v1.CreateTransactionResponse
+	8,  // 39: nagomi.v1.TransactionService.UpdateTransaction:output_type -> nagomi.v1.UpdateTransactionResponse
+	10, // 40: nagomi.v1.TransactionService.DeleteTransaction:output_type -> nagomi.v1.DeleteTransactionResponse
+	12, // 41: nagomi.v1.TransactionService.CategorizeTransactions:output_type -> nagomi.v1.CategorizeTransactionsResponse
+	15, // 42: nagomi.v1.TransactionService.SplitTransaction:output_type -> nagomi.v1.SplitTransactionResponse
+	17, // 43: nagomi.v1.TransactionService.ForgiveTransaction:output_type -> nagomi.v1.ForgiveTransactionResponse
+	20, // 44: nagomi.v1.TransactionService.GetFriendBalances:output_type -> nagomi.v1.GetFriendBalancesResponse
 	36, // [36:45] is the sub-list for method output_type
 	27, // [27:36] is the sub-list for method input_type
 	27, // [27:27] is the sub-list for extension type_name
@@ -1645,33 +1646,33 @@ var file_null_v1_transaction_services_proto_depIdxs = []int32{
 	0,  // [0:27] is the sub-list for field type_name
 }
 
-func init() { file_null_v1_transaction_services_proto_init() }
-func file_null_v1_transaction_services_proto_init() {
-	if File_null_v1_transaction_services_proto != nil {
+func init() { file_nagomi_v1_transaction_services_proto_init() }
+func file_nagomi_v1_transaction_services_proto_init() {
+	if File_nagomi_v1_transaction_services_proto != nil {
 		return
 	}
-	file_null_v1_common_proto_init()
-	file_null_v1_enums_proto_init()
-	file_null_v1_transaction_proto_init()
-	file_null_v1_transaction_services_proto_msgTypes[0].OneofWrappers = []any{}
-	file_null_v1_transaction_services_proto_msgTypes[1].OneofWrappers = []any{}
-	file_null_v1_transaction_services_proto_msgTypes[4].OneofWrappers = []any{}
-	file_null_v1_transaction_services_proto_msgTypes[7].OneofWrappers = []any{}
+	file_nagomi_v1_common_proto_init()
+	file_nagomi_v1_enums_proto_init()
+	file_nagomi_v1_transaction_proto_init()
+	file_nagomi_v1_transaction_services_proto_msgTypes[0].OneofWrappers = []any{}
+	file_nagomi_v1_transaction_services_proto_msgTypes[1].OneofWrappers = []any{}
+	file_nagomi_v1_transaction_services_proto_msgTypes[4].OneofWrappers = []any{}
+	file_nagomi_v1_transaction_services_proto_msgTypes[7].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_null_v1_transaction_services_proto_rawDesc), len(file_null_v1_transaction_services_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_nagomi_v1_transaction_services_proto_rawDesc), len(file_nagomi_v1_transaction_services_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   21,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_null_v1_transaction_services_proto_goTypes,
-		DependencyIndexes: file_null_v1_transaction_services_proto_depIdxs,
-		MessageInfos:      file_null_v1_transaction_services_proto_msgTypes,
+		GoTypes:           file_nagomi_v1_transaction_services_proto_goTypes,
+		DependencyIndexes: file_nagomi_v1_transaction_services_proto_depIdxs,
+		MessageInfos:      file_nagomi_v1_transaction_services_proto_msgTypes,
 	}.Build()
-	File_null_v1_transaction_services_proto = out.File
-	file_null_v1_transaction_services_proto_goTypes = nil
-	file_null_v1_transaction_services_proto_depIdxs = nil
+	File_nagomi_v1_transaction_services_proto = out.File
+	file_nagomi_v1_transaction_services_proto_goTypes = nil
+	file_nagomi_v1_transaction_services_proto_depIdxs = nil
 }

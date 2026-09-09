@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        (unknown)
-// source: null/v1/category.proto
+// source: nagomi/v1/category.proto
 
-package nullv1
+package nagomiv1
 
 import (
 	_ "buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/buf/validate"
@@ -34,7 +34,7 @@ type Category struct {
 
 func (x *Category) Reset() {
 	*x = Category{}
-	mi := &file_null_v1_category_proto_msgTypes[0]
+	mi := &file_nagomi_v1_category_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -46,7 +46,7 @@ func (x *Category) String() string {
 func (*Category) ProtoMessage() {}
 
 func (x *Category) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_category_proto_msgTypes[0]
+	mi := &file_nagomi_v1_category_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -59,7 +59,7 @@ func (x *Category) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Category.ProtoReflect.Descriptor instead.
 func (*Category) Descriptor() ([]byte, []int) {
-	return file_null_v1_category_proto_rawDescGZIP(), []int{0}
+	return file_nagomi_v1_category_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Category) GetId() int64 {
@@ -94,7 +94,7 @@ type CategoryWithUsage struct {
 
 func (x *CategoryWithUsage) Reset() {
 	*x = CategoryWithUsage{}
-	mi := &file_null_v1_category_proto_msgTypes[1]
+	mi := &file_nagomi_v1_category_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -106,7 +106,7 @@ func (x *CategoryWithUsage) String() string {
 func (*CategoryWithUsage) ProtoMessage() {}
 
 func (x *CategoryWithUsage) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_category_proto_msgTypes[1]
+	mi := &file_nagomi_v1_category_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -119,7 +119,7 @@ func (x *CategoryWithUsage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CategoryWithUsage.ProtoReflect.Descriptor instead.
 func (*CategoryWithUsage) Descriptor() ([]byte, []int) {
-	return file_null_v1_category_proto_rawDescGZIP(), []int{1}
+	return file_nagomi_v1_category_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *CategoryWithUsage) GetCategory() *Category {
@@ -154,7 +154,7 @@ type CategoryWithUserUsage struct {
 
 func (x *CategoryWithUserUsage) Reset() {
 	*x = CategoryWithUserUsage{}
-	mi := &file_null_v1_category_proto_msgTypes[2]
+	mi := &file_nagomi_v1_category_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -166,7 +166,7 @@ func (x *CategoryWithUserUsage) String() string {
 func (*CategoryWithUserUsage) ProtoMessage() {}
 
 func (x *CategoryWithUserUsage) ProtoReflect() protoreflect.Message {
-	mi := &file_null_v1_category_proto_msgTypes[2]
+	mi := &file_nagomi_v1_category_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -179,7 +179,7 @@ func (x *CategoryWithUserUsage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CategoryWithUserUsage.ProtoReflect.Descriptor instead.
 func (*CategoryWithUserUsage) Descriptor() ([]byte, []int) {
-	return file_null_v1_category_proto_rawDescGZIP(), []int{2}
+	return file_nagomi_v1_category_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *CategoryWithUserUsage) GetCategory() *Category {
@@ -203,50 +203,51 @@ func (x *CategoryWithUserUsage) GetUserTotalAmount() *money.Money {
 	return nil
 }
 
-var File_null_v1_category_proto protoreflect.FileDescriptor
+var File_nagomi_v1_category_proto protoreflect.FileDescriptor
 
-const file_null_v1_category_proto_rawDesc = "" +
+const file_nagomi_v1_category_proto_rawDesc = "" +
 	"\n" +
-	"\x16null/v1/category.proto\x12\anull.v1\x1a\x17google/type/money.proto\x1a\x1bbuf/validate/validate.proto\"\x92\x01\n" +
+	"\x18nagomi/v1/category.proto\x12\tnagomi.v1\x1a\x17google/type/money.proto\x1a\x1bbuf/validate/validate.proto\"\x92\x01\n" +
 	"\bCategory\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\x03R\x02id\x121\n" +
 	"\x04slug\x18\x02 \x01(\tB\x1d\xbaH\x1ar\x18\x10\x01\x18d2\x12^[^.]+(\\.+[^.]+)*$R\x04slug\x12C\n" +
-	"\x05color\x18\x03 \x01(\tB-\xbaH*r(\x10\x04\x18\a2\"^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$R\x05color\"\x9a\x01\n" +
-	"\x11CategoryWithUsage\x12-\n" +
-	"\bcategory\x18\x01 \x01(\v2\x11.null.v1.CategoryR\bcategory\x12\x1f\n" +
+	"\x05color\x18\x03 \x01(\tB-\xbaH*r(\x10\x04\x18\a2\"^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$R\x05color\"\x9c\x01\n" +
+	"\x11CategoryWithUsage\x12/\n" +
+	"\bcategory\x18\x01 \x01(\v2\x13.nagomi.v1.CategoryR\bcategory\x12\x1f\n" +
 	"\vusage_count\x18\x02 \x01(\x03R\n" +
 	"usageCount\x125\n" +
-	"\ftotal_amount\x18\x03 \x01(\v2\x12.google.type.MoneyR\vtotalAmount\"\xb0\x01\n" +
-	"\x15CategoryWithUserUsage\x12-\n" +
-	"\bcategory\x18\x01 \x01(\v2\x11.null.v1.CategoryR\bcategory\x12(\n" +
+	"\ftotal_amount\x18\x03 \x01(\v2\x12.google.type.MoneyR\vtotalAmount\"\xb2\x01\n" +
+	"\x15CategoryWithUserUsage\x12/\n" +
+	"\bcategory\x18\x01 \x01(\v2\x13.nagomi.v1.CategoryR\bcategory\x12(\n" +
 	"\x10user_usage_count\x18\x02 \x01(\x03R\x0euserUsageCount\x12>\n" +
-	"\x11user_total_amount\x18\x03 \x01(\v2\x12.google.type.MoneyR\x0fuserTotalAmountB\x8a\x01\n" +
-	"\vcom.null.v1B\rCategoryProtoP\x01Z-null-email-parser/internal/gen/null/v1;nullv1\xa2\x02\x03NXX\xaa\x02\aNull.V1\xca\x02\bNull_\\V1\xe2\x02\x14Null_\\V1\\GPBMetadata\xea\x02\bNull::V1b\x06proto3"
+	"\x11user_total_amount\x18\x03 \x01(\v2\x12.google.type.MoneyR\x0fuserTotalAmountB\x98\x01\n" +
+	"\rcom.nagomi.v1B\rCategoryProtoP\x01Z3nagomi-email-parser/internal/gen/nagomi/v1;nagomiv1\xa2\x02\x03NXX\xaa\x02\tNagomi.V1\xca\x02\tNagomi\\V1\xe2\x02\x15Nagomi\\V1\\GPBMetadata\xea\x02\n" +
+	"Nagomi::V1b\x06proto3"
 
 var (
-	file_null_v1_category_proto_rawDescOnce sync.Once
-	file_null_v1_category_proto_rawDescData []byte
+	file_nagomi_v1_category_proto_rawDescOnce sync.Once
+	file_nagomi_v1_category_proto_rawDescData []byte
 )
 
-func file_null_v1_category_proto_rawDescGZIP() []byte {
-	file_null_v1_category_proto_rawDescOnce.Do(func() {
-		file_null_v1_category_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_null_v1_category_proto_rawDesc), len(file_null_v1_category_proto_rawDesc)))
+func file_nagomi_v1_category_proto_rawDescGZIP() []byte {
+	file_nagomi_v1_category_proto_rawDescOnce.Do(func() {
+		file_nagomi_v1_category_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_nagomi_v1_category_proto_rawDesc), len(file_nagomi_v1_category_proto_rawDesc)))
 	})
-	return file_null_v1_category_proto_rawDescData
+	return file_nagomi_v1_category_proto_rawDescData
 }
 
-var file_null_v1_category_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
-var file_null_v1_category_proto_goTypes = []any{
-	(*Category)(nil),              // 0: null.v1.Category
-	(*CategoryWithUsage)(nil),     // 1: null.v1.CategoryWithUsage
-	(*CategoryWithUserUsage)(nil), // 2: null.v1.CategoryWithUserUsage
+var file_nagomi_v1_category_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_nagomi_v1_category_proto_goTypes = []any{
+	(*Category)(nil),              // 0: nagomi.v1.Category
+	(*CategoryWithUsage)(nil),     // 1: nagomi.v1.CategoryWithUsage
+	(*CategoryWithUserUsage)(nil), // 2: nagomi.v1.CategoryWithUserUsage
 	(*money.Money)(nil),           // 3: google.type.Money
 }
-var file_null_v1_category_proto_depIdxs = []int32{
-	0, // 0: null.v1.CategoryWithUsage.category:type_name -> null.v1.Category
-	3, // 1: null.v1.CategoryWithUsage.total_amount:type_name -> google.type.Money
-	0, // 2: null.v1.CategoryWithUserUsage.category:type_name -> null.v1.Category
-	3, // 3: null.v1.CategoryWithUserUsage.user_total_amount:type_name -> google.type.Money
+var file_nagomi_v1_category_proto_depIdxs = []int32{
+	0, // 0: nagomi.v1.CategoryWithUsage.category:type_name -> nagomi.v1.Category
+	3, // 1: nagomi.v1.CategoryWithUsage.total_amount:type_name -> google.type.Money
+	0, // 2: nagomi.v1.CategoryWithUserUsage.category:type_name -> nagomi.v1.Category
+	3, // 3: nagomi.v1.CategoryWithUserUsage.user_total_amount:type_name -> google.type.Money
 	4, // [4:4] is the sub-list for method output_type
 	4, // [4:4] is the sub-list for method input_type
 	4, // [4:4] is the sub-list for extension type_name
@@ -254,26 +255,26 @@ var file_null_v1_category_proto_depIdxs = []int32{
 	0, // [0:4] is the sub-list for field type_name
 }
 
-func init() { file_null_v1_category_proto_init() }
-func file_null_v1_category_proto_init() {
-	if File_null_v1_category_proto != nil {
+func init() { file_nagomi_v1_category_proto_init() }
+func file_nagomi_v1_category_proto_init() {
+	if File_nagomi_v1_category_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_null_v1_category_proto_rawDesc), len(file_null_v1_category_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_nagomi_v1_category_proto_rawDesc), len(file_nagomi_v1_category_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_null_v1_category_proto_goTypes,
-		DependencyIndexes: file_null_v1_category_proto_depIdxs,
-		MessageInfos:      file_null_v1_category_proto_msgTypes,
+		GoTypes:           file_nagomi_v1_category_proto_goTypes,
+		DependencyIndexes: file_nagomi_v1_category_proto_depIdxs,
+		MessageInfos:      file_nagomi_v1_category_proto_msgTypes,
 	}.Build()
-	File_null_v1_category_proto = out.File
-	file_null_v1_category_proto_goTypes = nil
-	file_null_v1_category_proto_depIdxs = nil
+	File_nagomi_v1_category_proto = out.File
+	file_nagomi_v1_category_proto_goTypes = nil
+	file_nagomi_v1_category_proto_depIdxs = nil
 }

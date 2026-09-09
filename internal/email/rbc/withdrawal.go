@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"strings"
 
-	"null-email-parser/internal/domain"
-	"null-email-parser/internal/parser"
+	"nagomi-email-parser/internal/domain"
+	"nagomi-email-parser/internal/parser"
 )
 
 func init() { parser.Register(&withdrawal{}) }

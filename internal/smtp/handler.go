@@ -2,12 +2,12 @@ package smtp
 
 import (
 	"fmt"
-	"null-email-parser/internal/api"
-	"null-email-parser/internal/domain"
-	"null-email-parser/internal/email"
-	_ "null-email-parser/internal/email/all"
-	pb "null-email-parser/internal/gen/null/v1"
-	"null-email-parser/internal/parser"
+	"nagomi-email-parser/internal/api"
+	"nagomi-email-parser/internal/domain"
+	"nagomi-email-parser/internal/email"
+	_ "nagomi-email-parser/internal/email/all"
+	pb "nagomi-email-parser/internal/gen/nagomi/v1"
+	"nagomi-email-parser/internal/parser"
 	"os"
 	"path/filepath"
 	"strings"
