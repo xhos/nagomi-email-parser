@@ -138,6 +138,7 @@ func (c *Client) CreateTransaction(userID string, tx *domain.Transaction) error 
 			Nanos:        int32((tx.TxAmount - float64(int64(tx.TxAmount))) * 1e9),
 		},
 		Direction: c.convertDirection(tx.TxDirection),
+		Source:    pb.TransactionSource_TRANSACTION_SOURCE_EMAIL,
 	}
 
 	// Optional fields
