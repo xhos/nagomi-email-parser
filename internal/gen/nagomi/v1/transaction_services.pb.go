@@ -375,7 +375,7 @@ type TransactionInput struct {
 	ExchangeRate  *float64               `protobuf:"fixed64,10,opt,name=exchange_rate,json=exchangeRate,proto3,oneof" json:"exchange_rate,omitempty"`
 	SplitFromId   *int64                 `protobuf:"varint,11,opt,name=split_from_id,json=splitFromId,proto3,oneof" json:"split_from_id,omitempty"`
 	ExternalId    *string                `protobuf:"bytes,12,opt,name=external_id,json=externalId,proto3,oneof" json:"external_id,omitempty"`
-	// unspecified means manual
+	// unspecified is manual
 	Source        TransactionSource `protobuf:"varint,13,opt,name=source,proto3,enum=nagomi.v1.TransactionSource" json:"source,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -1386,7 +1386,7 @@ var File_nagomi_v1_transaction_services_proto protoreflect.FileDescriptor
 
 const file_nagomi_v1_transaction_services_proto_rawDesc = "" +
 	"\n" +
-	"$nagomi/v1/transaction_services.proto\x12\tnagomi.v1\x1a\x16nagomi/v1/common.proto\x1a\x15nagomi/v1/enums.proto\x1a\x17google/type/money.proto\x1a\x1bnagomi/v1/transaction.proto\x1a\x1bbuf/validate/validate.proto\x1a google/protobuf/field_mask.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\x90\t\n" +
+	"$nagomi/v1/transaction_services.proto\x12\tnagomi.v1\x1a\x1bbuf/validate/validate.proto\x1a google/protobuf/field_mask.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x17google/type/money.proto\x1a\x16nagomi/v1/common.proto\x1a\x15nagomi/v1/enums.proto\x1a\x1bnagomi/v1/transaction.proto\"\x90\t\n" +
 	"\x17ListTransactionsRequest\x12!\n" +
 	"\auser_id\x18\x01 \x01(\tB\b\xbaH\x05r\x03\xb0\x01\x01R\x06userId\x12+\n" +
 	"\n" +

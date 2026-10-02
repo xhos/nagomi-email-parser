@@ -131,8 +131,6 @@ func (TransactionDirection) EnumDescriptor() ([]byte, []int) {
 	return file_nagomi_v1_enums_proto_rawDescGZIP(), []int{1}
 }
 
-// where a transaction came from. EMAIL and CONNECTOR are provisional:
-// statement reconciliation may replace or delete them.
 type TransactionSource int32
 
 const (
