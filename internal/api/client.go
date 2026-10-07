@@ -24,6 +24,7 @@ type Client struct {
 	accountClient pb.AccountServiceClient
 	txClient      pb.TransactionServiceClient
 	userClient    pb.UserServiceClient
+	emailClient   pb.EmailServiceClient
 	healthClient  grpc_health_v1.HealthClient
 	authToken     string
 	log           *log.Logger
@@ -40,6 +41,7 @@ func NewClient(nagomiCoreURL, _, authToken string) (*Client, error) {
 		accountClient: pb.NewAccountServiceClient(conn),
 		txClient:      pb.NewTransactionServiceClient(conn),
 		userClient:    pb.NewUserServiceClient(conn),
+		emailClient:   pb.NewEmailServiceClient(conn),
 		healthClient:  grpc_health_v1.NewHealthClient(conn),
 		authToken:     authToken,
 		log:           log.NewWithOptions(os.Stderr, log.Options{Prefix: "grpc-client"}),
@@ -125,7 +127,8 @@ func (c *Client) CreateAccount(userID, name, bank, currency string) (*pb.Account
 	return resp.Account, nil
 }
 
-func (c *Client) CreateTransaction(userID string, tx *domain.Transaction) error {
+// CreateTransaction returns the new transaction's id, or 0 when it was a duplicate
+func (c *Client) CreateTransaction(userID string, tx *domain.Transaction) (int64, error) {
 	ctx := c.withAuth(context.Background())
 
 	// convert domain transaction to TransactionInput
@@ -166,15 +169,26 @@ func (c *Client) CreateTransaction(userID string, tx *domain.Transaction) error 
 		// check for duplicate transaction (conflict)
 		if grpcStatus := status.Code(err); grpcStatus == codes.AlreadyExists {
 			c.log.Info("skipping duplicate transaction", "email_id", tx.EmailID)
-			return nil // not a fatal error, just a duplicate
+			return 0, nil // not a fatal error, just a duplicate
 		}
-		return fmt.Errorf("failed to create transaction: %w", err)
+		return 0, fmt.Errorf("failed to create transaction: %w", err)
 	}
 
 	if len(resp.Transactions) > 0 {
 		c.log.Info("transaction created successfully", "email_id", tx.EmailID, "tx_id", resp.Transactions[0].Id)
-	} else {
-		c.log.Info("transaction request completed", "email_id", tx.EmailID, "created_count", resp.CreatedCount)
+		return resp.Transactions[0].Id, nil
+	}
+	c.log.Info("transaction request completed", "email_id", tx.EmailID, "created_count", resp.CreatedCount)
+	return 0, nil
+}
+
+// ReportEmail records the email in core's short list of recently received
+// emails, which the web shows so forwarding can be checked
+func (c *Client) ReportEmail(req *pb.ReportEmailRequest) error {
+	ctx := c.withAuth(context.Background())
+
+	if _, err := c.emailClient.ReportEmail(ctx, req); err != nil {
+		return fmt.Errorf("failed to report email: %w", err)
 	}
 	return nil
 }
